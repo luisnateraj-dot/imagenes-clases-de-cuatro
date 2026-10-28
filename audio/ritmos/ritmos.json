@@ -368,7 +368,7 @@
    "tempo": {
     "min": 150,
     "grabado": 220,
-    "max": 250
+    "max": 280
    },
    "unidad": "corchea",
    "unidades_por_compas": 6,
