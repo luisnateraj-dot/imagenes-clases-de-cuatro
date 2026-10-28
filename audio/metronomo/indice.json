@@ -1,0 +1,40 @@
+{
+ "_formato": "metronomo/<clave>_<dinámica>.mp3 · MP3 mono 44,1 kHz. ataque_s = instante del golpe en el MP3 decodificado (se alinea con el pulso). nivel_db = nivel RMS de los primeros 30 ms tras el ataque, relativo a clave2_ff (las ff de las dos claves están igualadas; cada mf conserva su diferencia natural).",
+ "origen": "University of Iowa Electronic Music Studios, Musical Instrument Samples, Hand Percussion (Andrew Thierauf, 2013): clave2 y clave4. https://theremin.music.uiowa.edu/MIShandpercussion.html — «may be downloaded and used for any projects, without restrictions».",
+ "uso": {
+  "tiempo_1": "clave2",
+  "demas_pulsos": "clave4",
+  "compas_de_cuenta": "ff",
+  "durante_la_pieza": "mf"
+ },
+ "sonidos": {
+  "clave2_ff": {
+   "archivo": "clave2_ff.mp3",
+   "ataque_s": 0.0055,
+   "duracion_s": 0.571,
+   "nivel_db": 0.0,
+   "pico_dbfs": -3.5
+  },
+  "clave2_mf": {
+   "archivo": "clave2_mf.mp3",
+   "ataque_s": 0.0054,
+   "duracion_s": 0.681,
+   "nivel_db": -6.8,
+   "pico_dbfs": -11.3
+  },
+  "clave4_ff": {
+   "archivo": "clave4_ff.mp3",
+   "ataque_s": 0.0051,
+   "duracion_s": 0.945,
+   "nivel_db": 0.0,
+   "pico_dbfs": -1.4
+  },
+  "clave4_mf": {
+   "archivo": "clave4_mf.mp3",
+   "ataque_s": 0.0053,
+   "duracion_s": 0.526,
+   "nivel_db": -9.7,
+   "pico_dbfs": -13.9
+  }
+ }
+}
