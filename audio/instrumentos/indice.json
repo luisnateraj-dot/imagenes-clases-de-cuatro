@@ -1,0 +1,1127 @@
+{
+ "_formato": "Cada nota: archivo MP3 mono 44,1 kHz, afinada y con nivel igualado. ataque_s = instante (en el MP3 decodificado) en que la nota alcanza la mitad de su nivel estable: es el punto que se alinea con el tiempo. bucle_s = tramo estable [inicio, fin] para prolongar la nota con fundido cruzado de 12 ms (en fase). nivel_dbfs = nivel RMS del tramo estable.",
+ "origen": "University of Iowa Electronic Music Studios, Musical Instrument Samples (anteriores a 2012): «may be downloaded and used for any projects, without restrictions». Clarinete en si♭ (Christine Bellomy, 1998), mf. Flauta sin vibrato (Sonja Feig, 2000), mf. Notas nombradas por su altura real.",
+ "instrumentos": {
+  "clarinete": {
+   "rango": [
+    "D3",
+    "C7"
+   ],
+   "notas": {
+    "D3": {
+     "midi": 50,
+     "archivo": "clarinete/D3.mp3",
+     "duracion_s": 2.222,
+     "ataque_s": 0.126,
+     "bucle_s": [
+      0.476,
+      1.77
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "Eb3": {
+     "midi": 51,
+     "archivo": "clarinete/Eb3.mp3",
+     "duracion_s": 2.326,
+     "ataque_s": 0.114,
+     "bucle_s": [
+      0.464,
+      1.877
+     ],
+     "correlacion_bucle": 0.98,
+     "afinacion_corregida_cents": -19.4,
+     "nivel_dbfs": -6.9
+    },
+    "E3": {
+     "midi": 52,
+     "archivo": "clarinete/E3.mp3",
+     "duracion_s": 2.306,
+     "ataque_s": 0.104,
+     "bucle_s": [
+      0.454,
+      1.836
+     ],
+     "correlacion_bucle": 0.994,
+     "afinacion_corregida_cents": -19.4,
+     "nivel_dbfs": -6.7
+    },
+    "F3": {
+     "midi": 53,
+     "archivo": "clarinete/F3.mp3",
+     "duracion_s": 2.31,
+     "ataque_s": 0.106,
+     "bucle_s": [
+      0.456,
+      1.884
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.2
+    },
+    "Fs3": {
+     "midi": 54,
+     "archivo": "clarinete/Fs3.mp3",
+     "duracion_s": 2.282,
+     "ataque_s": 0.108,
+     "bucle_s": [
+      0.458,
+      1.831
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -5.9
+    },
+    "G3": {
+     "midi": 55,
+     "archivo": "clarinete/G3.mp3",
+     "duracion_s": 2.24,
+     "ataque_s": 0.108,
+     "bucle_s": [
+      0.458,
+      1.769
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.0
+    },
+    "Ab3": {
+     "midi": 56,
+     "archivo": "clarinete/Ab3.mp3",
+     "duracion_s": 2.403,
+     "ataque_s": 0.122,
+     "bucle_s": [
+      0.472,
+      1.943
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.5
+    },
+    "A3": {
+     "midi": 57,
+     "archivo": "clarinete/A3.mp3",
+     "duracion_s": 2.36,
+     "ataque_s": 0.122,
+     "bucle_s": [
+      0.472,
+      1.904
+     ],
+     "correlacion_bucle": 0.996,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.4
+    },
+    "Bb3": {
+     "midi": 58,
+     "archivo": "clarinete/Bb3.mp3",
+     "duracion_s": 2.302,
+     "ataque_s": 0.082,
+     "bucle_s": [
+      0.45,
+      1.861
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.5
+    },
+    "B3": {
+     "midi": 59,
+     "archivo": "clarinete/B3.mp3",
+     "duracion_s": 2.272,
+     "ataque_s": 0.086,
+     "bucle_s": [
+      0.45,
+      1.88
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.0
+    },
+    "C4": {
+     "midi": 60,
+     "archivo": "clarinete/C4.mp3",
+     "duracion_s": 2.262,
+     "ataque_s": 0.062,
+     "bucle_s": [
+      0.45,
+      1.856
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "Cs4": {
+     "midi": 61,
+     "archivo": "clarinete/Cs4.mp3",
+     "duracion_s": 2.252,
+     "ataque_s": 0.066,
+     "bucle_s": [
+      0.45,
+      1.869
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.2
+    },
+    "D4": {
+     "midi": 62,
+     "archivo": "clarinete/D4.mp3",
+     "duracion_s": 2.423,
+     "ataque_s": 0.062,
+     "bucle_s": [
+      0.45,
+      2.013
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.0
+    },
+    "Eb4": {
+     "midi": 63,
+     "archivo": "clarinete/Eb4.mp3",
+     "duracion_s": 2.272,
+     "ataque_s": 0.074,
+     "bucle_s": [
+      0.45,
+      1.866
+     ],
+     "correlacion_bucle": 0.994,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.5
+    },
+    "E4": {
+     "midi": 64,
+     "archivo": "clarinete/E4.mp3",
+     "duracion_s": 2.35,
+     "ataque_s": 0.084,
+     "bucle_s": [
+      0.45,
+      1.913
+     ],
+     "correlacion_bucle": 0.994,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.1
+    },
+    "F4": {
+     "midi": 65,
+     "archivo": "clarinete/F4.mp3",
+     "duracion_s": 2.312,
+     "ataque_s": 0.074,
+     "bucle_s": [
+      0.45,
+      1.891
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "Fs4": {
+     "midi": 66,
+     "archivo": "clarinete/Fs4.mp3",
+     "duracion_s": 2.172,
+     "ataque_s": 0.064,
+     "bucle_s": [
+      0.45,
+      1.776
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "G4": {
+     "midi": 67,
+     "archivo": "clarinete/G4.mp3",
+     "duracion_s": 2.31,
+     "ataque_s": 0.05,
+     "bucle_s": [
+      0.45,
+      1.892
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.4
+    },
+    "Ab4": {
+     "midi": 68,
+     "archivo": "clarinete/Ab4.mp3",
+     "duracion_s": 2.323,
+     "ataque_s": 0.056,
+     "bucle_s": [
+      0.45,
+      1.911
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.9
+    },
+    "A4": {
+     "midi": 69,
+     "archivo": "clarinete/A4.mp3",
+     "duracion_s": 2.4,
+     "ataque_s": 0.076,
+     "bucle_s": [
+      0.45,
+      1.955
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.3
+    },
+    "Bb4": {
+     "midi": 70,
+     "archivo": "clarinete/Bb4.mp3",
+     "duracion_s": 2.32,
+     "ataque_s": 0.084,
+     "bucle_s": [
+      0.45,
+      1.891
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.2
+    },
+    "B4": {
+     "midi": 71,
+     "archivo": "clarinete/B4.mp3",
+     "duracion_s": 2.36,
+     "ataque_s": 0.112,
+     "bucle_s": [
+      0.462,
+      1.924
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.6
+    },
+    "C5": {
+     "midi": 72,
+     "archivo": "clarinete/C5.mp3",
+     "duracion_s": 2.4,
+     "ataque_s": 0.076,
+     "bucle_s": [
+      0.45,
+      2.005
+     ],
+     "correlacion_bucle": 0.999,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.6
+    },
+    "Cs5": {
+     "midi": 73,
+     "archivo": "clarinete/Cs5.mp3",
+     "duracion_s": 2.296,
+     "ataque_s": 0.048,
+     "bucle_s": [
+      0.45,
+      1.876
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.4
+    },
+    "D5": {
+     "midi": 74,
+     "archivo": "clarinete/D5.mp3",
+     "duracion_s": 2.262,
+     "ataque_s": 0.064,
+     "bucle_s": [
+      0.45,
+      1.86
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.7
+    },
+    "Eb5": {
+     "midi": 75,
+     "archivo": "clarinete/Eb5.mp3",
+     "duracion_s": 2.42,
+     "ataque_s": 0.056,
+     "bucle_s": [
+      0.45,
+      2.049
+     ],
+     "correlacion_bucle": 0.999,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.6
+    },
+    "E5": {
+     "midi": 76,
+     "archivo": "clarinete/E5.mp3",
+     "duracion_s": 2.403,
+     "ataque_s": 0.048,
+     "bucle_s": [
+      0.45,
+      2.004
+     ],
+     "correlacion_bucle": 0.999,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.0
+    },
+    "F5": {
+     "midi": 77,
+     "archivo": "clarinete/F5.mp3",
+     "duracion_s": 2.242,
+     "ataque_s": 0.04,
+     "bucle_s": [
+      0.45,
+      1.858
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.5
+    },
+    "Fs5": {
+     "midi": 78,
+     "archivo": "clarinete/Fs5.mp3",
+     "duracion_s": 2.272,
+     "ataque_s": 0.04,
+     "bucle_s": [
+      0.45,
+      1.892
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "G5": {
+     "midi": 79,
+     "archivo": "clarinete/G5.mp3",
+     "duracion_s": 2.222,
+     "ataque_s": 0.05,
+     "bucle_s": [
+      0.45,
+      1.84
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.6
+    },
+    "Ab5": {
+     "midi": 80,
+     "archivo": "clarinete/Ab5.mp3",
+     "duracion_s": 2.232,
+     "ataque_s": 0.05,
+     "bucle_s": [
+      0.45,
+      1.86
+     ],
+     "correlacion_bucle": 0.98,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.0
+    },
+    "A5": {
+     "midi": 81,
+     "archivo": "clarinete/A5.mp3",
+     "duracion_s": 2.13,
+     "ataque_s": 0.068,
+     "bucle_s": [
+      0.45,
+      1.77
+     ],
+     "correlacion_bucle": 0.986,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.5
+    },
+    "Bb5": {
+     "midi": 82,
+     "archivo": "clarinete/Bb5.mp3",
+     "duracion_s": 2.17,
+     "ataque_s": 0.056,
+     "bucle_s": [
+      0.45,
+      1.828
+     ],
+     "correlacion_bucle": 0.996,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.8
+    },
+    "B5": {
+     "midi": 83,
+     "archivo": "clarinete/B5.mp3",
+     "duracion_s": 2.21,
+     "ataque_s": 0.066,
+     "bucle_s": [
+      0.45,
+      1.821
+     ],
+     "correlacion_bucle": 0.974,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.8
+    },
+    "C6": {
+     "midi": 84,
+     "archivo": "clarinete/C6.mp3",
+     "duracion_s": 2.25,
+     "ataque_s": 0.032,
+     "bucle_s": [
+      0.45,
+      1.906
+     ],
+     "correlacion_bucle": 0.991,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.7
+    },
+    "Cs6": {
+     "midi": 85,
+     "archivo": "clarinete/Cs6.mp3",
+     "duracion_s": 2.172,
+     "ataque_s": 0.032,
+     "bucle_s": [
+      0.45,
+      1.805
+     ],
+     "correlacion_bucle": 0.996,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.9
+    },
+    "D6": {
+     "midi": 86,
+     "archivo": "clarinete/D6.mp3",
+     "duracion_s": 2.172,
+     "ataque_s": 0.026,
+     "bucle_s": [
+      0.45,
+      1.811
+     ],
+     "correlacion_bucle": 0.966,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.9
+    },
+    "Eb6": {
+     "midi": 87,
+     "archivo": "clarinete/Eb6.mp3",
+     "duracion_s": 2.285,
+     "ataque_s": 0.03,
+     "bucle_s": [
+      0.45,
+      1.949
+     ],
+     "correlacion_bucle": 0.987,
+     "afinacion_corregida_cents": -19.4,
+     "nivel_dbfs": -6.8
+    },
+    "E6": {
+     "midi": 88,
+     "archivo": "clarinete/E6.mp3",
+     "duracion_s": 2.225,
+     "ataque_s": 0.036,
+     "bucle_s": [
+      0.45,
+      1.856
+     ],
+     "correlacion_bucle": 0.993,
+     "afinacion_corregida_cents": -19.4,
+     "nivel_dbfs": -6.7
+    },
+    "F6": {
+     "midi": 89,
+     "archivo": "clarinete/F6.mp3",
+     "duracion_s": 2.248,
+     "ataque_s": 0.022,
+     "bucle_s": [
+      0.45,
+      1.883
+     ],
+     "correlacion_bucle": 0.99,
+     "afinacion_corregida_cents": -29.4,
+     "nivel_dbfs": -7.0
+    },
+    "Fs6": {
+     "midi": 90,
+     "archivo": "clarinete/Fs6.mp3",
+     "duracion_s": 2.202,
+     "ataque_s": 0.028,
+     "bucle_s": [
+      0.45,
+      1.869
+     ],
+     "correlacion_bucle": 0.942,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.0
+    },
+    "G6": {
+     "midi": 91,
+     "archivo": "clarinete/G6.mp3",
+     "duracion_s": 2.202,
+     "ataque_s": 0.026,
+     "bucle_s": [
+      0.45,
+      1.88
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.1
+    },
+    "Ab6": {
+     "midi": 92,
+     "archivo": "clarinete/Ab6.mp3",
+     "duracion_s": 2.205,
+     "ataque_s": 0.028,
+     "bucle_s": [
+      0.45,
+      1.889
+     ],
+     "correlacion_bucle": 0.998,
+     "afinacion_corregida_cents": -19.4,
+     "nivel_dbfs": -7.1
+    },
+    "A6": {
+     "midi": 93,
+     "archivo": "clarinete/A6.mp3",
+     "duracion_s": 2.111,
+     "ataque_s": 0.022,
+     "bucle_s": [
+      0.45,
+      1.76
+     ],
+     "correlacion_bucle": 0.98,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.7
+    },
+    "Bb6": {
+     "midi": 94,
+     "archivo": "clarinete/Bb6.mp3",
+     "duracion_s": 2.051,
+     "ataque_s": 0.02,
+     "bucle_s": [
+      0.45,
+      1.7
+     ],
+     "correlacion_bucle": 0.904,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.7
+    },
+    "B6": {
+     "midi": 95,
+     "archivo": "clarinete/B6.mp3",
+     "duracion_s": 2.227,
+     "ataque_s": 0.024,
+     "bucle_s": [
+      0.45,
+      1.861
+     ],
+     "correlacion_bucle": 0.99,
+     "afinacion_corregida_cents": -29.4,
+     "nivel_dbfs": -7.6
+    },
+    "C7": {
+     "midi": 96,
+     "archivo": "clarinete/C7.mp3",
+     "duracion_s": 3.051,
+     "ataque_s": 0.036,
+     "bucle_s": [
+      0.45,
+      2.679
+     ],
+     "correlacion_bucle": 0.999,
+     "afinacion_corregida_cents": -29.4,
+     "nivel_dbfs": -7.4
+    }
+   }
+  },
+  "flauta": {
+   "rango": [
+    "B3",
+    "C7"
+   ],
+   "notas": {
+    "B3": {
+     "midi": 59,
+     "archivo": "flauta/B3.mp3",
+     "duracion_s": 2.05,
+     "ataque_s": 0.236,
+     "bucle_s": [
+      0.586,
+      1.503
+     ],
+     "correlacion_bucle": 0.566,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -8.5
+    },
+    "C4": {
+     "midi": 60,
+     "archivo": "flauta/C4.mp3",
+     "duracion_s": 2.353,
+     "ataque_s": 0.114,
+     "bucle_s": [
+      0.464,
+      1.771
+     ],
+     "correlacion_bucle": 0.686,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "Cs4": {
+     "midi": 61,
+     "archivo": "flauta/Cs4.mp3",
+     "duracion_s": 2.453,
+     "ataque_s": 0.09,
+     "bucle_s": [
+      0.45,
+      2.032
+     ],
+     "correlacion_bucle": 0.641,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.1
+    },
+    "D4": {
+     "midi": 62,
+     "archivo": "flauta/D4.mp3",
+     "duracion_s": 2.323,
+     "ataque_s": 0.09,
+     "bucle_s": [
+      0.45,
+      1.803
+     ],
+     "correlacion_bucle": 0.837,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -7.2
+    },
+    "Eb4": {
+     "midi": 63,
+     "archivo": "flauta/Eb4.mp3",
+     "duracion_s": 2.32,
+     "ataque_s": 0.092,
+     "bucle_s": [
+      0.45,
+      1.875
+     ],
+     "correlacion_bucle": 0.902,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.7
+    },
+    "E4": {
+     "midi": 64,
+     "archivo": "flauta/E4.mp3",
+     "duracion_s": 2.49,
+     "ataque_s": 0.086,
+     "bucle_s": [
+      0.45,
+      2.091
+     ],
+     "correlacion_bucle": 0.734,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.3
+    },
+    "F4": {
+     "midi": 65,
+     "archivo": "flauta/F4.mp3",
+     "duracion_s": 2.58,
+     "ataque_s": 0.072,
+     "bucle_s": [
+      0.45,
+      2.123
+     ],
+     "correlacion_bucle": 0.815,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.1
+    },
+    "Fs4": {
+     "midi": 66,
+     "archivo": "flauta/Fs4.mp3",
+     "duracion_s": 2.594,
+     "ataque_s": 0.088,
+     "bucle_s": [
+      0.45,
+      2.171
+     ],
+     "correlacion_bucle": 0.903,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.9
+    },
+    "G4": {
+     "midi": 67,
+     "archivo": "flauta/G4.mp3",
+     "duracion_s": 2.634,
+     "ataque_s": 0.076,
+     "bucle_s": [
+      0.45,
+      2.18
+     ],
+     "correlacion_bucle": 0.95,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.3
+    },
+    "Ab4": {
+     "midi": 68,
+     "archivo": "flauta/Ab4.mp3",
+     "duracion_s": 2.473,
+     "ataque_s": 0.078,
+     "bucle_s": [
+      0.45,
+      2.041
+     ],
+     "correlacion_bucle": 0.936,
+     "afinacion_corregida_cents": -9.4,
+     "nivel_dbfs": -6.8
+    },
+    "A4": {
+     "midi": 69,
+     "archivo": "flauta/A4.mp3",
+     "duracion_s": 2.485,
+     "ataque_s": 0.064,
+     "bucle_s": [
+      0.45,
+      2.077
+     ],
+     "correlacion_bucle": 0.739,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.9
+    },
+    "Bb4": {
+     "midi": 70,
+     "archivo": "flauta/Bb4.mp3",
+     "duracion_s": 2.693,
+     "ataque_s": 0.054,
+     "bucle_s": [
+      0.45,
+      2.262
+     ],
+     "correlacion_bucle": 0.912,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.3
+    },
+    "B4": {
+     "midi": 71,
+     "archivo": "flauta/B4.mp3",
+     "duracion_s": 2.435,
+     "ataque_s": 0.06,
+     "bucle_s": [
+      0.45,
+      2.041
+     ],
+     "correlacion_bucle": 0.757,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.9
+    },
+    "C5": {
+     "midi": 72,
+     "archivo": "flauta/C5.mp3",
+     "duracion_s": 2.505,
+     "ataque_s": 0.042,
+     "bucle_s": [
+      0.45,
+      2.18
+     ],
+     "correlacion_bucle": 0.822,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.3
+    },
+    "Cs5": {
+     "midi": 73,
+     "archivo": "flauta/Cs5.mp3",
+     "duracion_s": 2.306,
+     "ataque_s": 0.044,
+     "bucle_s": [
+      0.45,
+      1.96
+     ],
+     "correlacion_bucle": 0.77,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.5
+    },
+    "D5": {
+     "midi": 74,
+     "archivo": "flauta/D5.mp3",
+     "duracion_s": 2.425,
+     "ataque_s": 0.058,
+     "bucle_s": [
+      0.45,
+      1.36
+     ],
+     "correlacion_bucle": 0.886,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.7
+    },
+    "Eb5": {
+     "midi": 75,
+     "archivo": "flauta/Eb5.mp3",
+     "duracion_s": 2.336,
+     "ataque_s": 0.076,
+     "bucle_s": [
+      0.45,
+      1.3
+     ],
+     "correlacion_bucle": 0.898,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.4
+    },
+    "E5": {
+     "midi": 76,
+     "archivo": "flauta/E5.mp3",
+     "duracion_s": 2.256,
+     "ataque_s": 0.06,
+     "bucle_s": [
+      0.45,
+      1.22
+     ],
+     "correlacion_bucle": 0.938,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.3
+    },
+    "F5": {
+     "midi": 77,
+     "archivo": "flauta/F5.mp3",
+     "duracion_s": 2.27,
+     "ataque_s": 0.068,
+     "bucle_s": [
+      0.45,
+      1.82
+     ],
+     "correlacion_bucle": 0.955,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -6.5
+    },
+    "Fs5": {
+     "midi": 78,
+     "archivo": "flauta/Fs5.mp3",
+     "duracion_s": 2.045,
+     "ataque_s": 0.06,
+     "bucle_s": [
+      0.45,
+      1.351
+     ],
+     "correlacion_bucle": 0.958,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -6.6
+    },
+    "G5": {
+     "midi": 79,
+     "archivo": "flauta/G5.mp3",
+     "duracion_s": 2.167,
+     "ataque_s": 0.048,
+     "bucle_s": [
+      0.45,
+      1.771
+     ],
+     "correlacion_bucle": 0.988,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.8
+    },
+    "Ab5": {
+     "midi": 80,
+     "archivo": "flauta/Ab5.mp3",
+     "duracion_s": 2.51,
+     "ataque_s": 0.064,
+     "bucle_s": [
+      0.45,
+      2.103
+     ],
+     "correlacion_bucle": 0.981,
+     "afinacion_corregida_cents": 0.6,
+     "nivel_dbfs": -7.5
+    },
+    "A5": {
+     "midi": 81,
+     "archivo": "flauta/A5.mp3",
+     "duracion_s": 2.475,
+     "ataque_s": 0.054,
+     "bucle_s": [
+      0.45,
+      2.103
+     ],
+     "correlacion_bucle": 0.99,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.4
+    },
+    "Bb5": {
+     "midi": 82,
+     "archivo": "flauta/Bb5.mp3",
+     "duracion_s": 2.5,
+     "ataque_s": 0.05,
+     "bucle_s": [
+      0.45,
+      2.134
+     ],
+     "correlacion_bucle": 0.996,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.2
+    },
+    "B5": {
+     "midi": 83,
+     "archivo": "flauta/B5.mp3",
+     "duracion_s": 2.441,
+     "ataque_s": 0.05,
+     "bucle_s": [
+      0.45,
+      2.021
+     ],
+     "correlacion_bucle": 0.972,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.6
+    },
+    "C6": {
+     "midi": 84,
+     "archivo": "flauta/C6.mp3",
+     "duracion_s": 2.134,
+     "ataque_s": 0.042,
+     "bucle_s": [
+      0.45,
+      1.798
+     ],
+     "correlacion_bucle": 0.992,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.5
+    },
+    "Cs6": {
+     "midi": 85,
+     "archivo": "flauta/Cs6.mp3",
+     "duracion_s": 2.312,
+     "ataque_s": 0.036,
+     "bucle_s": [
+      0.45,
+      1.918
+     ],
+     "correlacion_bucle": 0.999,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -6.2
+    },
+    "D6": {
+     "midi": 86,
+     "archivo": "flauta/D6.mp3",
+     "duracion_s": 2.495,
+     "ataque_s": 0.03,
+     "bucle_s": [
+      0.45,
+      2.138
+     ],
+     "correlacion_bucle": 0.994,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.1
+    },
+    "Eb6": {
+     "midi": 87,
+     "archivo": "flauta/Eb6.mp3",
+     "duracion_s": 2.431,
+     "ataque_s": 0.036,
+     "bucle_s": [
+      0.45,
+      2.077
+     ],
+     "correlacion_bucle": 0.992,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.4
+    },
+    "E6": {
+     "midi": 88,
+     "archivo": "flauta/E6.mp3",
+     "duracion_s": 2.441,
+     "ataque_s": 0.044,
+     "bucle_s": [
+      0.45,
+      2.08
+     ],
+     "correlacion_bucle": 0.995,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.2
+    },
+    "F6": {
+     "midi": 89,
+     "archivo": "flauta/F6.mp3",
+     "duracion_s": 2.52,
+     "ataque_s": 0.036,
+     "bucle_s": [
+      0.45,
+      2.073
+     ],
+     "correlacion_bucle": 0.994,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.3
+    },
+    "Fs6": {
+     "midi": 90,
+     "archivo": "flauta/Fs6.mp3",
+     "duracion_s": 2.569,
+     "ataque_s": 0.038,
+     "bucle_s": [
+      0.45,
+      2.188
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -8.8
+    },
+    "G6": {
+     "midi": 91,
+     "archivo": "flauta/G6.mp3",
+     "duracion_s": 2.441,
+     "ataque_s": 0.032,
+     "bucle_s": [
+      0.45,
+      2.017
+     ],
+     "correlacion_bucle": 0.948,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -6.5
+    },
+    "Ab6": {
+     "midi": 92,
+     "archivo": "flauta/Ab6.mp3",
+     "duracion_s": 2.322,
+     "ataque_s": 0.044,
+     "bucle_s": [
+      0.45,
+      1.968
+     ],
+     "correlacion_bucle": 0.997,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -7.4
+    },
+    "A6": {
+     "midi": 93,
+     "archivo": "flauta/A6.mp3",
+     "duracion_s": 2.485,
+     "ataque_s": 0.054,
+     "bucle_s": [
+      0.45,
+      2.042
+     ],
+     "correlacion_bucle": 0.975,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -6.8
+    },
+    "Bb6": {
+     "midi": 94,
+     "archivo": "flauta/Bb6.mp3",
+     "duracion_s": 2.614,
+     "ataque_s": 0.082,
+     "bucle_s": [
+      0.45,
+      2.23
+     ],
+     "correlacion_bucle": 0.98,
+     "afinacion_corregida_cents": 10.6,
+     "nivel_dbfs": -7.2
+    },
+    "B6": {
+     "midi": 95,
+     "archivo": "flauta/B6.mp3",
+     "duracion_s": 2.5,
+     "ataque_s": 0.08,
+     "bucle_s": [
+      0.45,
+      1.989
+     ],
+     "correlacion_bucle": 0.984,
+     "afinacion_corregida_cents": 20.6,
+     "nivel_dbfs": -6.3
+    },
+    "C7": {
+     "midi": 96,
+     "archivo": "flauta/C7.mp3",
+     "duracion_s": 2.608,
+     "ataque_s": 0.22,
+     "bucle_s": [
+      0.57,
+      2.241
+     ],
+     "correlacion_bucle": 0.985,
+     "afinacion_corregida_cents": 40.6,
+     "nivel_dbfs": -5.6
+    }
+   }
+  }
+ }
+}
