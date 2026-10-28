@@ -1,0 +1,294 @@
+{
+ "_formato": "audio/ritmos/: golpes sueltos del prototipo (Re y La7) y cierres largos (Re). Cada toma empieza pre_s antes del ataque. Como el codificador MP3 añade un retardo que no todos los navegadores quitan igual, el ataque se calcula al cargar: primera muestra con |x| ≥ umbral × pico (en los primeros 0,21 s) + ataque_desde_umbral_s. ataque_mp3_s = el mismo cálculo hecho aquí sobre el MP3 decodificado (referencia). pico_db = pico medio de los primeros 60 ms tras el ataque (las tomas de una clave están igualadas a ese pico); la ganancia de un golpe es 10^((gdb − pico_db)/20).",
+ "pre_s": 0.06,
+ "umbral": 0.2,
+ "golpes": {
+  "re_abajo_normal": {
+   "pico_db": -5.77,
+   "tomas": [
+    {
+     "archivo": "golpes/re_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.0113,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.0192,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.0293,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.0309,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.0206,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "re_abajo_fuerte": {
+   "pico_db": -4.67,
+   "tomas": [
+    {
+     "archivo": "golpes/re_abajo_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.0317,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.0201,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.0222,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.0158,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_abajo_fuerte_5.mp3",
+     "ataque_desde_umbral_s": -0.0231,
+     "ataque_mp3_s": 0.0594
+    }
+   ]
+  },
+  "re_arriba": {
+   "pico_db": -5.24,
+   "tomas": [
+    {
+     "archivo": "golpes/re_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.0036,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.0032,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.0046,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/re_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.0051,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "la7_abajo_normal": {
+   "pico_db": -5.13,
+   "tomas": [
+    {
+     "archivo": "golpes/la7_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.0298,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.0268,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.0234,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.0196,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.0209,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "la7_abajo_fuerte": {
+   "pico_db": -6.91,
+   "tomas": [
+    {
+     "archivo": "golpes/la7_abajo_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.0213,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.0183,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.0317,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.0262,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_abajo_fuerte_5.mp3",
+     "ataque_desde_umbral_s": -0.0189,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "la7_arriba": {
+   "pico_db": -4.66,
+   "tomas": [
+    {
+     "archivo": "golpes/la7_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.0068,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.0077,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.0056,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.007,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/la7_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.0064,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "chasquido_abajo": {
+   "pico_db": -12.77,
+   "tomas": [
+    {
+     "archivo": "golpes/chasquido_abajo_1.mp3",
+     "ataque_desde_umbral_s": -0.0113,
+     "ataque_mp3_s": 0.0609
+    },
+    {
+     "archivo": "golpes/chasquido_abajo_2.mp3",
+     "ataque_desde_umbral_s": -0.0298,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/chasquido_abajo_3.mp3",
+     "ataque_desde_umbral_s": -0.0262,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/chasquido_abajo_4.mp3",
+     "ataque_desde_umbral_s": -0.0228,
+     "ataque_mp3_s": 0.0607
+    },
+    {
+     "archivo": "golpes/chasquido_abajo_5.mp3",
+     "ataque_desde_umbral_s": -0.0406,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "chasquido_arriba": {
+   "pico_db": -13.28,
+   "tomas": [
+    {
+     "archivo": "golpes/chasquido_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.0136,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/chasquido_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.0153,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "golpes/chasquido_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.0225,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  }
+ },
+ "cierres": {
+  "re_abajo_normal": {
+   "pico_db": -5.77,
+   "tomas": [
+    {
+     "archivo": "cierres/re_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.0113,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.0192,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.0293,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.0309,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.0206,
+     "ataque_mp3_s": 0.06
+    }
+   ]
+  },
+  "re_abajo_fuerte": {
+   "pico_db": -4.67,
+   "tomas": [
+    {
+     "archivo": "cierres/re_abajo_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.0317,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.0201,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.0222,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.0158,
+     "ataque_mp3_s": 0.06
+    },
+    {
+     "archivo": "cierres/re_abajo_fuerte_5.mp3",
+     "ataque_desde_umbral_s": -0.0231,
+     "ataque_mp3_s": 0.0594
+    }
+   ]
+  }
+ }
+}
