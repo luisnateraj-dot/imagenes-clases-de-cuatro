@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo.",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura).",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -245,6 +245,299 @@
    "nivel": {
     "lufs": -21.92,
     "rms_db": -21.02
+   },
+   "variantes": {
+    "chasquido_abajo": {
+     "es": "Merengue chasquido abajo",
+     "en": "Merengue, chasquido down",
+     "nivel": "intermedio",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓"
+      ],
+      "sesgo": [
+       0.0002,
+       0.01031,
+       -0.00773,
+       -0.00153,
+       0.00956
+      ],
+      "gdb": [
+       -16.694,
+       -12.674,
+       -10.729,
+       -15.389,
+       -8.467
+      ]
+     }
+    },
+    "repique": {
+     "es": "Repique",
+     "en": "Repique",
+     "nivel": "intermedio",
+     "entrada": {
+      "patron": [
+       "✕↑",
+       "↓",
+       "↓",
+       "✕↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       4.5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1,
+       0.5,
+       0.5
+      ],
+      "barras": [
+       3,
+       3
+      ],
+      "T": [
+       0.00906,
+       -0.002,
+       0.00381,
+       0.00073,
+       -0.0116,
+       0
+      ],
+      "sesgo": [
+       0.0002,
+       -0.0005,
+       -0.00773,
+       -0.00153,
+       0.00956,
+       0
+      ],
+      "gdb": [
+       -16.694,
+       -9.672,
+       -10.729,
+       -15.389,
+       -8.467,
+       -13.674
+      ],
+      "desv_ms": [
+       18.1,
+       5.5,
+       8.8,
+       10.3,
+       14.9,
+       6
+      ]
+     },
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       4.5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1,
+       0.5,
+       0.5
+      ],
+      "barras": [
+       3,
+       3
+      ],
+      "T": [
+       0.00906,
+       -0.002,
+       0.00381,
+       0.00073,
+       -0.0116,
+       0
+      ],
+      "sesgo": [
+       0.0002,
+       0.01031,
+       -0.00773,
+       -0.00153,
+       0.00956,
+       0
+      ],
+      "gdb": [
+       -16.694,
+       -12.674,
+       -10.729,
+       -15.389,
+       -8.467,
+       -13.674
+      ],
+      "desv_ms": [
+       18.1,
+       5.5,
+       8.8,
+       10.3,
+       14.9,
+       6
+      ]
+     },
+     "salida": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓"
+      ],
+      "sesgo": [
+       0.0002,
+       0.01031,
+       -0.00773,
+       -0.00153,
+       0.00956
+      ],
+      "gdb": [
+       -16.694,
+       -12.674,
+       -10.729,
+       -15.389,
+       -8.467
+      ]
+     }
+    },
+    "adelantado": {
+     "es": "Adelantado",
+     "en": "Adelantado (anticipated)",
+     "nivel": "intermedio",
+     "entrada": {
+      "adelanta": [
+       4
+      ]
+     },
+     "sigue": {
+      "patron": [
+       "↑",
+       "↓",
+       "✕↑",
+       "↓"
+      ],
+      "posiciones": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "ligada": true,
+      "barras": [
+       3,
+       2
+      ],
+      "T": [
+       -0.002,
+       0.00381,
+       0.00073,
+       -0.0116
+      ],
+      "sesgo": [
+       0.01031,
+       -0.00773,
+       -0.00153,
+       0.00956
+      ],
+      "gdb": [
+       -12.674,
+       -10.729,
+       -15.389,
+       -8.467
+      ],
+      "desv_ms": [
+       5.5,
+       8.8,
+       10.3,
+       14.9
+      ],
+      "adelanta": [
+       3
+      ]
+     },
+     "salida": {
+      "patron": [
+       "↑",
+       "↓",
+       "✕↑",
+       "↓"
+      ],
+      "posiciones": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "ligada": true,
+      "barras": [
+       3,
+       2
+      ],
+      "T": [
+       -0.002,
+       0.00381,
+       0.00073,
+       -0.0116
+      ],
+      "sesgo": [
+       0.01031,
+       -0.00773,
+       -0.00153,
+       0.00956
+      ],
+      "gdb": [
+       -12.674,
+       -10.729,
+       -15.389,
+       -8.467
+      ],
+      "desv_ms": [
+       5.5,
+       8.8,
+       10.3,
+       14.9
+      ]
+     }
+    }
    }
   },
   "merengue_basico": {
