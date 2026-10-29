@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓).",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas).",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -132,6 +132,213 @@
    "nivel": {
     "lufs": -23.58,
     "rms_db": -22.8
+   }
+  },
+  "vals_criollo": {
+   "es": "Vals criollo",
+   "en": "Vals criollo",
+   "compas": "3/4",
+   "figura_tempo": "negra",
+   "tempo": {
+    "min": 100,
+    "grabado": 125,
+    "max": 150
+   },
+   "unidad": "corchea",
+   "unidades_por_compas": 6,
+   "patron": [
+    "↓",
+    "↓",
+    "✕↑",
+    "↓",
+    "↓",
+    "✕↑"
+   ],
+   "posiciones": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "duraciones": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "barras": [
+    2,
+    2,
+    2
+   ],
+   "figura_por_tempo": 2,
+   "T": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sesgo": [
+    0,
+    0.004,
+    0,
+    0,
+    0.004,
+    0
+   ],
+   "gdb": [
+    -8.46,
+    -10.2,
+    -10.97,
+    -9.0,
+    -10.4,
+    -10.97
+   ],
+   "desv_ms": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "chq": "suave",
+   "cierre": {
+    "golpe": "re_abajo_normal",
+    "cg": -5.497,
+    "brillo_db": -2,
+    "desvio_s": 0.0144
+   },
+   "bloque_brillo_db": 0,
+   "metronomo": {
+    "defecto": "pulso",
+    "pulso": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      2,
+      "clave4_mf"
+     ],
+     [
+      4,
+      "clave4_mf"
+     ]
+    ],
+    "sub": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      1,
+      "clave4_mf"
+     ],
+     [
+      2,
+      "clave2_mf"
+     ],
+     [
+      3,
+      "clave4_mf"
+     ],
+     [
+      4,
+      "clave2_mf"
+     ],
+     [
+      5,
+      "clave4_mf"
+     ]
+    ]
+   },
+   "nivel": {
+    "lufs": -21.7,
+    "rms_db": -20.76
+   },
+   "variantes": {
+    "repique": {
+     "es": "Repique",
+     "en": "Repique",
+     "nivel": "principiante",
+     "sigue": {
+      "patron": [
+       "↓",
+       "↓",
+       "✕↑",
+       "↓",
+       "↑",
+       "↓",
+       "✕↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       3.5,
+       4,
+       5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       0.5,
+       0.5,
+       1,
+       1
+      ],
+      "barras": [
+       2,
+       3,
+       2
+      ],
+      "T": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "sesgo": [
+       0,
+       0.004,
+       0,
+       0,
+       0,
+       0.004,
+       0
+      ],
+      "gdb": [
+       -8.46,
+       -10.2,
+       -10.97,
+       -9.0,
+       -12.6,
+       -10.4,
+       -10.97
+      ],
+      "desv_ms": [
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6
+      ]
+     }
+    }
    }
   },
   "merengue": {
