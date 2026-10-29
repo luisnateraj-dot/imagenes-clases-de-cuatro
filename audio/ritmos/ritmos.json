@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura).",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓).",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -455,7 +455,7 @@
        1,
        1
       ],
-      "ligada": true,
+      "ligada": "↓",
       "barras": [
        3,
        2
@@ -507,7 +507,7 @@
        1,
        1
       ],
-      "ligada": true,
+      "ligada": "↓",
       "barras": [
        3,
        2
@@ -651,6 +651,200 @@
    "nivel": {
     "lufs": -21.65,
     "rms_db": -20.68
+   },
+   "variantes": {
+    "repique": {
+     "es": "Repique",
+     "en": "Repique",
+     "nivel": "principiante",
+     "sigue": {
+      "patron": [
+       "⇓",
+       "↑",
+       "↓",
+       "↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       4.5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1,
+       0.5,
+       0.5
+      ],
+      "barras": [
+       3,
+       3
+      ],
+      "T": [
+       -0.00538,
+       0.01402,
+       -0.0025,
+       -0.00179,
+       -0.00435,
+       0
+      ],
+      "sesgo": [
+       -0.00192,
+       0.01031,
+       -0.0074,
+       0.00754,
+       -0.00853,
+       0
+      ],
+      "gdb": [
+       -11.878,
+       -12.674,
+       -8.736,
+       -16.762,
+       -9.391,
+       -13.674
+      ],
+      "desv_ms": [
+       18.6,
+       6.8,
+       7.4,
+       6.8,
+       8.9,
+       6
+      ]
+     }
+    },
+    "adelantado": {
+     "es": "Adelantado",
+     "en": "Adelantado (anticipated)",
+     "nivel": "principiante",
+     "entrada": {
+      "patron": [
+       "⇓",
+       "↑",
+       "↓",
+       "↑",
+       "⇓"
+      ],
+      "adelanta": [
+       4
+      ],
+      "gdb": [
+       -11.878,
+       -12.674,
+       -8.736,
+       -16.762,
+       -11.878
+      ]
+     },
+     "sigue": {
+      "patron": [
+       "↑",
+       "↓",
+       "↑",
+       "⇓"
+      ],
+      "posiciones": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "ligada": "⇓",
+      "barras": [
+       3,
+       2
+      ],
+      "adelanta": [
+       3
+      ],
+      "T": [
+       0.01402,
+       -0.0025,
+       -0.00179,
+       -0.00435
+      ],
+      "sesgo": [
+       0.01031,
+       -0.0074,
+       0.00754,
+       -0.00853
+      ],
+      "gdb": [
+       -12.674,
+       -8.736,
+       -16.762,
+       -11.878
+      ],
+      "desv_ms": [
+       6.8,
+       7.4,
+       6.8,
+       8.9
+      ]
+     },
+     "salida": {
+      "patron": [
+       "↑",
+       "↓",
+       "↑",
+       "↓"
+      ],
+      "posiciones": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "ligada": "⇓",
+      "barras": [
+       3,
+       2
+      ],
+      "T": [
+       0.01402,
+       -0.0025,
+       -0.00179,
+       -0.00435
+      ],
+      "sesgo": [
+       0.01031,
+       -0.0074,
+       0.00754,
+       -0.00853
+      ],
+      "gdb": [
+       -12.674,
+       -8.736,
+       -16.762,
+       -9.391
+      ],
+      "desv_ms": [
+       6.8,
+       7.4,
+       6.8,
+       8.9
+      ]
+     }
+    }
    }
   },
   "joropo": {
@@ -994,9 +1188,9 @@
     "rms_db": -22.71
    }
   },
-  "gaita_tambora": {
-   "es": "Gaita de tambora",
-   "en": "Gaita de tambora",
+  "gaita_furro": {
+   "es": "Gaita de furro",
+   "en": "Gaita de furro",
    "compas": "6/8",
    "figura_tempo": "corchea",
    "tempo": {
@@ -1007,7 +1201,7 @@
    "unidad": "corchea",
    "unidades_por_compas": 6,
    "patron": [
-    "✕↓",
+    "⇓",
     "↑",
     "✕↓",
     "✕↑",
@@ -1044,7 +1238,7 @@
     0.00286
    ],
    "sesgo": [
-    -0.00443,
+    -0.00192,
     0.01332,
     -0.01211,
     0.00528,
@@ -1052,7 +1246,7 @@
     -0.00022
    ],
    "gdb": [
-    -11.432,
+    -9.769,
     -9.972,
     -12.457,
     -14.312,
@@ -1060,7 +1254,7 @@
     -13.195
    ],
    "desv_ms": [
-    7.2,
+    7.0,
     6.0,
     4.8,
     3.0,
@@ -1073,7 +1267,7 @@
     "brillo_db": -2,
     "desvio_s": -0.0022
    },
-   "bloque_brillo_db": 0,
+   "bloque_brillo_db": -6,
    "metronomo": {
     "defecto": "sub",
     "pulso": [
@@ -1114,43 +1308,188 @@
     ]
    },
    "nivel": {
-    "lufs": -22.28,
-    "rms_db": -21.45
+    "lufs": -21.8,
+    "rms_db": -21.05
+   },
+   "variantes": {
+    "trancao_abajo": {
+     "es": "Trancao chasquido abajo",
+     "en": "Trancao, chasquido down",
+     "nivel": "avanzado",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "✕↓",
+       "✕↑",
+       "↓",
+       "✕↑"
+      ],
+      "T": [
+       0.00125,
+       -0.00078,
+       -0.00554,
+       0.00258,
+       -0.00036,
+       0.00286
+      ],
+      "sesgo": [
+       -0.00443,
+       0.01332,
+       -0.01211,
+       0.00528,
+       -0.00183,
+       -0.00022
+      ],
+      "gdb": [
+       -11.432,
+       -9.972,
+       -12.457,
+       -14.312,
+       -6.955,
+       -13.195
+      ],
+      "desv_ms": [
+       7.2,
+       6.0,
+       4.8,
+       3.0,
+       4.9,
+       2.6
+      ],
+      "chq": "fuerte"
+     }
+    },
+    "trancao_arriba": {
+     "es": "Trancao chasquido arriba",
+     "en": "Trancao, chasquido up",
+     "nivel": "avanzado",
+     "sigue": {
+      "patron": [
+       "✕↑",
+       "↓",
+       "✕↓",
+       "✕↑",
+       "↓",
+       "✕↓"
+      ],
+      "T": [
+       0.00125,
+       -0.00078,
+       -0.00554,
+       0.00258,
+       -0.00036,
+       0.00286
+      ],
+      "sesgo": [
+       0.00528,
+       -0.00183,
+       -0.01211,
+       0.00528,
+       -0.00183,
+       -0.00443
+      ],
+      "gdb": [
+       -11.432,
+       -7.972,
+       -12.457,
+       -14.312,
+       -6.955,
+       -13.195
+      ],
+      "desv_ms": [
+       7.2,
+       6.0,
+       4.8,
+       3.0,
+       4.9,
+       2.6
+      ],
+      "chq": "fuerte"
+     }
+    },
+    "toque_de_furro": {
+     "es": "Toque de furro",
+     "en": "Furro-style",
+     "nivel": "avanzado",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓",
+       "✕↑"
+      ],
+      "T": [
+       0.0004,
+       -0.00904,
+       0.01073,
+       0.0033,
+       -0.00668,
+       0.0013
+      ],
+      "sesgo": [
+       0.00189,
+       0.01464,
+       -0.00907,
+       -0.00321,
+       -0.00479,
+       0.00053
+      ],
+      "gdb": [
+       -15.936,
+       -11.639,
+       -7.685,
+       -12.716,
+       -8.765,
+       -13.272
+      ],
+      "desv_ms": [
+       5.4,
+       7.2,
+       5.7,
+       6.2,
+       5.1,
+       3.6
+      ]
+     }
+    }
    }
   },
-  "gaita_furro": {
-   "es": "Gaita de furro",
-   "en": "Gaita de furro",
-   "compas": "6/8",
-   "figura_tempo": "corchea",
+  "gaita_tambora": {
+   "es": "Gaita de tambora",
+   "en": "Gaita de tambora",
+   "compas": "2/4",
+   "figura_tempo": "negra",
    "tempo": {
-    "min": 280,
-    "grabado": 350,
-    "max": 400
+    "min": 80,
+    "grabado": 100,
+    "max": 120
    },
-   "unidad": "corchea",
-   "unidades_por_compas": 6,
+   "unidad": "semicorchea",
+   "unidades_por_compas": 8,
    "patron": [
     "✕↓",
     "↑",
+    "↑",
+    "✕↓",
     "↓",
-    "✕↑",
-    "↓",
-    "✕↑"
+    "↑"
    ],
    "posiciones": [
     0,
     1,
-    2,
     3,
     4,
-    5
+    6,
+    7
    ],
    "duraciones": [
     1,
+    2,
     1,
-    1,
-    1,
+    2,
     1,
     1
    ],
@@ -1158,55 +1497,55 @@
     3,
     3
    ],
-   "figura_por_tempo": 1,
+   "figura_por_tempo": 4,
    "T": [
-    0.0004,
-    -0.00904,
-    0.01073,
-    0.0033,
-    -0.00668,
-    0.0013
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "sesgo": [
-    0.00189,
-    0.01464,
-    -0.00907,
-    -0.00321,
-    -0.00479,
-    0.00053
+    -0.00443,
+    0.01332,
+    0.01332,
+    -0.01211,
+    -0.00183,
+    0.01332
    ],
    "gdb": [
-    -15.936,
-    -11.639,
-    -7.685,
-    -12.716,
-    -8.765,
-    -13.272
+    -11.432,
+    -9.972,
+    -11.472,
+    -12.457,
+    -6.955,
+    -11.472
    ],
    "desv_ms": [
-    5.4,
-    7.2,
-    5.7,
-    6.2,
-    5.1,
-    3.6
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -7.139,
+    "cg": -6.238,
     "brillo_db": -2,
-    "desvio_s": -0.0223
+    "desvio_s": -0.0022
    },
    "bloque_brillo_db": 0,
    "metronomo": {
-    "defecto": "sub",
+    "defecto": "pulso",
     "pulso": [
      [
       0,
       "clave2_ff"
      ],
      [
-      3,
+      4,
       "clave2_mf"
      ]
     ],
@@ -1216,30 +1555,214 @@
       "clave2_ff"
      ],
      [
-      1,
+      2,
       "clave4_mf"
+     ],
+     [
+      4,
+      "clave2_mf"
+     ],
+     [
+      6,
+      "clave4_mf"
+     ]
+    ]
+   },
+   "nivel": {
+    "lufs": -21.7,
+    "rms_db": -20.78
+   }
+  },
+  "gaita_tamborera": {
+   "es": "Gaita tamborera",
+   "en": "Gaita tamborera",
+   "compas": "2/4",
+   "figura_tempo": "negra",
+   "tempo": {
+    "min": 80,
+    "grabado": 100,
+    "max": 120
+   },
+   "unidad": "semicorchea",
+   "unidades_por_compas": 8,
+   "patron": [
+    "✕↓",
+    "↑",
+    "↑",
+    "✕↓",
+    "✕↑",
+    "↓"
+   ],
+   "posiciones": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "duraciones": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    2
+   ],
+   "barras": [
+    3,
+    3
+   ],
+   "figura_por_tempo": 4,
+   "T": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sesgo": [
+    -0.00443,
+    0.01332,
+    0.01332,
+    -0.01211,
+    0.00528,
+    -0.00183
+   ],
+   "gdb": [
+    -11.432,
+    -9.972,
+    -11.472,
+    -12.457,
+    -14.312,
+    -6.955
+   ],
+   "desv_ms": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "cierre": {
+    "golpe": "re_abajo_normal",
+    "cg": -6.238,
+    "brillo_db": -2,
+    "desvio_s": -0.0022
+   },
+   "bloque_brillo_db": 0,
+   "metronomo": {
+    "defecto": "pulso",
+    "pulso": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      4,
+      "clave2_mf"
+     ]
+    ],
+    "sub": [
+     [
+      0,
+      "clave2_ff"
      ],
      [
       2,
       "clave4_mf"
      ],
      [
-      3,
+      4,
       "clave2_mf"
      ],
      [
-      4,
-      "clave4_mf"
-     ],
-     [
-      5,
+      6,
       "clave4_mf"
      ]
     ]
    },
    "nivel": {
-    "lufs": -21.41,
-    "rms_db": -20.63
+    "lufs": -21.9,
+    "rms_db": -21.03
+   },
+   "variantes": {
+    "variante": {
+     "es": "Variante de la tamborera",
+     "en": "Tamborera variant",
+     "nivel": "avanzado",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↑",
+       "✕↓",
+       "✕↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "duraciones": [
+       1,
+       2,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "barras": [
+       3,
+       4
+      ],
+      "T": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "sesgo": [
+       -0.00443,
+       0.01332,
+       0.01332,
+       -0.01211,
+       0.00528,
+       -0.00183,
+       0.01332
+      ],
+      "gdb": [
+       -11.432,
+       -9.972,
+       -11.472,
+       -12.457,
+       -14.312,
+       -6.955,
+       -11.472
+      ],
+      "desv_ms": [
+       5,
+       5,
+       5,
+       5,
+       5,
+       5,
+       5
+      ]
+     }
+    }
    }
   },
   "bolero": {
@@ -1397,6 +1920,18 @@
     "lufs": -26.04,
     "rms_db": -25.12
    }
+  }
+ },
+ "chasquidos": {
+  "fuerte": {
+   "db": 4,
+   "brillo_db": 5,
+   "hz": 2000
+  },
+  "suave": {
+   "db": -5,
+   "brillo_db": -6,
+   "hz": 1500
   }
  }
 }
