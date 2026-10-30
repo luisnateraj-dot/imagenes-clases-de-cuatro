@@ -2,6 +2,10 @@
 
 Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor de ritmos** del CEM: generador de ritmos, módulo de cifrados y, más adelante, Acordes básicos y Progresiones armónicas (`contexto/13_Modulo_Generador_Ritmos.md`).
 
+## Fichas «Sobre este ritmo» (30-oct-2026)
+
+- **`fichas.json`:** los textos de la ficha de cada familia de ritmos (de dónde viene, dónde se toca, estilos, variantes, piezas con enlaces para escuchar, fuentes), en español e inglés. El Generador la muestra con el botón «Sobre este ritmo» en los ritmos que aparecen en su lista `ritmos`. Las partituras de golpes no están aquí: el Generador las dibuja con los datos de `ritmos.json`. El formato está explicado en la clave `_formato`. Un cambio en este archivo se ve al recargar el Generador, sin tocar GAS. Por ahora hay una ficha: joropo llanero (joropo corrío, joropo por derecho y pasaje).
+
 ## Desde el 30-oct-2026: grabación informal
 
 - **`informal/<clave>_<n>.mp3`:** las tomas que usa el motor, de la grabación informal de Luis (29-oct-2026): Re, La7, Sol, Si m, Mi m y Fa♯7 (digitaciones de `08b`), con 5 tomas de cada golpe:

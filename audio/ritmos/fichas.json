@@ -1,0 +1,91 @@
+{
+  "_formato": "Fichas «Sobre este ritmo» del Generador de ritmos (30-oct-2026; contexto/13, sección 10o). Una ficha por familia; «ritmos» = las claves de ritmos.json que la abren. Cada texto va en es/en. Secciones: «texto» (párrafos), «patron» (partitura de golpes de un ritmo o de una variante, dibujada por el Generador con los datos de ritmos.json), «formas» (lista de estilos o variantes, cada uno con su partitura; «tempo»: true añade el rango de tempo de ritmos.json), «piezas» (con enlaces «escuchar», que se abren en otra pestaña) y «dato» (recuadro azul). «plegable»: true = en el teléfono viene cerrada y se abre al tocarla; en PC todo va abierto.",
+  "fichas": {
+    "joropo_llanero": {
+      "ritmos": ["joropo", "joropo_por_derecho", "pasaje"],
+      "titulo": {"es": "Joropo llanero", "en": "Llanero joropo"},
+      "etiquetas": [
+        {"es": "Llanos de Venezuela y Colombia", "en": "Plains of Venezuela and Colombia", "destacada": true},
+        {"es": "3/4", "en": "3/4"},
+        {"es": "Nivel intermedio", "en": "Intermediate level"}
+      ],
+      "secciones": [
+        {"tipo": "texto", "titulo": {"es": "De dónde viene", "en": "Where it comes from"},
+         "parrafos": [
+          {"es": "Nace en los Llanos que comparten Venezuela y Colombia, entre los siglos XVII y XVIII, de los fandangos españoles mezclados con ritmos africanos y la sensibilidad indígena. Al principio, «joropo» era el nombre de la fiesta, no de la música.",
+           "en": "It was born in the plains (Llanos) shared by Venezuela and Colombia, between the 17th and 18th centuries, from Spanish fandangos blended with African rhythms and Indigenous sensibility. At first, «joropo» was the name of the party, not of the music."}
+         ]},
+        {"tipo": "texto", "titulo": {"es": "Dónde se toca", "en": "Where it is played"},
+         "parrafos": [
+          {"es": "Se le llama llanero para distinguirlo de otros joropos, como el oriental o el central. Es la variante más difundida y emblemática del género: nació en las extensas sabanas de los estados Apure, Barinas, Guárico, Cojedes y Portuguesa, y allí se toca principalmente, igual que el pasaje.",
+           "en": "It is called llanero to tell it apart from other joropos, such as the eastern (oriental) or the central joropo. It is the most widespread and emblematic form of the genre: it was born in the vast savannas of the states of Apure, Barinas, Guárico, Cojedes and Portuguesa, and that is where it is mainly played, just like the pasaje."},
+          {"es": "También se toca en los Llanos colombianos (Meta, Casanare, Arauca, Vichada). Lo acompañan el arpa llanera (o la bandola), el cuatro y las maracas, con la voz.",
+           "en": "It is also played in the Colombian plains (Meta, Casanare, Arauca, Vichada). It is accompanied by the llanero harp (or the bandola), the cuatro and maracas, with voice."}
+         ]},
+        {"tipo": "patron", "titulo": {"es": "El patrón · joropo corrío", "en": "The pattern · joropo corrío"}, "ritmo": "joropo",
+         "texto": {"es": "Seis corcheas. Los chasquidos, en la 3.ª y la 6.ª corchea, marcan dos grupos de tres dentro del 3/4. Carácter recio, rápido y alegre.",
+                   "en": "Six eighth notes. The chasquidos, on the 3rd and 6th eighths, mark two groups of three inside the 3/4. Strong, fast and joyful."}},
+        {"tipo": "formas", "titulo": {"es": "Estilos", "en": "Styles"}, "tempo": true,
+         "items": [
+          {"ritmo": "joropo", "texto": {"es": "Chasquidos fuertes", "en": "Strong chasquidos"}},
+          {"ritmo": "joropo_por_derecho", "texto": {"es": "Invierte los acentos del corrío · chasquidos fuertes", "en": "Reverses the accents of the corrío · strong chasquidos"}},
+          {"ritmo": "pasaje", "texto": {"es": "Más lento y cantable; letras del paisaje, el amor y la nostalgia · chasquidos suaves. Para empezar, antes que el joropo.", "en": "Slower and more lyrical; songs about the landscape, love and longing · soft chasquidos. Learn it before the joropo."}}
+         ]},
+        {"tipo": "formas", "titulo": {"es": "Variantes y repiques", "en": "Variations and repiques"},
+         "items": [
+          {"ritmo": "joropo", "variante": "repique", "nombre": {"es": "Repique (corrío y pasaje)", "en": "Repique (corrío and pasaje)"},
+           "texto": {"es": "Se toca de vez en cuando, sobre todo al final de una vuelta, para dar entrada a la voz.", "en": "Played now and then, above all at the end of a round, to bring the voice back in."}},
+          {"ritmo": "joropo_por_derecho", "variante": "repique", "nombre": {"es": "Repique del por derecho", "en": "Por derecho repique"},
+           "texto": {"es": "Las dos últimas corcheas se convierten en cuatro semicorcheas.", "en": "The last two eighths become four sixteenths."}},
+          {"ritmo": "pasaje", "variante": "brincaito", "nombre": {"es": "Brincaíto (pasaje, nivel avanzado)", "en": "Brincaíto (pasaje, advanced level)"},
+           "texto": {"es": "Dos compases que se alternan y «brincan», con chasquidos fuertes y silencios. Variante personal de Luis Natera.", "en": "Two alternating bars that «jump», with strong chasquidos and rests. Luis Natera's own variation."}}
+         ]},
+        {"tipo": "texto", "plegable": true, "titulo": {"es": "Golpes llaneros", "en": "Golpes llaneros"},
+         "parrafos": [
+          {"es": "Pajarillo, quirpa, seis por derecho, gabán, catira… no son ritmos distintos: se tocan con este mismo ritmo y se distinguen por su armonía fija. Los estudiarás en Progresiones armónicas.",
+           "en": "Pajarillo, quirpa, seis por derecho, gabán, catira… are not different rhythms: they are played with this same rhythm and differ in their fixed harmony. You will study them in Chord Progressions."}
+         ]},
+        {"tipo": "piezas", "plegable": true, "titulo": {"es": "Piezas para escuchar", "en": "Pieces to listen to"},
+         "items": [
+          {"titulo": "Alma llanera",
+           "texto": {"es": "Pedro Elías Gutiérrez (1914). Considerada el segundo himno de Venezuela.", "en": "Pedro Elías Gutiérrez (1914). Considered Venezuela's second national anthem."},
+           "escuchar": [
+            {"texto": {"es": "Almenar Otero · Spotify", "en": "Almenar Otero · Spotify"}, "quien": "Carlos Almenar Otero", "url": "https://open.spotify.com/track/37UKIkb7Q0Rs1o6POmi2Ot"},
+            {"texto": {"es": "Sáinz-Villegas, guitarra · Spotify", "en": "Sáinz-Villegas, guitar · Spotify"}, "quien": "Pablo Sáinz-Villegas", "url": "https://open.spotify.com/track/0CRHBbtqK3CJTd1yd1KAbK"}
+           ]},
+          {"titulo": "Pajarillo",
+           "texto": {"es": "Golpe tradicional, de autor anónimo, con cientos de versiones. También las hay instrumentales: Juan Vicente Torrealba lo llevó a un sonido de salón, estilizado y limpio, y lo dio a conocer fuera de Venezuela; Hernán Gamboa y Cheo Hurtado lo tocaron como cuatro solista, con toda la melodía en el cuatro y a una velocidad impresionante.",
+                     "en": "A traditional golpe by an unknown author, with hundreds of versions. There are instrumental ones too: Juan Vicente Torrealba turned it into a polished, refined salon sound and made it known outside Venezuela; Hernán Gamboa and Cheo Hurtado played it as solo cuatro, with the whole melody on the cuatro at an impressive speed."},
+           "escuchar": [
+            {"texto": {"es": "Torrealba · YouTube", "en": "Torrealba · YouTube"}, "quien": "Juan Vicente Torrealba", "url": "https://www.youtube.com/watch?v=GtRlkVcN_0I"},
+            {"texto": {"es": "Hernán Gamboa · Spotify", "en": "Hernán Gamboa · Spotify"}, "quien": "Hernán Gamboa", "url": "https://open.spotify.com/intl-es/track/4tHuPam95iA9MTMKpbt3dr"}
+           ]},
+          {"titulo": "Florentino y el Diablo",
+           "texto": {"es": "Poema de Alberto Arvelo Torrealba. En la grabación original (1965) cantaron José Romero Bello (Florentino) y Juan de los Santos Contreras, «El Carrao de Palmarito» (el Diablo).",
+                     "en": "A poem by Alberto Arvelo Torrealba. On the original recording (1965), José Romero Bello sang Florentino and Juan de los Santos Contreras, «El Carrao de Palmarito», sang the Devil."},
+           "escuchar": [{"texto": {"es": "YouTube", "en": "YouTube"}, "url": "https://www.youtube.com/watch?v=_7lw1ep61Sk"}]},
+          {"titulo": "Fiesta en Elorza", "texto": {"es": "Eneas Perdomo.", "en": "Eneas Perdomo."},
+           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/track/2qTJNEgsTtg0WTtMjue7t2"}]},
+          {"titulo": "Cómo no voy a decirlo", "texto": {"es": "Luis Silva.", "en": "Luis Silva."},
+           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/track/3X3QSKhnPbpt5WbxA7s8rj"}]},
+          {"titulo": "La muerte del rucio moro", "texto": {"es": "Reynaldo Armas (1987).", "en": "Reynaldo Armas (1987)."},
+           "escuchar": [{"texto": {"es": "YouTube", "en": "YouTube"}, "url": "https://www.youtube.com/watch?v=staveuRJdFE"}]},
+          {"titulo": "A usted", "texto": {"es": "Reynaldo Armas.", "en": "Reynaldo Armas."},
+           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/intl-es/track/4PX3v1a24ji1lKcK1XLyOJ"}]}
+         ]},
+        {"tipo": "dato", "plegable": true, "titulo": {"es": "Un dato", "en": "Did you know?"},
+         "parrafos": [
+          {"es": "En 2025, la UNESCO inscribió el joropo venezolano en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad.",
+           "en": "In 2025, UNESCO inscribed the Venezuelan joropo on the Representative List of the Intangible Cultural Heritage of Humanity."}
+         ]}
+      ],
+      "fuentes": [
+        {"es": "Wikipedia, «Joropo»", "en": "Wikipedia, «Joropo»", "url": "https://es.wikipedia.org/wiki/Joropo"},
+        {"es": "Wikipedia, «Florentino y El Diablo»", "en": "Wikipedia, «Florentino y El Diablo»", "url": "https://es.wikipedia.org/wiki/Florentino_y_El_Diablo"},
+        {"es": "Wikipedia, «Eneas Perdomo»", "en": "Wikipedia, «Eneas Perdomo»", "url": "https://en.wikipedia.org/wiki/Eneas_Perdomo"},
+        {"es": "Diario Las Américas, 9-dic-2025", "en": "Diario Las Américas, Dec 9, 2025"},
+        {"es": "musicallanera.net", "en": "musicallanera.net", "url": "https://www.musicallanera.net/"}
+      ]
+    }
+  }
+}
