@@ -3464,6 +3464,144 @@
      }
     }
    }
+  },
+  "onda_nueva": {
+   "es": "Onda nueva",
+   "en": "Onda nueva",
+   "compas": "6/8",
+   "figura_tempo": "corchea",
+   "tempo": {
+    "min": 160,
+    "grabado": 190,
+    "max": 220
+   },
+   "unidad": "semicorchea",
+   "unidades_por_compas": 12,
+   "patron": [
+    "↓",
+    "✕↓",
+    "↑",
+    "↑",
+    "✕↑",
+    "↓",
+    "✕↓",
+    "✕↑"
+   ],
+   "posiciones": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10,
+    11
+   ],
+   "duraciones": [
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1,
+    1
+   ],
+   "barras": [
+    3,
+    5
+   ],
+   "figura_por_tempo": 2,
+   "T": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sesgo": [
+    -0.00183,
+    -0.00443,
+    0.01332,
+    0.01332,
+    0.00528,
+    -0.00183,
+    -0.00443,
+    0.00528
+   ],
+   "gdb": [
+    -6.955,
+    -11.9,
+    -10.7,
+    -10.7,
+    -14.3,
+    -6.955,
+    -11.9,
+    -14.3
+   ],
+   "desv_ms": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "cierre": {
+    "golpe": "re_abajo_normal",
+    "cg": -6.238,
+    "brillo_db": -2,
+    "desvio_s": 0.0257
+   },
+   "bloque_brillo_db": 0,
+   "metronomo": {
+    "defecto": "sub",
+    "pulso": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      6,
+      "clave2_mf"
+     ]
+    ],
+    "sub": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      2,
+      "clave4_mf"
+     ],
+     [
+      4,
+      "clave4_mf"
+     ],
+     [
+      6,
+      "clave2_mf"
+     ],
+     [
+      8,
+      "clave4_mf"
+     ],
+     [
+      10,
+      "clave4_mf"
+     ]
+    ]
+   },
+   "nivel": {
+    "lufs": -21.67,
+    "rms_db": -20.87
+   }
   }
  },
  "chasquidos": {
