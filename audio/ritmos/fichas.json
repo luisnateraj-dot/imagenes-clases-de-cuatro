@@ -1,95 +1,1599 @@
 {
-  "_formato": "Fichas «Sobre este ritmo» del Generador de ritmos (30-oct-2026; contexto/13, sección 10o). Una ficha por familia; «ritmos» = las claves de ritmos.json que la abren. Cada texto va en es/en. Secciones: «texto» (párrafos), «patron» (partitura de golpes de un ritmo o de una variante, dibujada por el Generador con los datos de ritmos.json), «formas» (lista de estilos o variantes, cada uno con su partitura; «tempo»: true añade el rango de tempo de ritmos.json), «piezas» (con enlaces «escuchar», que se abren en otra pestaña) y «dato» (recuadro azul). «plegable»: true = en el teléfono viene cerrada y se abre al tocarla; en PC todo va abierto.",
-  "fichas": {
-    "joropo_llanero": {
-      "ritmos": ["joropo", "joropo_por_derecho", "pasaje"],
-      "titulo": {"es": "Joropo llanero", "en": "Llanero joropo"},
-      "etiquetas": [
-        {"es": "Llanos de Venezuela y Colombia", "en": "Plains of Venezuela and Colombia", "destacada": true},
-        {"es": "3/4", "en": "3/4"},
-        {"es": "Nivel intermedio", "en": "Intermediate level"}
-      ],
-      "secciones": [
-        {"tipo": "texto", "titulo": {"es": "De dónde viene", "en": "Where it comes from"},
-         "parrafos": [
-          {"es": "Nace en los Llanos que comparten Venezuela y Colombia, entre los siglos XVII y XVIII, de los fandangos españoles mezclados con ritmos africanos y la sensibilidad indígena. Al principio, «joropo» era el nombre de la fiesta, no de la música.",
-           "en": "It was born in the plains (Llanos) shared by Venezuela and Colombia, between the 17th and 18th centuries, from Spanish fandangos blended with African rhythms and Indigenous sensibility. At first, «joropo» was the name of the party, not of the music."}
-         ]},
-        {"tipo": "texto", "titulo": {"es": "Dónde se toca", "en": "Where it is played"},
-         "parrafos": [
-          {"es": "Se le llama llanero para distinguirlo de otros joropos, como el oriental o el central. Es la variante más difundida y emblemática del género: nació en las extensas sabanas de los estados Apure, Barinas, Guárico, Cojedes y Portuguesa, y allí se toca principalmente, igual que el pasaje.",
-           "en": "It is called llanero to tell it apart from other joropos, such as the eastern (oriental) or the central joropo. It is the most widespread and emblematic form of the genre: it was born in the vast savannas of the states of Apure, Barinas, Guárico, Cojedes and Portuguesa, and that is where it is mainly played, just like the pasaje."},
-          {"es": "También se toca en los Llanos colombianos (Meta, Casanare, Arauca, Vichada). Lo acompañan el arpa llanera (o la bandola), el cuatro y las maracas, con la voz.",
-           "en": "It is also played in the Colombian plains (Meta, Casanare, Arauca, Vichada). It is accompanied by the llanero harp (or the bandola), the cuatro and maracas, with voice."}
-         ]},
-        {"tipo": "patron", "titulo": {"es": "El patrón · joropo corrío", "en": "The pattern · joropo corrío"}, "ritmo": "joropo",
-         "texto": {"es": "Seis corcheas. Los chasquidos, en la 3.ª y la 6.ª corchea, marcan dos grupos de tres dentro del 3/4. Carácter recio, rápido y alegre.",
-                   "en": "Six eighth notes. The chasquidos, on the 3rd and 6th eighths, mark two groups of three inside the 3/4. Strong, fast and joyful."}},
-        {"tipo": "formas", "titulo": {"es": "Estilos", "en": "Styles"}, "tempo": true,
-         "items": [
-          {"ritmo": "joropo", "texto": {"es": "Chasquidos fuertes", "en": "Strong chasquidos"}},
-          {"ritmo": "joropo_por_derecho", "texto": {"es": "Invierte los acentos del corrío · chasquidos fuertes", "en": "Reverses the accents of the corrío · strong chasquidos"}},
-          {"ritmo": "pasaje", "texto": {"es": "Más lento y cantable; letras del paisaje, el amor y la nostalgia · chasquidos suaves. Para empezar, antes que el joropo.", "en": "Slower and more lyrical; songs about the landscape, love and longing · soft chasquidos. Learn it before the joropo."}}
-         ]},
-        {"tipo": "formas", "titulo": {"es": "Variantes y repiques", "en": "Variations and repiques"},
-         "items": [
-          {"ritmo": "joropo", "variante": "repique", "nombre": {"es": "Repique (corrío y pasaje)", "en": "Repique (corrío and pasaje)"},
-           "texto": {"es": "Se toca de vez en cuando, sobre todo al final de una vuelta, para dar entrada a la voz.", "en": "Played now and then, above all at the end of a round, to bring the voice back in."}},
-          {"ritmo": "joropo_por_derecho", "variante": "repique", "nombre": {"es": "Repique del por derecho", "en": "Por derecho repique"},
-           "texto": {"es": "Las dos últimas corcheas se convierten en cuatro semicorcheas.", "en": "The last two eighths become four sixteenths."}},
-          {"ritmo": "pasaje", "variante": "brincaito", "nombre": {"es": "Brincaíto (pasaje, nivel avanzado)", "en": "Brincaíto (pasaje, advanced level)"},
-           "texto": {"es": "Dos compases que se alternan y «brincan», con chasquidos fuertes y silencios. Variante personal de Luis Natera.", "en": "Two alternating bars that «jump», with strong chasquidos and rests. Luis Natera's own variation."}}
-         ]},
-        {"tipo": "texto", "plegable": true, "titulo": {"es": "Golpes llaneros", "en": "Golpes llaneros"},
-         "parrafos": [
-          {"es": "Pajarillo, quirpa, seis por derecho, gabán, catira… no son ritmos distintos: se tocan con este mismo ritmo y se distinguen por su armonía fija. Los estudiarás en Progresiones armónicas.",
-           "en": "Pajarillo, quirpa, seis por derecho, gabán, catira… are not different rhythms: they are played with this same rhythm and differ in their fixed harmony. You will study them in Chord Progressions."}
-         ]},
-        {"tipo": "piezas", "plegable": true, "titulo": {"es": "Piezas para escuchar", "en": "Pieces to listen to"},
-         "items": [
-          {"titulo": "Alma llanera",
-           "texto": {"es": "Pedro Elías Gutiérrez (1914). Considerada el segundo himno de Venezuela.", "en": "Pedro Elías Gutiérrez (1914). Considered Venezuela's second national anthem."},
-           "escuchar": [
-            {"texto": {"es": "Almenar Otero · Spotify", "en": "Almenar Otero · Spotify"}, "quien": "Carlos Almenar Otero", "url": "https://open.spotify.com/track/37UKIkb7Q0Rs1o6POmi2Ot"},
-            {"texto": {"es": "Sáinz-Villegas, guitarra · Spotify", "en": "Sáinz-Villegas, guitar · Spotify"}, "quien": "Pablo Sáinz-Villegas", "url": "https://open.spotify.com/track/0CRHBbtqK3CJTd1yd1KAbK"}
-           ]},
-          {"titulo": "Pajarillo",
-           "texto": {"es": "Golpe tradicional, de autor anónimo, con cientos de versiones. También las hay instrumentales: Juan Vicente Torrealba lo llevó a un sonido de salón, estilizado y limpio, y lo dio a conocer fuera de Venezuela; Hernán Gamboa y Cheo Hurtado lo tocaron como cuatro solista, con toda la melodía en el cuatro y a una velocidad impresionante.",
-                     "en": "A traditional golpe by an unknown author, with hundreds of versions. There are instrumental ones too: Juan Vicente Torrealba turned it into a polished, refined salon sound and made it known outside Venezuela; Hernán Gamboa and Cheo Hurtado played it as solo cuatro, with the whole melody on the cuatro at an impressive speed."},
-           "escuchar": [
-            {"texto": {"es": "Torrealba · YouTube", "en": "Torrealba · YouTube"}, "quien": "Juan Vicente Torrealba", "url": "https://www.youtube.com/watch?v=uDk6kN4u23I"},
-            {"texto": {"es": "Hernán Gamboa · Spotify", "en": "Hernán Gamboa · Spotify"}, "quien": "Hernán Gamboa", "url": "https://open.spotify.com/intl-es/track/4tHuPam95iA9MTMKpbt3dr"}
-           ]},
-          {"titulo": "Gabán",
-           "texto": {"es": "Golpe tradicional llanero. Versión para cuatro solista de Luis Natera, tu profesor.",
-                     "en": "A traditional llanero golpe. Solo cuatro version by Luis Natera, your teacher."},
-           "escuchar": [{"texto": {"es": "Luis Natera · YouTube", "en": "Luis Natera · YouTube"}, "quien": "Luis Natera", "url": "https://www.youtube.com/watch?v=zWAUHAMee0g"}]},
-          {"titulo": "Florentino y el Diablo",
-           "texto": {"es": "Poema de Alberto Arvelo Torrealba. En la grabación original (1965) cantaron José Romero Bello (Florentino) y Juan de los Santos Contreras, «El Carrao de Palmarito» (el Diablo).",
-                     "en": "A poem by Alberto Arvelo Torrealba. On the original recording (1965), José Romero Bello sang Florentino and Juan de los Santos Contreras, «El Carrao de Palmarito», sang the Devil."},
-           "escuchar": [{"texto": {"es": "YouTube", "en": "YouTube"}, "url": "https://www.youtube.com/watch?v=_7lw1ep61Sk"}]},
-          {"titulo": "Fiesta en Elorza", "texto": {"es": "Eneas Perdomo.", "en": "Eneas Perdomo."},
-           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/track/2qTJNEgsTtg0WTtMjue7t2"}]},
-          {"titulo": "Cómo no voy a decirlo", "texto": {"es": "Luis Silva.", "en": "Luis Silva."},
-           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/track/3X3QSKhnPbpt5WbxA7s8rj"}]},
-          {"titulo": "La muerte del rucio moro", "texto": {"es": "Reynaldo Armas (1987).", "en": "Reynaldo Armas (1987)."},
-           "escuchar": [{"texto": {"es": "YouTube", "en": "YouTube"}, "url": "https://www.youtube.com/watch?v=staveuRJdFE"}]},
-          {"titulo": "A usted", "texto": {"es": "Reynaldo Armas.", "en": "Reynaldo Armas."},
-           "escuchar": [{"texto": {"es": "Spotify", "en": "Spotify"}, "url": "https://open.spotify.com/intl-es/track/4PX3v1a24ji1lKcK1XLyOJ"}]}
-         ]},
-        {"tipo": "dato", "plegable": true, "titulo": {"es": "Un dato", "en": "Did you know?"},
-         "parrafos": [
-          {"es": "En 2025, la UNESCO inscribió el joropo venezolano en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad.",
-           "en": "In 2025, UNESCO inscribed the Venezuelan joropo on the Representative List of the Intangible Cultural Heritage of Humanity."}
-         ]}
-      ],
-      "fuentes": [
-        {"es": "Wikipedia, «Joropo»", "en": "Wikipedia, «Joropo»", "url": "https://es.wikipedia.org/wiki/Joropo"},
-        {"es": "Wikipedia, «Florentino y El Diablo»", "en": "Wikipedia, «Florentino y El Diablo»", "url": "https://es.wikipedia.org/wiki/Florentino_y_El_Diablo"},
-        {"es": "Wikipedia, «Eneas Perdomo»", "en": "Wikipedia, «Eneas Perdomo»", "url": "https://en.wikipedia.org/wiki/Eneas_Perdomo"},
-        {"es": "Diario Las Américas, 9-dic-2025", "en": "Diario Las Américas, Dec 9, 2025"},
-        {"es": "musicallanera.net", "en": "musicallanera.net", "url": "https://www.musicallanera.net/"}
-      ]
+ "_formato": "Fichas «Sobre este ritmo» del Generador de ritmos (30-oct-2026; contexto/13, sección 10o). Una ficha por familia; «ritmos» = las claves de ritmos.json que la abren. Cada texto va en es/en. Secciones: «texto» (párrafos), «patron» (partitura de golpes de un ritmo o de una variante, dibujada por el Generador con los datos de ritmos.json), «formas» (lista de estilos o variantes, cada uno con su partitura; «tempo»: true añade el rango de tempo de ritmos.json), «piezas» (con enlaces «escuchar», que se abren en otra pestaña) y «dato» (recuadro azul). «plegable»: true = en el teléfono viene cerrada y se abre al tocarla; en PC todo va abierto. Desde el 30-oct-2026 (noche): «nivel» en cada estilo de «formas» (principiante/intermedio/avanzado; en las fichas de varios estilos el nivel va ahí y no en las etiquetas); «grupo» {es, en} en las piezas (subtítulo para las piezas seguidas del mismo grupo); «enlace» {modulo, es, en} en un párrafo (ese trozo lleva al módulo del CEM, si el Generador conoce al alumno).",
+ "fichas": {
+  "merengue_venezolano": {
+   "ritmos": [
+    "merengue_basico",
+    "merengue",
+    "merengue_68_basico",
+    "merengue_68"
+   ],
+   "titulo": {
+    "es": "Merengue venezolano",
+    "en": "Venezuelan merengue"
+   },
+   "etiquetas": [
+    {
+     "es": "Caracas y el centro del país",
+     "en": "Caracas and central Venezuela",
+     "destacada": true
+    },
+    {
+     "es": "5/8 (3 + 2)",
+     "en": "5/8 (3 + 2)"
     }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "Aparece en partituras de baile venezolanas en la segunda mitad del siglo XIX y se pone de moda en Caracas en los años 20 del siglo XX, en salones de baile populares. No es el merengue dominicano: solo comparten el nombre.",
+       "en": "It appears in Venezuelan dance scores in the second half of the 19th century and became the craze in Caracas in the 1920s, in popular dance halls. It is not the Dominican merengue: they only share the name."
+      },
+      {
+       "es": "En el siglo XX, el guitarrista Luis Laguna (Guacara, Carabobo, 1926 – Maracay, 1984) le dio un nuevo impulso al merengue. Casi autodidacta, lo vistió con armonías modernas que no se usaban en el folclore tradicional. Al oído de hoy, ese color recuerda a la bossa nova brasileña, aunque Laguna llegó a él por su propio camino. Con su grupo Venezuela 4 difundió merengues suyos como Criollísima (con Henry Martínez), El saltarín y El tramao.",
+       "en": "In the 20th century, guitarist Luis Laguna (Guacara, Carabobo, 1926 – Maracay, 1984) gave the merengue a new impulse. Largely self-taught, he dressed it in modern harmonies that traditional folk music did not use. To today's ear, that colour recalls Brazilian bossa nova, although Laguna reached it on his own path. With his group Venezuela 4 he spread his merengues, such as Criollísima (with Henry Martínez), El saltarín and El tramao."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Dónde se toca",
+      "en": "Where it is played"
+     },
+     "parrafos": [
+      {
+       "es": "Sobre todo en Caracas, por eso también se le llama merengue caraqueño, y en la región central. Lo tocaban conjuntos con trompeta, trombón, saxofón o clarinete, junto con cuatro, bajo y percusión (charrasca, maracas, redoblante).",
+       "en": "Above all in Caracas (hence its other name, merengue caraqueño) and central Venezuela. It was played by bands with trumpet, trombone, saxophone or clarinet, together with cuatro, bass and percussion (scraper, maracas, snare drum)."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón · merengue con chasquido",
+      "en": "The pattern · merengue with chasquido"
+     },
+     "ritmo": "merengue",
+     "texto": {
+      "es": "Cinco corcheas en dos grupos, 3 + 2. Los chasquidos caen en la 1.ª y la 4.ª corchea y marcan los dos grupos. Ese reparto desigual le da su balanceo característico.",
+      "en": "Five eighth notes in two groups, 3 + 2. The chasquidos fall on the 1st and 4th eighths and mark both groups. That uneven split gives it its characteristic sway."
+     }
+    },
+    {
+     "tipo": "formas",
+     "titulo": {
+      "es": "Estilos",
+      "en": "Styles"
+     },
+     "tempo": true,
+     "items": [
+      {
+       "ritmo": "merengue_basico",
+       "nivel": "principiante",
+       "texto": {
+        "es": "Para empezar, sin chasquidos; el primer tiempo es un bloque.",
+        "en": "To start with, no chasquidos; beat 1 is a block stroke."
+       }
+      },
+      {
+       "ritmo": "merengue",
+       "nivel": "intermedio",
+       "nombre": {
+        "es": "Merengue con chasquido",
+        "en": "Merengue with chasquido"
+       }
+      },
+      {
+       "ritmo": "merengue_68_basico",
+       "nivel": "principiante",
+       "texto": {
+        "es": "Los mismos golpes con la última corchea sin golpe. Más sosegado; muy usado en aguinaldos.",
+        "en": "The same strokes with the last eighth left silent. Calmer; often used for aguinaldos."
+       }
+      },
+      {
+       "ritmo": "merengue_68",
+       "nivel": "intermedio",
+       "nombre": {
+        "es": "Merengue a 6/8 con chasquido",
+        "en": "Merengue in 6/8 with chasquido"
+       },
+       "texto": {
+        "es": "Igual, con los chasquidos del merengue.",
+        "en": "The same, with the merengue chasquidos."
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "formas",
+     "titulo": {
+      "es": "Variantes",
+      "en": "Variations"
+     },
+     "items": [
+      {
+       "ritmo": "merengue",
+       "variante": "repique",
+       "nombre": {
+        "es": "Repique",
+        "en": "Repique"
+       },
+       "texto": {
+        "es": "La última corchea se parte en dos semicorcheas.",
+        "en": "The last eighth is split into two sixteenths."
+       }
+      },
+      {
+       "ritmo": "merengue",
+       "variante": "adelantado",
+       "nombre": {
+        "es": "Adelantado",
+        "en": "Adelantado (anticipated)"
+       },
+       "texto": {
+        "es": "El primer tiempo del compás siguiente se adelanta a la última corchea, ya con el acorde nuevo.",
+        "en": "Beat 1 of the next bar comes early, on the last eighth, already with the new chord."
+       }
+      },
+      {
+       "ritmo": "merengue",
+       "variante": "chasquido_abajo",
+       "nombre": {
+        "es": "Merengue chasquido abajo",
+        "en": "Merengue, chasquido down"
+       },
+       "texto": {
+        "es": "El primer chasquido va hacia abajo.",
+        "en": "The first chasquido goes down."
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "plegable": true,
+     "titulo": {
+      "es": "Géneros con este rasgueo",
+      "en": "Genres played with this strum"
+     },
+     "parrafos": [
+      {
+       "es": "El aguinaldo no es un ritmo, sino un género navideño. La mayoría se toca en merengue: en 5/8, o en 6/8 si la pieza pide un aire más reflexivo, como Esta bella noche. Algunos van en 3/4, con la tonada.",
+       "en": "The aguinaldo is not a rhythm but a Christmas genre. Most are played as merengue: in 5/8, or in 6/8 when the piece calls for a more reflective feel, like Esta bella noche. Some go in 3/4, with the tonada."
+      }
+     ]
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "grupo": {
+        "es": "Aguinaldos",
+        "en": "Aguinaldos"
+       },
+       "titulo": "Esta bella noche",
+       "texto": {
+        "es": "Luis Eduardo Galián.",
+        "en": "Luis Eduardo Galián."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=ZoqXV4Pf8uU"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Aguinaldos",
+        "en": "Aguinaldos"
+       },
+       "titulo": "Niño lindo",
+       "texto": {
+        "es": "Tradicional; lo rescató Vicente Emilio Sojo.",
+        "en": "Traditional; rescued by Vicente Emilio Sojo."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=sLWD4AGgiqk"
+        },
+        {
+         "texto": {
+          "es": "En 6/8 · YouTube",
+          "en": "In 6/8 · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=Cwz4jwxvJUw"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "La negra Atilia",
+       "texto": {
+        "es": "Pablo Camacaro.",
+        "en": "Pablo Camacaro."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=BdlC-JudBsg"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "Patatín patatán",
+       "texto": {
+        "es": "Pablo Camacaro.",
+        "en": "Pablo Camacaro."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=gFisDpRs-Zk"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "Compae Pancho",
+       "texto": {
+        "es": "Lorenzo Herrera.",
+        "en": "Lorenzo Herrera."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=fAO5YMzo9bY"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "El frutero",
+       "texto": {
+        "es": "Cruz Felipe Iriarte.",
+        "en": "Cruz Felipe Iriarte."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=3aGYZF7RxlQ"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "El Norte es una quimera",
+       "texto": {
+        "es": "Luis Fragachán. Lorenzo Herrera la grabó en 1939; aquí, en la versión de Cecilia Todd.",
+        "en": "Luis Fragachán. Lorenzo Herrera recorded it in 1939; here, in Cecilia Todd's version."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Cecilia Todd · Spotify",
+          "en": "Cecilia Todd · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/4lKTGpJ5poZEDIsyRrEjIA"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "El becerrito",
+       "texto": {
+        "es": "Simón Díaz.",
+        "en": "Simón Díaz."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/1oBGzpPZRQSd5RAUm3J8Cm"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "Criollísima",
+       "texto": {
+        "es": "Luis Laguna y Henry Martínez.",
+        "en": "Luis Laguna and Henry Martínez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=CCZsSC1LvIA"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "El saltarín",
+       "texto": {
+        "es": "Luis Laguna.",
+        "en": "Luis Laguna."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=VIfZ1LB3sD8"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue tradicional",
+        "en": "Traditional merengue"
+       },
+       "titulo": "El tramao",
+       "texto": {
+        "es": "Luis Laguna.",
+        "en": "Luis Laguna."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=0I-31i5eHXk"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue contemporáneo",
+        "en": "Contemporary merengue"
+       },
+       "titulo": "Cómo podré",
+       "texto": {
+        "es": "Ignacio Izcaray.",
+        "en": "Ignacio Izcaray."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=sKjtlIMPEqw"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue contemporáneo",
+        "en": "Contemporary merengue"
+       },
+       "titulo": "El negrito 'e Caja de Agua",
+       "texto": {
+        "es": "Rodner Padilla.",
+        "en": "Rodner Padilla."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=B4wRM7d5Rj4"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dato",
+     "plegable": true,
+     "titulo": {
+      "es": "Un dato",
+      "en": "Did you know?"
+     },
+     "parrafos": [
+      {
+       "es": "Al principio, el merengue era mal visto. A comienzos del siglo XX se bailaba «apretaíto» en los mabiles, salones de baile de mala fama de Caracas, y la gente «decente» lo llamaba indecente: «tan popular, tan prohibido, tan de mabil».",
+       "en": "At first, merengue was frowned upon. In the early 20th century it was danced cheek to cheek in the mabiles, disreputable dance halls in Caracas, and “decent” people called it indecent: “so popular, so forbidden, so mabil”."
+      },
+      {
+       "es": "Por esos años, los cañoneros recorrían las fiestas de la ciudad. Llegaban disparando un cañón de bambú cargado con carburo y agua, y luego tocaban merengues, joropos y valses a cambio de propinas.",
+       "en": "In those years, the cañoneros toured the city's parties. They arrived firing a bamboo cannon loaded with carbide and water, and then played merengues, joropos and waltzes for tips."
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "Wikipedia, «Venezuelan merengue»",
+     "en": "Wikipedia, «Venezuelan merengue»",
+     "url": "https://en.wikipedia.org/wiki/Venezuelan_merengue"
+    },
+    {
+     "es": "Wikipedia, «Luis Laguna»",
+     "en": "Wikipedia, «Luis Laguna»",
+     "url": "https://en.wikipedia.org/wiki/Luis_Laguna"
+    },
+    {
+     "es": "Universidad Central de Venezuela, tesis sobre el merengue caraqueño",
+     "en": "Universidad Central de Venezuela, thesis on the merengue caraqueño",
+     "url": "https://saber.ucv.ve/bitstream/10872/2719/1/Tesis%20CO6%20C3.pdf"
+    },
+    {
+     "es": "Cancioneros, biografía de Luis Laguna",
+     "en": "Cancioneros, Luis Laguna biography",
+     "url": "https://www.cancioneros.com/at/3666/0/biografia-de-luis-laguna"
+    },
+    {
+     "es": "Orinoco Padre Río, «Las serenatas de Luis Laguna»",
+     "en": "Orinoco Padre Río, «Las serenatas de Luis Laguna»",
+     "url": "https://orinocopadrerio.blogspot.com/2015/01/las-serenatas-de-luis-laguna.html"
+    },
+    {
+     "es": "Archivo Frontera (UCLA)",
+     "en": "Frontera Collection (UCLA)",
+     "url": "https://frontera.library.ucla.edu/recordings/el-norte-es-una-quimera-0"
+    },
+    {
+     "es": "Caracas Chronicles, «Niño lindo»",
+     "en": "Caracas Chronicles, «Niño lindo»",
+     "url": "https://caracaschronicles.com/2021/12/23/how-vicente-emilio-sojo-rescued-nino-lindo"
+    }
+   ]
+  },
+  "tonada": {
+   "ritmos": [
+    "tonada"
+   ],
+   "titulo": {
+    "es": "Tonada",
+    "en": "Tonada"
+   },
+   "etiquetas": [
+    {
+     "es": "Llanos de Venezuela",
+     "en": "Venezuelan plains",
+     "destacada": true
+    },
+    {
+     "es": "3/4",
+     "en": "3/4"
+    },
+    {
+     "es": "Nivel principiante",
+     "en": "Beginner level"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "Nace de los cantos de trabajo del llano. El ordeñador le canta a cada vaca, llamándola por su nombre, para calmarla mientras la ordeña. El cabrestero canta al guiar el ganado por la sabana, y el vaquero, al velarlo de noche.",
+       "en": "It was born from the work songs of the plains. The milker sings to each cow, calling her by name, to calm her while milking. The cabrestero sings as he leads the cattle across the savanna, and the cowhand as he watches over them at night."
+      },
+      {
+       "es": "Eran cantos sin acompañamiento. Desde los años 70, Simón Díaz los recogió y los llevó a la canción con cuatro, en sus discos Tonadas (1974 y 1976), y la tonada se conoció en toda Venezuela. En 2012 recibió el Premio Nacional de Cultura por su trabajo con la tonada y los cantos de ordeño.",
+       "en": "They were sung unaccompanied. From the 1970s on, Simón Díaz collected them and turned them into songs with cuatro, on his albums Tonadas (1974 and 1976), and the tonada became known all over Venezuela. In 2012 he received the National Culture Prize for his work with the tonada and milking songs."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Dónde se toca",
+      "en": "Where it is played"
+     },
+     "parrafos": [
+      {
+       "es": "En los Llanos de Venezuela y Colombia, donde los cantos de trabajo siguen vivos. Como canción, en todo el país. Es lenta, serena y nostálgica, y el canto lleva la voz cantante.",
+       "en": "In the plains of Venezuela and Colombia, where the work songs are still alive; as a song, all over the country. It is slow, serene and nostalgic, and the singing leads."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón",
+      "en": "The pattern"
+     },
+     "ritmo": "tonada",
+     "texto": {
+      "es": "Cuatro golpes por compás, sin chasquidos: abajo corto, arriba largo, arriba corto, abajo largo. Los golpes largos dejan respirar el canto. Es el ritmo más sencillo del CEM y el primero que se aprende.",
+      "en": "Four strokes per bar, no chasquidos: short down, long up, short up, long down. The long strokes let the singing breathe. It is the simplest rhythm in the CEM and the first one you learn."
+     }
+    },
+    {
+     "tipo": "texto",
+     "plegable": true,
+     "titulo": {
+      "es": "Géneros con este rasgueo",
+      "en": "Genres played with this strum"
+     },
+     "parrafos": [
+      {
+       "es": "Algunos aguinaldos a 3/4, como A adorar al Niño, se tocan como la tonada.",
+       "en": "Some aguinaldos in 3/4, like A adorar al Niño, are played like the tonada."
+      }
+     ]
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "titulo": "Tonada de luna llena",
+       "texto": {
+        "es": "Simón Díaz. La cantó Caetano Veloso en una película de Almodóvar.",
+        "en": "Simón Díaz. Caetano Veloso sang it in an Almodóvar film."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=kybLjGtZJhs"
+        }
+       ]
+      },
+      {
+       "titulo": "Tonada de las espigas",
+       "texto": {
+        "es": "Simón Díaz.",
+        "en": "Simón Díaz."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/2w0NWRBQQ7znLhk5suWiid"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dato",
+     "plegable": true,
+     "titulo": {
+      "es": "Un dato",
+      "en": "Did you know?"
+     },
+     "parrafos": [
+      {
+       "es": "En 2017, la UNESCO inscribió los cantos de trabajo de los Llanos de Colombia y Venezuela en su lista de patrimonio que necesita protección urgente: cada vez quedan menos llaneros que los cantan.",
+       "en": "In 2017, UNESCO inscribed the work songs of the plains of Colombia and Venezuela on its list of heritage in need of urgent safeguarding: fewer and fewer llaneros still sing them."
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "Wikipedia, «Simón Díaz»",
+     "en": "Wikipedia, «Simón Díaz»",
+     "url": "https://en.wikipedia.org/wiki/Sim%C3%B3n_D%C3%ADaz"
+    },
+    {
+     "es": "Canal Trece, «Cantos de vaquería: patrimonio inmaterial de la humanidad»",
+     "en": "Canal Trece, «Cantos de vaquería: patrimonio inmaterial de la humanidad»",
+     "url": "https://canaltrece.com.co/noticias/los-cantos-de-trabajo-de-los-llanos-ya-son-patrimonio-inmaterial-de-la-humanidad/"
+    },
+    {
+     "es": "El Diario NY, 7-dic-2017",
+     "en": "El Diario NY, Dec 7, 2017",
+     "url": "https://eldiariony.com/2017/12/07/mas-tradiciones-de-latinoamerica-entran-en-el-patrimonio-cultural-inmaterial-de-la-humanidad-de-unesco/"
+    }
+   ]
+  },
+  "vals_criollo": {
+   "ritmos": [
+    "vals_criollo"
+   ],
+   "titulo": {
+    "es": "Vals criollo",
+    "en": "Vals criollo"
+   },
+   "etiquetas": [
+    {
+     "es": "Toda Venezuela",
+     "en": "All of Venezuela",
+     "destacada": true
+    },
+    {
+     "es": "3/4",
+     "en": "3/4"
+    },
+    {
+     "es": "Nivel principiante",
+     "en": "Beginner level"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "El vals llega de Europa en el siglo XIX como baile de salón, y en Venezuela se hace criollo: se le mezclan ritmos africanos y locales hasta volverse un género propio. Pronto tuvo dos caras. Una es el vals de salón, para piano, de compositores como Heraclio Fernández, Ramón Delgado Palacios o Teresa Carreño. La otra es el vals popular, con violín, bandola, guitarra, tiple y cuatro, muchas veces de autor anónimo.",
+       "en": "The waltz arrived from Europe in the 19th century as a ballroom dance, and in Venezuela it became criollo: African and local rhythms blended into it until it became a genre of its own. It soon had two faces. One is the salon waltz, for piano, by composers such as Heraclio Fernández, Ramón Delgado Palacios or Teresa Carreño. The other is the popular waltz, with violin, bandola, guitar, tiple and cuatro, often by anonymous authors."
+      },
+      {
+       "es": "Se le dice vals criollo para distinguirlo de la tonada y del vals pasaje.",
+       "en": "It is called vals criollo to tell it apart from the tonada and the vals pasaje."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Dónde se toca",
+      "en": "Where it is played"
+     },
+     "parrafos": [
+      {
+       "es": "En todo el país, tanto en la sala de concierto como en la fiesta. En el siglo XX, Antonio Lauro lo llevó a la guitarra clásica: sus valses se tocan en salas de concierto de todo el mundo y se estudian en conservatorios de muchos países. Natalia, el más famoso, se usa en concursos de guitarra.",
+       "en": "All over the country, in the concert hall and at parties. In the 20th century, Antonio Lauro brought it to the classical guitar: his waltzes are played in concert halls around the world and studied in conservatories in many countries. Natalia, the most famous, is used in guitar competitions."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón · vals criollo",
+      "en": "The pattern · vals criollo"
+     },
+     "ritmo": "vals_criollo",
+     "texto": {
+      "es": "Seis corcheas: abajo, abajo, chasquido arriba, y otra vez lo mismo. Los chasquidos suaves, en la 3.ª y la 6.ª corchea, parten el compás en dos grupos de tres. Ese vaivén entre el 3/4 y el 6/8 es la marca del vals venezolano.",
+      "en": "Six eighth notes: down, down, chasquido up, and the same again. The soft chasquidos, on the 3rd and 6th eighths, split the bar into two groups of three. That sway between 3/4 and 6/8 is the hallmark of the Venezuelan waltz."
+     }
+    },
+    {
+     "tipo": "formas",
+     "titulo": {
+      "es": "Variantes",
+      "en": "Variations"
+     },
+     "items": [
+      {
+       "ritmo": "vals_criollo",
+       "variante": "repique",
+       "nombre": {
+        "es": "Repique",
+        "en": "Repique"
+       },
+       "texto": {
+        "es": "La 4.ª corchea se parte en dos semicorcheas.",
+        "en": "The 4th eighth is split into two sixteenths."
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "grupo": {
+        "es": "Valses cantados",
+        "en": "Sung waltzes"
+       },
+       "titulo": "Dama antañona",
+       "texto": {
+        "es": "Francisco de Paula Aguirre.",
+        "en": "Francisco de Paula Aguirre."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=l3hnpM4uhT8"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses cantados",
+        "en": "Sung waltzes"
+       },
+       "titulo": "Conticinio",
+       "texto": {
+        "es": "Laudelino Mejías. En esta versión de Eleazar Agudo, una de las más famosas, se toca como vals pasaje: el vals y el pasaje comparten una zona fronteriza.",
+        "en": "Laudelino Mejías. In this version by Eleazar Agudo, one of the most famous, it is played as a vals pasaje: the waltz and the pasaje share a borderland."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Eleazar Agudo · Spotify",
+          "en": "Eleazar Agudo · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/42EZt9qWZrHVwQjqgX4gUY"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses cantados",
+        "en": "Sung waltzes"
+       },
+       "titulo": "Crepúsculo coriano",
+       "texto": {
+        "es": "Rafael Sánchez López.",
+        "en": "Rafael Sánchez López."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=JZc_rsDougg"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses cantados",
+        "en": "Sung waltzes"
+       },
+       "titulo": "Atardecer",
+       "texto": {
+        "es": "Letra de Lencho Amaro y música de Luis Laguna.",
+        "en": "Lyrics by Lencho Amaro, music by Luis Laguna."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Cantada · YouTube",
+          "en": "Sung · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=8EzkNUw-f4o"
+        },
+        {
+         "texto": {
+          "es": "Instrumental · YouTube",
+          "en": "Instrumental · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=e4VKNprGdzM"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses cantados",
+        "en": "Sung waltzes"
+       },
+       "titulo": "Natalia",
+       "texto": {
+        "es": "Luis Laguna.",
+        "en": "Luis Laguna."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/3rN1XDfCaqnC3Lvs7Govy0"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "El diablo suelto",
+       "texto": {
+        "es": "Heraclio Fernández. Nació como vals instrumental, publicado en 1888; la versión cantada llegó después. Hoy casi nadie lo toca como vals: se ha convertido prácticamente en un joropo y se toca con ese ritmo.",
+        "en": "Heraclio Fernández. It was born as an instrumental waltz, published in 1888; the sung version came later. Today hardly anyone plays it as a waltz: it has practically become a joropo and is played with that rhythm."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Instrumental · John Williams",
+          "en": "Instrumental · John Williams"
+         },
+         "url": "https://www.youtube.com/watch?v=9vgVL1y2wRA"
+        },
+        {
+         "texto": {
+          "es": "Cantada · YouTube",
+          "en": "Sung · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=iVvuQWiwj_c"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "Vals venezolano n.º 1, «Tatiana»",
+       "texto": {
+        "es": "Antonio Lauro.",
+        "en": "Antonio Lauro."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Deion Cho · Spotify",
+          "en": "Deion Cho · Spotify"
+         },
+         "url": "https://open.spotify.com/track/6pq74fllPH85IvQI0NTJL3"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "Vals venezolano n.º 2, «Andreína»",
+       "texto": {
+        "es": "Antonio Lauro.",
+        "en": "Antonio Lauro."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Deion Cho · Spotify",
+          "en": "Deion Cho · Spotify"
+         },
+         "url": "https://open.spotify.com/track/0umf0kdqyY2IJx7s6Mt3xb"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "Vals venezolano n.º 3, «Natalia»",
+       "texto": {
+        "es": "Antonio Lauro. El más tocado de sus valses.",
+        "en": "Antonio Lauro. The most played of his waltzes."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "John Williams · Spotify",
+          "en": "John Williams · Spotify"
+         },
+         "url": "https://open.spotify.com/track/1o7YwKb8f9pBsgPRkre9dE"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "Vals venezolano n.º 4, «Yacambú»",
+       "texto": {
+        "es": "Antonio Lauro.",
+        "en": "Antonio Lauro."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Deion Cho · Spotify",
+          "en": "Deion Cho · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-fr/track/1m4CM68loImpXwGYkQi8nm"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dato",
+     "plegable": true,
+     "titulo": {
+      "es": "Un dato",
+      "en": "Did you know?"
+     },
+     "parrafos": [
+      {
+       "es": "El diablo suelto, quizá el vals venezolano más famoso, se publicó en 1888 en una revista que había fundado su autor, Heraclio Fernández, dos años después de su muerte.",
+       "en": "El diablo suelto, perhaps the most famous Venezuelan waltz, was published in 1888 in a magazine its composer, Heraclio Fernández, had founded, two years after his death."
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "Wikipedia, «Venezuelan waltz»",
+     "en": "Wikipedia, «Venezuelan waltz»",
+     "url": "https://en.wikipedia.org/wiki/Venezuelan_waltz"
+    },
+    {
+     "es": "Wikipedia, «Heraclio Fernández»",
+     "en": "Wikipedia, «Heraclio Fernández»",
+     "url": "https://en.wikipedia.org/wiki/Heraclio_Fern%C3%A1ndez"
+    },
+    {
+     "es": "Venezolanos Ilustres, «Valses venezolanos de Antonio Lauro»",
+     "en": "Venezolanos Ilustres, «Valses venezolanos de Antonio Lauro»",
+     "url": "https://venezolanosilustres.com/ediciones/ano-3/edicion-3-21-agosto-2021/valses-venezolanos-antonio-lauro/"
+    },
+    {
+     "es": "Musicanet",
+     "en": "Musicanet",
+     "url": "https://www.musicanet.org/bdd/en/score/10530-crepusculo-coriano-rafael-suarez"
+    },
+    {
+     "es": "Richter Guitar, «Antonio Lauro»",
+     "en": "Richter Guitar, «Antonio Lauro»",
+     "url": "https://richterguitar.com/classical-guitar/composers/antonio-lauro/"
+    }
+   ]
+  },
+  "orquidea": {
+   "ritmos": [
+    "orquidea"
+   ],
+   "titulo": {
+    "es": "El orquídea",
+    "en": "El orquídea"
+   },
+   "etiquetas": [
+    {
+     "es": "Venezuela, años 60",
+     "en": "Venezuela, 1960s",
+     "destacada": true
+    },
+    {
+     "es": "4/4 (también 2/4)",
+     "en": "4/4 (also 2/4)"
+    },
+    {
+     "es": "Nivel principiante",
+     "en": "Beginner level"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "Lo creó el arpista caraqueño Hugo Blanco y lo presentó en 1960 en su disco El nuevo ritmo orquídea, con la soprano Teresa de González, «la Dama Equis». Lo llamó así en honor a la flor nacional de Venezuela. Su base es la rumba flamenca, mezclada con aires cubanos. El sabor llanero lo pone el arpa de Blanco, no el ritmo: es un 2/4 o 4/4 en el que no se siente el joropo.",
+       "en": "It was created by Caracas harpist Hugo Blanco, who introduced it in 1960 on his album El nuevo ritmo orquídea, with soprano Teresa de González, “la Dama Equis”. He named it after Venezuela's national flower. Its base is the Spanish rumba flamenca, blended with Cuban flavours. The llanero touch comes from Blanco's harp, not from the rhythm: it is a 2/4 or 4/4 in which you don't feel the joropo."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Dónde se toca",
+      "en": "Where it is played"
+     },
+     "parrafos": [
+      {
+       "es": "En el cuatro se usa para acompañar de forma sencilla canciones en 4/4. También se toca en 2/4, con la misma célula repetida dos veces.",
+       "en": "On the cuatro it is used as a simple accompaniment for songs in 4/4. It is also played in 2/4, with the same cell repeated twice."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón",
+      "en": "The pattern"
+     },
+     "ritmo": "orquidea",
+     "texto": {
+      "es": "Una célula de cuatro semicorcheas que se repite en cada tiempo: chasquido abajo, arriba, abajo, arriba. El chasquido marca cada tiempo y le da el impulso.",
+      "en": "A four-sixteenth cell repeated on every beat: chasquido down, up, down, up. The chasquido marks each beat and drives it forward."
+     }
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "titulo": "Moliendo café",
+       "texto": {
+        "es": "Hugo Blanco dijo que la escribió a los 17 años, en 1958, y que la registró a nombre de su tío, José Manzo Perroni, que después reclamó la autoría. Hoy se acredita a los dos.",
+        "en": "Hugo Blanco said he wrote it at 17, in 1958, and registered it under the name of his uncle, José Manzo Perroni, who later claimed authorship. Today both are credited."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Instrumental · YouTube",
+          "en": "Instrumental · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=p0x1V4gY8RA"
+        },
+        {
+         "texto": {
+          "es": "Cantada · YouTube",
+          "en": "Sung · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=HNaBRSbMbfM"
+        }
+       ]
+      },
+      {
+       "titulo": "Tibisay",
+       "texto": {
+        "es": "Luis Cruz.",
+        "en": "Luis Cruz."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Cantada · YouTube",
+          "en": "Sung · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=daN6prRV5q4"
+        },
+        {
+         "texto": {
+          "es": "Instrumental · cuatro",
+          "en": "Instrumental · cuatro"
+         },
+         "url": "https://open.spotify.com/intl-es/track/3Q5DQOg2rL0iP4H7sUEo2x"
+        }
+       ]
+      },
+      {
+       "titulo": "Tierra mojada",
+       "texto": {
+        "es": "Hugo Blanco.",
+        "en": "Hugo Blanco."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=287U9TBT0js"
+        }
+       ]
+      },
+      {
+       "titulo": "Agua fresca",
+       "texto": {
+        "es": "Hugo Blanco.",
+        "en": "Hugo Blanco."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/6uLKEMWswXdVGFLfYPhkT9"
+        }
+       ]
+      },
+      {
+       "titulo": "Priquitín",
+       "texto": {
+        "es": "Hugo Blanco.",
+        "en": "Hugo Blanco."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/6IQ5J2ZIirz521zWj87vxi"
+        }
+       ]
+      },
+      {
+       "titulo": "Elsa",
+       "texto": {
+        "es": "Enrique Rivas.",
+        "en": "Enrique Rivas."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=n1CQ1hAh73c"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dato",
+     "plegable": true,
+     "titulo": {
+      "es": "Un dato",
+      "en": "Did you know?"
+     },
+     "parrafos": [
+      {
+       "es": "Moliendo café tiene más de 950 versiones grabadas. Fue número 1 en Italia con Mina y en Japón y Argentina con el propio Blanco, y su melodía terminó convertida en un canto de las hinchadas de fútbol.",
+       "en": "Moliendo café has been recorded in more than 950 versions. It was a number one in Italy with Mina, and in Japan and Argentina with Blanco himself, and its melody ended up as a football chant."
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "600 Discos Latam, «El nuevo ritmo orquídea»",
+     "en": "600 Discos Latam, «El nuevo ritmo orquídea»",
+     "url": "https://www.600discoslatam.com/discos/venezuela/el-nuevo-ritmo-orquidea-la-dama-equis-con-hugo-blanco-y-su-arpa-viajera/"
+    },
+    {
+     "es": "Wikipedia, «Hugo Blanco»",
+     "en": "Wikipedia, «Hugo Blanco»",
+     "url": "https://en.wikipedia.org/wiki/Hugo_Blanco_(musician)"
+    },
+    {
+     "es": "Wikipedia, «Moliendo Café»",
+     "en": "Wikipedia, «Moliendo Café»",
+     "url": "https://en.wikipedia.org/wiki/Moliendo_Caf%C3%A9"
+    },
+    {
+     "es": "TuCuatro, «Hugo Blanco»",
+     "en": "TuCuatro, «Hugo Blanco»",
+     "url": "https://tucuatro.com/musicians/hugo-blanco/"
+    }
+   ]
+  },
+  "joropo_llanero": {
+   "ritmos": [
+    "joropo",
+    "joropo_por_derecho",
+    "pasaje"
+   ],
+   "titulo": {
+    "es": "Joropo llanero",
+    "en": "Llanero joropo"
+   },
+   "etiquetas": [
+    {
+     "es": "Llanos de Venezuela y Colombia",
+     "en": "Plains of Venezuela and Colombia",
+     "destacada": true
+    },
+    {
+     "es": "3/4",
+     "en": "3/4"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "Nace en los Llanos que comparten Venezuela y Colombia, entre los siglos XVII y XVIII, de los fandangos españoles mezclados con ritmos africanos y la sensibilidad indígena. Al principio, «joropo» era el nombre de la fiesta, no de la música.",
+       "en": "It was born in the plains (Llanos) shared by Venezuela and Colombia, between the 17th and 18th centuries, from Spanish fandangos blended with African rhythms and Indigenous sensibility. At first, «joropo» was the name of the party, not of the music."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Dónde se toca",
+      "en": "Where it is played"
+     },
+     "parrafos": [
+      {
+       "es": "Se le llama llanero para distinguirlo de otros joropos, como el oriental o el central. Es la variante más difundida y emblemática del género: nació en las extensas sabanas de los estados Apure, Barinas, Guárico, Cojedes y Portuguesa, y allí se toca principalmente, igual que el pasaje.",
+       "en": "It is called llanero to tell it apart from other joropos, such as the eastern (oriental) or the central joropo. It is the most widespread and emblematic form of the genre: it was born in the vast savannas of the states of Apure, Barinas, Guárico, Cojedes and Portuguesa, and that is where it is mainly played, just like the pasaje."
+      },
+      {
+       "es": "También se toca en los Llanos colombianos (Meta, Casanare, Arauca, Vichada). Lo acompañan el arpa llanera (o la bandola), el cuatro y las maracas, con la voz.",
+       "en": "It is also played in the Colombian plains (Meta, Casanare, Arauca, Vichada). It is accompanied by the llanero harp (or the bandola), the cuatro and maracas, with voice."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón · joropo corrío",
+      "en": "The pattern · joropo corrío"
+     },
+     "ritmo": "joropo",
+     "texto": {
+      "es": "Seis corcheas. Los chasquidos, en la 3.ª y la 6.ª corchea, marcan dos grupos de tres dentro del 3/4. Carácter recio, rápido y alegre.",
+      "en": "Six eighth notes. The chasquidos, on the 3rd and 6th eighths, mark two groups of three inside the 3/4. Strong, fast and joyful."
+     }
+    },
+    {
+     "tipo": "formas",
+     "titulo": {
+      "es": "Estilos",
+      "en": "Styles"
+     },
+     "tempo": true,
+     "items": [
+      {
+       "ritmo": "joropo",
+       "texto": {
+        "es": "Chasquidos fuertes",
+        "en": "Strong chasquidos"
+       },
+       "nivel": "intermedio"
+      },
+      {
+       "ritmo": "joropo_por_derecho",
+       "texto": {
+        "es": "Invierte los acentos del corrío · chasquidos fuertes",
+        "en": "Reverses the accents of the corrío · strong chasquidos"
+       },
+       "nivel": "intermedio"
+      },
+      {
+       "ritmo": "pasaje",
+       "texto": {
+        "es": "Más lento y cantable; letras del paisaje, el amor y la nostalgia · chasquidos suaves. Para empezar, antes que el joropo.",
+        "en": "Slower and more lyrical; songs about the landscape, love and longing · soft chasquidos. Learn it before the joropo."
+       },
+       "nivel": "intermedio"
+      }
+     ]
+    },
+    {
+     "tipo": "formas",
+     "titulo": {
+      "es": "Variantes y repiques",
+      "en": "Variations and repiques"
+     },
+     "items": [
+      {
+       "ritmo": "joropo",
+       "variante": "repique",
+       "nombre": {
+        "es": "Repique (corrío y pasaje)",
+        "en": "Repique (corrío and pasaje)"
+       },
+       "texto": {
+        "es": "Se toca de vez en cuando, sobre todo al final de una vuelta, para dar entrada a la voz.",
+        "en": "Played now and then, above all at the end of a round, to bring the voice back in."
+       }
+      },
+      {
+       "ritmo": "joropo_por_derecho",
+       "variante": "repique",
+       "nombre": {
+        "es": "Repique del por derecho",
+        "en": "Por derecho repique"
+       },
+       "texto": {
+        "es": "Las dos últimas corcheas se convierten en cuatro semicorcheas.",
+        "en": "The last two eighths become four sixteenths."
+       }
+      },
+      {
+       "ritmo": "pasaje",
+       "variante": "brincaito",
+       "nombre": {
+        "es": "Brincaíto (pasaje, nivel avanzado)",
+        "en": "Brincaíto (pasaje, advanced level)"
+       },
+       "texto": {
+        "es": "Dos compases que se alternan y «brincan», con chasquidos fuertes y silencios. Variante personal de Luis Natera.",
+        "en": "Two alternating bars that «jump», with strong chasquidos and rests. Luis Natera's own variation."
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "plegable": true,
+     "titulo": {
+      "es": "Golpes llaneros",
+      "en": "Golpes llaneros"
+     },
+     "parrafos": [
+      {
+       "es": "Pajarillo, quirpa, seis por derecho, gabán, catira… no son ritmos distintos: se tocan con este mismo ritmo y se distinguen por su armonía fija. Los estudiarás en Progresiones armónicas.",
+       "en": "Pajarillo, quirpa, seis por derecho, gabán, catira… are not different rhythms: they are played with this same rhythm and differ in their fixed harmony. You will study them in Chord Progressions.",
+       "enlace": {
+        "modulo": "progresiones",
+        "es": "Progresiones armónicas",
+        "en": "Chord Progressions"
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "titulo": "Alma llanera",
+       "texto": {
+        "es": "Pedro Elías Gutiérrez (1914). Considerada el segundo himno de Venezuela.",
+        "en": "Pedro Elías Gutiérrez (1914). Considered Venezuela's second national anthem."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Almenar Otero · Spotify",
+          "en": "Almenar Otero · Spotify"
+         },
+         "quien": "Carlos Almenar Otero",
+         "url": "https://open.spotify.com/track/37UKIkb7Q0Rs1o6POmi2Ot"
+        },
+        {
+         "texto": {
+          "es": "Sáinz-Villegas, guitarra · Spotify",
+          "en": "Sáinz-Villegas, guitar · Spotify"
+         },
+         "quien": "Pablo Sáinz-Villegas",
+         "url": "https://open.spotify.com/track/0CRHBbtqK3CJTd1yd1KAbK"
+        }
+       ]
+      },
+      {
+       "titulo": "Pajarillo",
+       "texto": {
+        "es": "Golpe tradicional, de autor anónimo, con cientos de versiones. También las hay instrumentales: Juan Vicente Torrealba lo llevó a un sonido de salón, estilizado y limpio, y lo dio a conocer fuera de Venezuela; Hernán Gamboa y Cheo Hurtado lo tocaron como cuatro solista, con toda la melodía en el cuatro y a una velocidad impresionante.",
+        "en": "A traditional golpe by an unknown author, with hundreds of versions. There are instrumental ones too: Juan Vicente Torrealba turned it into a polished, refined salon sound and made it known outside Venezuela; Hernán Gamboa and Cheo Hurtado played it as solo cuatro, with the whole melody on the cuatro at an impressive speed."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Torrealba · YouTube",
+          "en": "Torrealba · YouTube"
+         },
+         "quien": "Juan Vicente Torrealba",
+         "url": "https://www.youtube.com/watch?v=uDk6kN4u23I"
+        },
+        {
+         "texto": {
+          "es": "Hernán Gamboa · Spotify",
+          "en": "Hernán Gamboa · Spotify"
+         },
+         "quien": "Hernán Gamboa",
+         "url": "https://open.spotify.com/intl-es/track/4tHuPam95iA9MTMKpbt3dr"
+        }
+       ]
+      },
+      {
+       "titulo": "Gabán",
+       "texto": {
+        "es": "Golpe tradicional llanero. Versión para cuatro solista de Luis Natera, tu profesor.",
+        "en": "A traditional llanero golpe. Solo cuatro version by Luis Natera, your teacher."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Luis Natera · YouTube",
+          "en": "Luis Natera · YouTube"
+         },
+         "quien": "Luis Natera",
+         "url": "https://www.youtube.com/watch?v=zWAUHAMee0g"
+        }
+       ]
+      },
+      {
+       "titulo": "Florentino y el Diablo",
+       "texto": {
+        "es": "Poema de Alberto Arvelo Torrealba. En la grabación original (1965) cantaron José Romero Bello (Florentino) y Juan de los Santos Contreras, «El Carrao de Palmarito» (el Diablo).",
+        "en": "A poem by Alberto Arvelo Torrealba. On the original recording (1965), José Romero Bello sang Florentino and Juan de los Santos Contreras, «El Carrao de Palmarito», sang the Devil."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=_7lw1ep61Sk"
+        }
+       ]
+      },
+      {
+       "titulo": "Fiesta en Elorza",
+       "texto": {
+        "es": "Eneas Perdomo.",
+        "en": "Eneas Perdomo."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/track/2qTJNEgsTtg0WTtMjue7t2"
+        }
+       ]
+      },
+      {
+       "titulo": "Cómo no voy a decirlo",
+       "texto": {
+        "es": "Luis Silva.",
+        "en": "Luis Silva."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/track/3X3QSKhnPbpt5WbxA7s8rj"
+        }
+       ]
+      },
+      {
+       "titulo": "La muerte del rucio moro",
+       "texto": {
+        "es": "Reynaldo Armas (1987).",
+        "en": "Reynaldo Armas (1987)."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=staveuRJdFE"
+        }
+       ]
+      },
+      {
+       "titulo": "A usted",
+       "texto": {
+        "es": "Reynaldo Armas.",
+        "en": "Reynaldo Armas."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/4PX3v1a24ji1lKcK1XLyOJ"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dato",
+     "plegable": true,
+     "titulo": {
+      "es": "Un dato",
+      "en": "Did you know?"
+     },
+     "parrafos": [
+      {
+       "es": "En 2025, la UNESCO inscribió el joropo venezolano en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad.",
+       "en": "In 2025, UNESCO inscribed the Venezuelan joropo on the Representative List of the Intangible Cultural Heritage of Humanity."
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "Wikipedia, «Joropo»",
+     "en": "Wikipedia, «Joropo»",
+     "url": "https://es.wikipedia.org/wiki/Joropo"
+    },
+    {
+     "es": "Wikipedia, «Florentino y El Diablo»",
+     "en": "Wikipedia, «Florentino y El Diablo»",
+     "url": "https://es.wikipedia.org/wiki/Florentino_y_El_Diablo"
+    },
+    {
+     "es": "Wikipedia, «Eneas Perdomo»",
+     "en": "Wikipedia, «Eneas Perdomo»",
+     "url": "https://en.wikipedia.org/wiki/Eneas_Perdomo"
+    },
+    {
+     "es": "Diario Las Américas, 9-dic-2025",
+     "en": "Diario Las Américas, Dec 9, 2025"
+    },
+    {
+     "es": "musicallanera.net",
+     "en": "musicallanera.net",
+     "url": "https://www.musicallanera.net/"
+    }
+   ]
   }
+ }
 }

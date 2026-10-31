@@ -4,7 +4,7 @@ Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor 
 
 ## Fichas «Sobre este ritmo» (30-oct-2026)
 
-- **`fichas.json`:** los textos de la ficha de cada familia de ritmos (de dónde viene, dónde se toca, estilos, variantes, piezas con enlaces para escuchar, fuentes), en español e inglés. El Generador la muestra con el botón «Sobre este ritmo» en los ritmos que aparecen en su lista `ritmos`. Las partituras de golpes no están aquí: el Generador las dibuja con los datos de `ritmos.json`. El formato está explicado en la clave `_formato`. Un cambio en este archivo se ve al recargar el Generador, sin tocar GAS. Por ahora hay una ficha: joropo llanero (joropo corrío, joropo por derecho y pasaje).
+- **`fichas.json`:** los textos de la ficha de cada familia de ritmos (de dónde viene, dónde se toca, estilos, variantes, piezas con enlaces para escuchar, fuentes), en español e inglés. El Generador la muestra con el botón «Sobre este ritmo» en los ritmos que aparecen en su lista `ritmos`. Las partituras de golpes no están aquí: el Generador las dibuja con los datos de `ritmos.json`. El formato está explicado en la clave `_formato`. Un cambio en este archivo se ve al recargar el Generador, sin tocar GAS. Fichas (30-oct-2026): merengue venezolano (los cuatro merengues), tonada, vals criollo, el orquídea y joropo llanero (joropo corrío, joropo por derecho y pasaje). Las piezas pueden ir en grupos con subtítulo, cada estilo puede llevar su nivel y un párrafo puede enlazar a otro módulo del CEM.
 
 ## Desde el 30-oct-2026: grabación informal
 
