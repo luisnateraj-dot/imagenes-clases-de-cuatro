@@ -60,6 +60,10 @@
             {"texto": {"es": "Torrealba · YouTube", "en": "Torrealba · YouTube"}, "quien": "Juan Vicente Torrealba", "url": "https://www.youtube.com/watch?v=uDk6kN4u23I"},
             {"texto": {"es": "Hernán Gamboa · Spotify", "en": "Hernán Gamboa · Spotify"}, "quien": "Hernán Gamboa", "url": "https://open.spotify.com/intl-es/track/4tHuPam95iA9MTMKpbt3dr"}
            ]},
+          {"titulo": "Gabán",
+           "texto": {"es": "Golpe tradicional llanero. Versión para cuatro solista de Luis Natera, tu profesor.",
+                     "en": "A traditional llanero golpe. Solo cuatro version by Luis Natera, your teacher."},
+           "escuchar": [{"texto": {"es": "Luis Natera · YouTube", "en": "Luis Natera · YouTube"}, "quien": "Luis Natera", "url": "https://www.youtube.com/watch?v=zWAUHAMee0g"}]},
           {"titulo": "Florentino y el Diablo",
            "texto": {"es": "Poema de Alberto Arvelo Torrealba. En la grabación original (1965) cantaron José Romero Bello (Florentino) y Juan de los Santos Contreras, «El Carrao de Palmarito» (el Diablo).",
                      "en": "A poem by Alberto Arvelo Torrealba. On the original recording (1965), José Romero Bello sang Florentino and Juan de los Santos Contreras, «El Carrao de Palmarito», sang the Devil."},
