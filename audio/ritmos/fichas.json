@@ -445,6 +445,46 @@
          "url": "https://www.youtube.com/watch?v=B4wRM7d5Rj4"
         }
        ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue contemporáneo",
+        "en": "Contemporary merengue"
+       },
+       "titulo": "Mi pequeña",
+       "texto": {
+        "es": "Aquiles Báez.",
+        "en": "Aquiles Báez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=acJ5ZBtSAeM"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Merengue contemporáneo",
+        "en": "Contemporary merengue"
+       },
+       "titulo": "Acidito",
+       "texto": {
+        "es": "Adelis Freites.",
+        "en": "Adelis Freites."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=5FWotsdHAZM"
+        }
+       ]
       }
      ]
     },
@@ -594,6 +634,26 @@
      },
      "items": [
       {
+       "grupo": {
+        "es": "Tradicional",
+        "en": "Traditional"
+       },
+       "titulo": "Tonadas de ordeño",
+       "texto": {
+        "es": "Cantos tradicionales del llano, sin acompañamiento.",
+        "en": "Traditional songs of the plains, unaccompanied."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=mATjsOvCjGI"
+        }
+       ]
+      },
+      {
        "titulo": "Tonada de luna llena",
        "texto": {
         "es": "Simón Díaz. La cantó Caetano Veloso en una película de Almodóvar.",
@@ -607,7 +667,11 @@
          },
          "url": "https://www.youtube.com/watch?v=kybLjGtZJhs"
         }
-       ]
+       ],
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       }
       },
       {
        "titulo": "Tonada de las espigas",
@@ -622,6 +686,198 @@
           "en": "Spotify"
          },
          "url": "https://open.spotify.com/intl-es/track/2w0NWRBQQ7znLhk5suWiid"
+        }
+       ],
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       }
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Tonada del cabrestero",
+       "texto": {
+        "es": "Simón Díaz.",
+        "en": "Simón Díaz."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/track/1lcKzup3Of7lfFLhYSBJw3"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Tonada del tormento",
+       "texto": {
+        "es": "Simón Díaz.",
+        "en": "Simón Díaz."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Spotify",
+          "en": "Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/73rS4AvKErcMHS2MQaR3DR"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Sabana",
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=H8XJsBxCqvA"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "El loco Juan Carabina",
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=Nhu2lteUjsA"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Garcita",
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=DApEN-aXdlY"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Flor de mayo",
+       "texto": {
+        "es": "Otilio Galíndez.",
+        "en": "Otilio Galíndez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=CNFT8iLLuQg"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Tonada de la melancolía",
+       "texto": {
+        "es": "César Gómez.",
+        "en": "César Gómez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=Wc_J1tWMIiA"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonadas de autor",
+        "en": "Composed tonadas"
+       },
+       "titulo": "Tonada para dos tristezas",
+       "texto": {
+        "es": "Ignacio Izcaray.",
+        "en": "Ignacio Izcaray."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=i8smV1DGGp4"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonada contemporánea",
+        "en": "Contemporary tonada"
+       },
+       "titulo": "Por ella",
+       "texto": {
+        "es": "Rawayana.",
+        "en": "Rawayana."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=R3kp1zDKoJk"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Tonada contemporánea",
+        "en": "Contemporary tonada"
+       },
+       "titulo": "Lluvia",
+       "texto": {
+        "es": "Franco de Vita.",
+        "en": "Franco de Vita."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "YouTube",
+          "en": "YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=r1DHYJKkzoA"
         }
        ]
       }
@@ -886,6 +1142,33 @@
           "en": "Sung · YouTube"
          },
          "url": "https://www.youtube.com/watch?v=iVvuQWiwj_c"
+        }
+       ]
+      },
+      {
+       "grupo": {
+        "es": "Valses instrumentales",
+        "en": "Instrumental waltzes"
+       },
+       "titulo": "Cuando duerme Caracas",
+       "texto": {
+        "es": "La original es instrumental; después se le puso letra.",
+        "en": "The original is instrumental; lyrics were added later."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Instrumental (original) · YouTube",
+          "en": "Instrumental (original) · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=EzKW9wIG-mA"
+        },
+        {
+         "texto": {
+          "es": "Cantada · Spotify",
+          "en": "Sung · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/5UaqxV4Hl2F5aY55IBW4FA"
         }
        ]
       },
