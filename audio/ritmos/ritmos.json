@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo.",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos.",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -82,7 +82,7 @@
    "cierre": {
     "golpe": "re_abajo_normal",
     "cg": -3.509,
-    "brillo_db": -3.0,
+    "brillo_db": -4,
     "desvio_s": -0.0252
    },
    "bloque_brillo_db": 0,
@@ -130,8 +130,8 @@
     ]
    },
    "nivel": {
-    "lufs": -23.47,
-    "rms_db": -22.72
+    "lufs": -23.17,
+    "rms_db": -22.38
    }
   },
   "vals_criollo": {
@@ -177,12 +177,12 @@
    ],
    "figura_por_tempo": 2,
    "T": [
-    -0.01033,
-    0.00829,
-    0.00488,
-    -0.00433,
-    0.00484,
-    -0.00575
+    -0.01385,
+    0.00771,
+    0.00366,
+    -0.00436,
+    0.00505,
+    -0.0006
    ],
    "sesgo": [
     0,
@@ -193,12 +193,12 @@
     0
    ],
    "gdb": [
-    -7.675,
-    -8.72,
-    -12.892,
-    -8.116,
-    -9.29,
-    -13.305
+    -7.65,
+    -8.736,
+    -11.824,
+    -8.121,
+    -9.098,
+    -14.569
    ],
    "desv_ms": [
     3,
@@ -211,9 +211,9 @@
    "chq": "suave",
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -3.053,
-    "brillo_db": 5.7,
-    "desvio_s": -0.0589
+    "cg": -4.957,
+    "brillo_db": -2,
+    "desvio_s": -0.0577
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -261,7 +261,7 @@
    },
    "nivel": {
     "lufs": -20.47,
-    "rms_db": -19.66
+    "rms_db": -19.57
    },
    "variantes": {
     "repique": {
@@ -320,13 +320,13 @@
        0
       ],
       "gdb": [
-       -8.202,
-       -9.148,
-       -14.355,
-       -5.323,
-       -9.419,
-       -10.795,
-       -14.293
+       -8.153,
+       -9.099,
+       -14.453,
+       -5.274,
+       -9.37,
+       -10.746,
+       -14.391
       ],
       "desv_ms": [
        3,
@@ -357,7 +357,7 @@
     "⇓",
     "↑",
     "↓",
-    "↑",
+    "l↑",
     "↓"
    ],
    "posiciones": [
@@ -380,11 +380,11 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.01032,
-    0.00906,
-    0.01237,
-    -0.01225,
-    0.0025
+    -0.00636,
+    0.01064,
+    0.00816,
+    -0.01562,
+    0.00455
    ],
    "sesgo": [
     -0.00192,
@@ -394,11 +394,11 @@
     -0.00853
    ],
    "gdb": [
-    -10.702,
-    -13.185,
-    -10.44,
-    -15.371,
-    -9.739
+    -10.59,
+    -13.463,
+    -10.264,
+    -15.354,
+    -9.766
    ],
    "desv_ms": [
     3,
@@ -409,11 +409,11 @@
    ],
    "cierre": {
     "golpe": "re_bloque_suave",
-    "cg": -4.002,
-    "brillo_db": 6.0,
-    "desvio_s": -0.0418
+    "cg": -5.782,
+    "brillo_db": -6,
+    "desvio_s": -0.0434
    },
-   "bloque_brillo_db": 0.9,
+   "bloque_brillo_db": -6,
    "metronomo": {
     "defecto": "sub",
     "pulso": [
@@ -451,7 +451,7 @@
    },
    "nivel": {
     "lufs": -21.77,
-    "rms_db": -20.88
+    "rms_db": -20.79
    },
    "variantes": {
     "repique": {
@@ -463,7 +463,7 @@
        "⇓",
        "↑",
        "↓",
-       "↑",
+       "l↑",
        "↓",
        "↑"
       ],
@@ -493,7 +493,7 @@
        0.01687,
        -0.00052,
        0.01183,
-       -0.02665
+       -0.00884
       ],
       "sesgo": [
        -0.00192,
@@ -504,12 +504,12 @@
        0
       ],
       "gdb": [
-       -12.189,
-       -14.095,
-       -11.404,
-       -17.805,
-       -7.188,
-       -9.988
+       -12.077,
+       -13.975,
+       -11.329,
+       -18.186,
+       -7.114,
+       -9.868
       ],
       "desv_ms": [
        3,
@@ -530,25 +530,25 @@
        "⇓",
        "↑",
        "↓",
-       "↑",
+       "l↑",
        "⇓"
       ],
       "adelanta": [
        4
       ],
       "gdb": [
-       -10.702,
-       -13.185,
-       -10.44,
-       -15.371,
-       -10.702
+       -10.59,
+       -13.463,
+       -10.264,
+       -15.354,
+       -10.59
       ]
      },
      "sigue": {
       "patron": [
        "↑",
        "↓",
-       "↑",
+       "l↑",
        "⇓"
       ],
       "posiciones": [
@@ -572,10 +572,10 @@
        3
       ],
       "T": [
-       0.00224,
-       0.02835,
-       0.00171,
-       -0.01168
+       0.01476,
+       0.02165,
+       0.00041,
+       -0.0162
       ],
       "sesgo": [
        0.01031,
@@ -584,10 +584,10 @@
        -0.00853
       ],
       "gdb": [
-       -13.955,
-       -11.046,
-       -15.391,
-       -9.306
+       -14.393,
+       -11.397,
+       -15.217,
+       -8.765
       ],
       "desv_ms": [
        3,
@@ -600,7 +600,7 @@
       "patron": [
        "↑",
        "↓",
-       "↑",
+       "l↑",
        "↓"
       ],
       "posiciones": [
@@ -621,10 +621,10 @@
        2
       ],
       "T": [
-       0.00906,
-       0.01237,
-       -0.01225,
-       0.0025
+       0.01064,
+       0.00816,
+       -0.01562,
+       0.00455
       ],
       "sesgo": [
        0.01031,
@@ -633,10 +633,10 @@
        -0.00853
       ],
       "gdb": [
-       -13.185,
-       -10.44,
-       -15.371,
-       -9.739
+       -13.463,
+       -10.264,
+       -15.354,
+       -9.766
       ],
       "desv_ms": [
        3,
@@ -664,7 +664,7 @@
     "⇓",
     "↑",
     "↓",
-    "↑",
+    "l↑",
     "↓"
    ],
    "posiciones": [
@@ -687,11 +687,11 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.03699,
-    0.00937,
-    0.00325,
-    0.00681,
-    0.01761
+    -0.03487,
+    0.00958,
+    0.00505,
+    0.00355,
+    0.01673
    ],
    "sesgo": [
     -0.00192,
@@ -701,11 +701,11 @@
     -0.00853
    ],
    "gdb": [
-    -10.395,
-    -14.936,
-    -10.619,
-    -14.916,
-    -8.573
+    -10.227,
+    -14.777,
+    -10.572,
+    -15.047,
+    -8.816
    ],
    "desv_ms": [
     3,
@@ -716,11 +716,11 @@
    ],
    "cierre": {
     "golpe": "re_bloque_suave",
-    "cg": -6.935,
-    "brillo_db": 0.4,
-    "desvio_s": -0.0396
+    "cg": -7.025,
+    "brillo_db": -6,
+    "desvio_s": -0.0447
    },
-   "bloque_brillo_db": -0.3,
+   "bloque_brillo_db": -6,
    "metronomo": {
     "defecto": "sub",
     "pulso": [
@@ -761,8 +761,8 @@
     ]
    },
    "nivel": {
-    "lufs": -22.37,
-    "rms_db": -21.53
+    "lufs": -22.77,
+    "rms_db": -22.05
    }
   },
   "orquidea": {
@@ -913,7 +913,7 @@
    "cierre": {
     "golpe": "re_abajo_normal",
     "cg": -0.732,
-    "brillo_db": -7.2,
+    "brillo_db": 0,
     "desvio_s": -0.0108
    },
    "bloque_brillo_db": 0,
@@ -974,7 +974,7 @@
    },
    "nivel": {
     "lufs": -22.77,
-    "rms_db": -21.99
+    "rms_db": -21.84
    }
   },
   "merengue": {
@@ -1016,11 +1016,11 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.00017,
-    0.00151,
-    0.02098,
-    -0.0039,
-    -0.01092
+    -0.00478,
+    0.00285,
+    0.01723,
+    -0.0007,
+    -0.00776
    ],
    "sesgo": [
     0.0002,
@@ -1030,11 +1030,11 @@
     0.00956
    ],
    "gdb": [
-    -16.044,
-    -8.348,
-    -9.46,
-    -17.136,
-    -9.965
+    -15.866,
+    -8.432,
+    -10.039,
+    -16.417,
+    -10.199
    ],
    "desv_ms": [
     3,
@@ -1045,9 +1045,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -6.167,
-    "brillo_db": -0.4,
-    "desvio_s": -0.0155
+    "cg": -6.485,
+    "brillo_db": -3.0,
+    "desvio_s": 0.0073
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -1086,8 +1086,8 @@
     ]
    },
    "nivel": {
-    "lufs": -21.27,
-    "rms_db": -20.43
+    "lufs": -21.07,
+    "rms_db": -20.46
    },
    "variantes": {
     "chasquido_abajo": {
@@ -1110,11 +1110,11 @@
        0.00956
       ],
       "gdb": [
-       -16.69,
-       -12.424,
-       -11.102,
-       -15.809,
-       -10.088
+       -16.242,
+       -12.723,
+       -11.401,
+       -15.361,
+       -10.387
       ],
       "T": [
        -0.00127,
@@ -1159,11 +1159,11 @@
        3
       ],
       "T": [
-       -0.00017,
-       0.00151,
-       0.02098,
-       -0.0039,
-       -0.01092,
+       -0.00478,
+       0.00285,
+       0.01723,
+       -0.0007,
+       -0.00776,
        0
       ],
       "sesgo": [
@@ -1175,12 +1175,12 @@
        0
       ],
       "gdb": [
-       -16.044,
-       -8.348,
-       -9.46,
-       -17.136,
-       -9.965,
-       -13.309
+       -15.866,
+       -8.432,
+       -10.039,
+       -16.417,
+       -10.199,
+       -13.608
       ],
       "desv_ms": [
        3,
@@ -1237,12 +1237,12 @@
        0
       ],
       "gdb": [
-       -16.873,
-       -13.053,
-       -12.999,
-       -17.071,
-       -7.838,
-       -11.588
+       -16.425,
+       -13.352,
+       -13.298,
+       -16.623,
+       -8.137,
+       -11.887
       ],
       "desv_ms": [
        3,
@@ -1269,11 +1269,11 @@
        0.00956
       ],
       "gdb": [
-       -17.242,
-       -12.309,
-       -9.46,
-       -17.136,
-       -9.965
+       -16.794,
+       -12.608,
+       -10.039,
+       -16.417,
+       -10.199
       ]
      }
     },
@@ -1323,10 +1323,10 @@
        0.00956
       ],
       "gdb": [
-       -15.025,
-       -11.111,
-       -14.215,
-       -8.519
+       -15.324,
+       -11.41,
+       -13.767,
+       -8.818
       ],
       "desv_ms": [
        3,
@@ -1363,10 +1363,10 @@
        2
       ],
       "T": [
-       0.00151,
-       0.02098,
-       -0.0039,
-       -0.01092
+       0.00285,
+       0.01723,
+       -0.0007,
+       -0.00776
       ],
       "sesgo": [
        0.01031,
@@ -1375,10 +1375,10 @@
        0.00956
       ],
       "gdb": [
-       -12.309,
-       -9.46,
-       -17.136,
-       -9.965
+       -12.608,
+       -10.039,
+       -16.417,
+       -10.199
       ],
       "desv_ms": [
        3,
@@ -1429,11 +1429,11 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.0026,
-    0.00365,
-    0.01264,
-    -0.01017,
-    -0.00313
+    -0.00425,
+    0.00743,
+    0.01143,
+    -0.01112,
+    -0.00312
    ],
    "sesgo": [
     0.0002,
@@ -1443,11 +1443,11 @@
     0.00956
    ],
    "gdb": [
-    -17.943,
-    -9.235,
-    -9.218,
-    -16.593,
-    -7.97
+    -17.275,
+    -9.337,
+    -9.342,
+    -17.116,
+    -7.888
    ],
    "desv_ms": [
     3,
@@ -1458,9 +1458,9 @@
    ],
    "cierre": {
     "golpe": "re_bloque_suave",
-    "cg": -3.507,
-    "brillo_db": -7.3,
-    "desvio_s": -0.0073
+    "cg": -4.327,
+    "brillo_db": -10,
+    "desvio_s": 0.0067
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -1503,8 +1503,8 @@
     ]
    },
    "nivel": {
-    "lufs": -22.07,
-    "rms_db": -21.23
+    "lufs": -22.27,
+    "rms_db": -21.5
    }
   },
   "pasaje": {
@@ -1550,12 +1550,12 @@
    ],
    "figura_por_tempo": 2,
    "T": [
-    0.00374,
-    0.00964,
-    -0.00439,
-    -0.00282,
-    -0.0002,
-    -0.00182
+    0.00634,
+    0.01512,
+    -0.00801,
+    -0.00241,
+    -0.00242,
+    -0.00447
    ],
    "sesgo": [
     -0.00336,
@@ -1566,12 +1566,12 @@
     -3e-05
    ],
    "gdb": [
-    -7.915,
-    -12.697,
-    -15.272,
-    -11.598,
-    -8.589,
-    -11.128
+    -8.277,
+    -13.163,
+    -15.326,
+    -11.773,
+    -8.072,
+    -10.588
    ],
    "desv_ms": [
     3,
@@ -1583,9 +1583,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -4.117,
-    "brillo_db": -4.7,
-    "desvio_s": -0.0358
+    "cg": -4.259,
+    "brillo_db": -2,
+    "desvio_s": -0.0309
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -1632,8 +1632,8 @@
     ]
    },
    "nivel": {
-    "lufs": -20.77,
-    "rms_db": -20.04
+    "lufs": -20.97,
+    "rms_db": -20.35
    },
    "chq": "suave",
    "variantes": {
@@ -1693,13 +1693,13 @@
        -3e-05
       ],
       "gdb": [
-       -7.521,
-       -7.494,
-       -11.003,
-       -10.505,
-       -11.848,
-       -8.673,
-       -13.637
+       -7.443,
+       -7.416,
+       -11.323,
+       -10.428,
+       -12.169,
+       -8.595,
+       -13.097
       ],
       "desv_ms": [
        3,
@@ -1753,10 +1753,10 @@
         -3e-05
        ],
        "gdb": [
-        -6.72,
-        -10.945,
-        -9.473,
-        -18.108
+        -6.642,
+        -10.999,
+        -9.794,
+        -17.568
        ],
        "desv_ms": [
         3,
@@ -1802,10 +1802,10 @@
         -3e-05
        ],
        "gdb": [
-        -6.527,
-        -10.959,
-        -5.988,
-        -18.692
+        -6.848,
+        -11.013,
+        -5.91,
+        -18.152
        ],
        "desv_ms": [
         3,
@@ -1862,12 +1862,12 @@
    ],
    "figura_por_tempo": 2,
    "T": [
-    0.00065,
-    0.00986,
-    0.00496,
-    -0.01038,
-    -0.00103,
-    0.00306
+    -1e-05,
+    0.01795,
+    0.00727,
+    -0.00877,
+    -0.00719,
+    0.00145
    ],
    "sesgo": [
     -0.00336,
@@ -1878,12 +1878,12 @@
     -3e-05
    ],
    "gdb": [
-    -6.05,
-    -11.424,
-    -13.444,
-    -9.414,
-    -6.8,
-    -19.37
+    -6.446,
+    -10.896,
+    -14.989,
+    -9.799,
+    -6.75,
+    -17.622
    ],
    "desv_ms": [
     3,
@@ -1895,9 +1895,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": 0.343,
-    "brillo_db": 2.7,
-    "desvio_s": -0.0274
+    "cg": -0.53,
+    "brillo_db": -2,
+    "desvio_s": -0.033
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -1944,8 +1944,8 @@
     ]
    },
    "nivel": {
-    "lufs": -18.27,
-    "rms_db": -17.42
+    "lufs": -18.37,
+    "rms_db": -17.5
    },
    "chq": null,
    "variantes": {
@@ -2005,13 +2005,13 @@
        -3e-05
       ],
       "gdb": [
-       -8.043,
-       -5.3,
-       -7.714,
-       -11.236,
-       -10.481,
-       -8.328,
-       -17.055
+       -8.216,
+       -5.473,
+       -7.643,
+       -11.409,
+       -10.41,
+       -8.501,
+       -15.307
       ],
       "desv_ms": [
        3,
@@ -2069,12 +2069,12 @@
    ],
    "figura_por_tempo": 2,
    "T": [
-    0.01078,
-    -0.00034,
-    -0.00903,
-    -0.00588,
-    -0.01626,
-    0.01874
+    0.00278,
+    0.00384,
+    -0.00935,
+    0.00164,
+    -0.01385,
+    0.01552
    ],
    "sesgo": [
     0,
@@ -2085,12 +2085,12 @@
     0
    ],
    "gdb": [
-    -12.864,
-    -11.189,
-    -8.259,
-    -13.6,
-    -9.303,
-    -11.991
+    -11.65,
+    -11.124,
+    -8.02,
+    -14.668,
+    -9.444,
+    -12.3
    ],
    "desv_ms": [
     3,
@@ -2102,9 +2102,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -5.621,
-    "brillo_db": -1.2,
-    "desvio_s": -0.0298
+    "cg": -6.907,
+    "brillo_db": -2,
+    "desvio_s": -0.0274
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -2151,8 +2151,8 @@
     ]
    },
    "nivel": {
-    "lufs": -19.87,
-    "rms_db": -19.11
+    "lufs": -20.07,
+    "rms_db": -19.45
    },
    "chq": "fuerte",
    "variantes": {
@@ -2217,14 +2217,14 @@
        0
       ],
       "gdb": [
-       -11.865,
-       -12.288,
-       -7.467,
-       -15.838,
-       -7.572,
-       -7.4,
-       -10.304,
-       -13.003
+       -10.651,
+       -12.41,
+       -7.418,
+       -16.906,
+       -7.523,
+       -7.522,
+       -10.255,
+       -13.125
       ],
       "desv_ms": [
        3,
@@ -2279,11 +2279,11 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.02895,
-    0.00177,
-    0.01709,
-    0.00463,
-    0.01994
+    -0.0329,
+    0.00548,
+    0.0149,
+    0.00564,
+    0.02136
    ],
    "sesgo": [
     0,
@@ -2293,11 +2293,11 @@
     0
    ],
    "gdb": [
-    -9.545,
-    -13.695,
-    -10.776,
-    -12.606,
-    -9.827
+    -7.648,
+    -14.314,
+    -11.445,
+    -12.663,
+    -10.379
    ],
    "desv_ms": [
     3,
@@ -2309,9 +2309,9 @@
    "chq": "suave",
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -5.973,
-    "brillo_db": -6.4,
-    "desvio_s": 0.002
+    "cg": -5.784,
+    "brillo_db": -2,
+    "desvio_s": 0.0031
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -2354,8 +2354,8 @@
     ]
    },
    "nivel": {
-    "lufs": -23.17,
-    "rms_db": -22.04
+    "lufs": -23.87,
+    "rms_db": -23.05
    }
   },
   "contradanza": {
@@ -2403,13 +2403,13 @@
    ],
    "figura_por_tempo": 4,
    "T": [
-    -8e-05,
-    0.0247,
-    0.00901,
-    -0.03634,
-    0.01197,
-    -0.00596,
-    0.00448
+    0.0017,
+    0.02299,
+    0.00178,
+    -0.04202,
+    0.01997,
+    -0.00629,
+    0.0081
    ],
    "sesgo": [
     0,
@@ -2421,13 +2421,13 @@
     0
    ],
    "gdb": [
-    -10.396,
-    -9.304,
-    -12.544,
-    -13.208,
-    -13.672,
-    -18.179,
-    -9.081
+    -10.117,
+    -9.528,
+    -11.618,
+    -12.762,
+    -14.245,
+    -18.791,
+    -9.324
    ],
    "desv_ms": [
     3,
@@ -2440,11 +2440,11 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -16.159,
-    "brillo_db": 6.0,
-    "desvio_s": -0.0058
+    "cg": -15.842,
+    "brillo_db": -4,
+    "desvio_s": -0.0107
    },
-   "bloque_brillo_db": 1.1,
+   "bloque_brillo_db": -6,
    "metronomo": {
     "defecto": "pulso",
     "pulso": [
@@ -2477,8 +2477,8 @@
     ]
    },
    "nivel": {
-    "lufs": -22.37,
-    "rms_db": -21.72
+    "lufs": -22.57,
+    "rms_db": -22.23
    }
   },
   "bolero": {
@@ -2555,7 +2555,7 @@
     -13.965,
     -22.718,
     -10.954,
-    -34.687,
+    -33.187,
     -11.012,
     -9.493,
     -16.111
@@ -2573,7 +2573,7 @@
    "cierre": {
     "golpe": "re_abajo_normal",
     "cg": -8.033,
-    "brillo_db": -2.2,
+    "brillo_db": -2,
     "desvio_s": -0.0349
    },
    "bloque_brillo_db": 0,
@@ -2633,8 +2633,8 @@
     ]
    },
    "nivel": {
-    "lufs": -23.17,
-    "rms_db": -22.23
+    "lufs": -23.07,
+    "rms_db": -22.37
    }
   },
   "gaita_furro": {
@@ -2713,10 +2713,10 @@
    "cierre": {
     "golpe": "re_abajo_normal",
     "cg": -7.745,
-    "brillo_db": 6.0,
+    "brillo_db": -2,
     "desvio_s": -0.0218
    },
-   "bloque_brillo_db": 6.0,
+   "bloque_brillo_db": -6,
    "metronomo": {
     "defecto": "sub",
     "pulso": [
@@ -2757,8 +2757,8 @@
     ]
    },
    "nivel": {
-    "lufs": -20.07,
-    "rms_db": -19.58
+    "lufs": -20.17,
+    "rms_db": -19.28
    },
    "variantes": {
     "trancao_abajo": {
@@ -3032,12 +3032,12 @@
    ],
    "figura_por_tempo": 4,
    "T": [
-    -0.00612,
-    0.0022,
-    -0.00821,
-    -0.0013,
-    0.00731,
-    0.0086
+    -0.00772,
+    0.00337,
+    -0.00886,
+    0.00624,
+    0.00603,
+    0.00343
    ],
    "sesgo": [
     -0.00443,
@@ -3048,12 +3048,12 @@
     0.01332
    ],
    "gdb": [
-    -12.372,
-    -10.407,
-    -9.97,
-    -14.092,
-    -6.968,
-    -9.952
+    -12.624,
+    -10.48,
+    -9.733,
+    -14.257,
+    -6.886,
+    -9.781
    ],
    "desv_ms": [
     3,
@@ -3065,9 +3065,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -2.205,
-    "brillo_db": 6.0,
-    "desvio_s": -0.0081
+    "cg": -1.904,
+    "brillo_db": -2,
+    "desvio_s": -0.0055
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -3102,8 +3102,8 @@
     ]
    },
    "nivel": {
-    "lufs": -20.77,
-    "rms_db": -19.93
+    "lufs": -20.57,
+    "rms_db": -19.8
    }
   },
   "gaita_tamborera": {
@@ -3148,12 +3148,12 @@
    ],
    "figura_por_tempo": 4,
    "T": [
-    -6e-05,
-    0.00242,
-    0.00315,
-    -0.0109,
-    -0.00317,
-    0.01362
+    0.00286,
+    0.0041,
+    -0.00344,
+    -0.00342,
+    -0.00779,
+    0.01275
    ],
    "sesgo": [
     -0.00443,
@@ -3164,12 +3164,12 @@
     -0.00183
    ],
    "gdb": [
-    -12.378,
-    -9.79,
-    -10.523,
-    -10.267,
-    -16.023,
-    -7.617
+    -12.698,
+    -9.927,
+    -10.539,
+    -12.761,
+    -15.979,
+    -7.696
    ],
    "desv_ms": [
     3,
@@ -3181,9 +3181,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -2.804,
-    "brillo_db": -7.0,
-    "desvio_s": 0.0385
+    "cg": -2.164,
+    "brillo_db": -2,
+    "desvio_s": 0.0404
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -3218,8 +3218,8 @@
     ]
    },
    "nivel": {
-    "lufs": -21.27,
-    "rms_db": -20.23
+    "lufs": -21.67,
+    "rms_db": -20.72
    },
    "variantes": {
     "variante": {
@@ -3277,13 +3277,13 @@
        0.01332
       ],
       "gdb": [
-       -13.187,
-       -10.425,
-       -9.867,
-       -11.465,
-       -12.922,
-       -7.817,
-       -11.821
+       -13.844,
+       -10.502,
+       -9.944,
+       -13.622,
+       -12.878,
+       -7.896,
+       -11.898
       ],
       "desv_ms": [
        3,
@@ -3340,12 +3340,12 @@
    ],
    "figura_por_tempo": 1,
    "T": [
-    -0.00434,
-    0.00857,
-    -0.01404,
-    -0.00033,
-    0.01473,
-    -0.01135
+    -0.00162,
+    0.00954,
+    -0.01246,
+    -0.00444,
+    0.01254,
+    -0.0103
    ],
    "sesgo": [
     -0.00443,
@@ -3356,12 +3356,12 @@
     -0.00022
    ],
    "gdb": [
-    -13.815,
-    -9.725,
-    -15.893,
-    -13.909,
-    -6.871,
-    -8.11
+    -13.757,
+    -9.679,
+    -15.21,
+    -13.578,
+    -6.678,
+    -9.422
    ],
    "desv_ms": [
     3,
@@ -3373,9 +3373,9 @@
    ],
    "cierre": {
     "golpe": "re_abajo_normal",
-    "cg": -3.725,
-    "brillo_db": -2.8,
-    "desvio_s": -0.023
+    "cg": -3.69,
+    "brillo_db": -2,
+    "desvio_s": -0.0262
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -3418,8 +3418,8 @@
     ]
    },
    "nivel": {
-    "lufs": -22.27,
-    "rms_db": -21.91
+    "lufs": -21.97,
+    "rms_db": -21.58
    },
    "variantes": {
     "trancar": {
@@ -3452,12 +3452,12 @@
        -0.00443
       ],
       "gdb": [
-       -15.781,
-       -6.65,
-       -12.178,
-       -16.356,
-       -4.626,
-       -13.322
+       -16.271,
+       -6.457,
+       -11.808,
+       -16.847,
+       -4.433,
+       -12.951
       ],
       "desv_ms": [
        3,
@@ -3569,7 +3569,7 @@
    "cierre": {
     "golpe": "re_abajo_normal",
     "cg": -3.762,
-    "brillo_db": -9.4,
+    "brillo_db": -2,
     "desvio_s": 0.0114
    },
    "bloque_brillo_db": 0,
@@ -3614,7 +3614,7 @@
    },
    "nivel": {
     "lufs": -19.87,
-    "rms_db": -19.16
+    "rms_db": -18.95
    }
   }
  },
