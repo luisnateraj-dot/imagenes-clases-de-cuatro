@@ -900,7 +900,7 @@
    ]
   },
   "sim_latigo_arriba": {
-   "pico_db": -6.34,
+   "pico_db": -3.25,
    "tomas": [
     {
      "archivo": "casa31/sim_latigo_arriba_1.mp3",
@@ -925,7 +925,7 @@
    ]
   },
   "fas7_latigo_arriba": {
-   "pico_db": -8.31,
+   "pico_db": -3.81,
    "tomas": [
     {
      "archivo": "casa31/fas7_latigo_arriba_1.mp3",
@@ -938,19 +938,11 @@
     {
      "archivo": "casa31/fas7_latigo_arriba_3.mp3",
      "ataque_desde_umbral_s": -0.005
-    },
-    {
-     "archivo": "casa31/fas7_latigo_arriba_4.mp3",
-     "ataque_desde_umbral_s": -0.005
-    },
-    {
-     "archivo": "casa31/fas7_latigo_arriba_5.mp3",
-     "ataque_desde_umbral_s": -0.005
     }
    ]
   },
   "mim_latigo_arriba": {
-   "pico_db": -7.68,
+   "pico_db": -3.19,
    "tomas": [
     {
      "archivo": "casa31/mim_latigo_arriba_1.mp3",
@@ -967,15 +959,11 @@
     {
      "archivo": "casa31/mim_latigo_arriba_4.mp3",
      "ataque_desde_umbral_s": -0.005
-    },
-    {
-     "archivo": "casa31/mim_latigo_arriba_5.mp3",
-     "ataque_desde_umbral_s": -0.005
     }
    ]
   },
   "re_latigo_arriba": {
-   "pico_db": -11.82,
+   "pico_db": -5.32,
    "tomas": [
     {
      "archivo": "casa31/re_latigo_arriba_1.mp3",
@@ -992,15 +980,11 @@
     {
      "archivo": "casa31/re_latigo_arriba_4.mp3",
      "ataque_desde_umbral_s": -0.005
-    },
-    {
-     "archivo": "casa31/re_latigo_arriba_5.mp3",
-     "ataque_desde_umbral_s": -0.005
     }
    ]
   },
   "la7_latigo_arriba": {
-   "pico_db": -9.61,
+   "pico_db": -3.79,
    "tomas": [
     {
      "archivo": "casa31/la7_latigo_arriba_1.mp3",
@@ -1025,7 +1009,7 @@
    ]
   },
   "sol_latigo_arriba": {
-   "pico_db": -7.6,
+   "pico_db": -3.02,
    "tomas": [
     {
      "archivo": "casa31/sol_latigo_arriba_1.mp3",
