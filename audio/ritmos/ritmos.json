@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos. Resto tras el chasquido por ritmo (31-oct-2026): un ritmo puede traer «resto» ({db, tau_s, …}) que sustituye los campos de fundidos.resto; db null = sin resto. Apagado y corte (1-nov-2026): «(X)» = apagado (los dedos medio, anular y meñique se posan sobre las cuerdas): no tiene toma, solo apaga el acorde que suena con la caída de fundidos.apagado. «corte» (en el ritmo o en una variante) = el compás que toca el botón «Cortar»: media frase y un golpe que corta en el tiempo 3; luego, silencio. Abanico y estilo romántico (1-nov-2026): «ab» = abanico (tomas <acorde>_abanico, alineadas por su cenit; si no hay, el bloque suave). gaita_romantica = gaita de furro, estilo romántico (semichasquidos, sin variantes); variante «rincon_morales» de la gaita de furro: abanico ↑ ✕↓ ✕↑ ↓ ↑, chasquidos suaves. Antes del abanico (1-nov-2026): una forma con «antes_abanico_s» apaga el golpe anterior al abanico a ese tiempo de su ataque (a escala del tempo, como T), con la caída de «fundidos.apagado» (Rincón Morales: 0,075 s, elegido de oído por Luis).",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos. Resto tras el chasquido por ritmo (31-oct-2026): un ritmo puede traer «resto» ({db, tau_s, …}) que sustituye los campos de fundidos.resto; db null = sin resto. Apagado y corte (1-nov-2026): «(X)» = apagado (los dedos medio, anular y meñique se posan sobre las cuerdas): no tiene toma, solo apaga el acorde que suena con la caída de fundidos.apagado. «corte» (en el ritmo o en una variante) = el compás que toca el botón «Cortar»: media frase y un golpe que corta en el tiempo 3; luego, silencio. Abanico y estilo romántico (1-nov-2026): «ab» = abanico (tomas <acorde>_abanico, alineadas por su cenit; si no hay, el bloque suave). gaita_romantica = gaita de furro, estilo romántico (semichasquidos, sin variantes); variante «rincon_morales» de la gaita de furro: abanico ↑ ✕↓ ✕↑ ↓ ↑, chasquidos suaves. Antes del abanico (1-nov-2026): una forma con «antes_abanico_s» apaga el golpe anterior al abanico a ese tiempo de su ataque (a escala del tempo, como T), con la caída de «fundidos.apagado» (Rincón Morales: 0,075 s, elegido de oído por Luis). Catálogo (1-nov-2026, noche): «catalogo» = grupos (principiante, intermedio, avanzado, foraneos) con sus familias en orden; cada familia = una ficha del Generador, con sus estilos (ritmos de ritmos.json) como botones; los foráneos traen su «nivel». Una familia con estilos de dos niveles (el merengue) va en los dos, con los estilos de cada nivel. Cada ritmo va en una sola familia. Rincón Morales: estilo de la gaita de furro (ritmo «gaita_rincon_morales»), ya no variante (Luis, 1-nov-2026).",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -3991,75 +3991,6 @@
        ]
       }
      ]
-    },
-    "rincon_morales": {
-     "es": "Rincón Morales",
-     "en": "Rincón Morales",
-     "nivel": "avanzado",
-     "sigue": {
-      "patron": [
-       "ab",
-       "↑",
-       "✕↓",
-       "✕↑",
-       "↓",
-       "↑"
-      ],
-      "posiciones": [
-       0,
-       1,
-       2,
-       3,
-       4,
-       5
-      ],
-      "duraciones": [
-       1,
-       1,
-       1,
-       1,
-       1,
-       1
-      ],
-      "barras": [
-       3,
-       3
-      ],
-      "T": [
-       -0.01436,
-       0.00045,
-       -0.00915,
-       0.00225,
-       0.00578,
-       0.00037
-      ],
-      "sesgo": [
-       0.0,
-       0.0133,
-       -0.0121,
-       0.0053,
-       -0.0018,
-       0.0133
-      ],
-      "gdb": [
-       -9.109,
-       -8.065,
-       -18.191,
-       -14.889,
-       -6.488,
-       -9.618
-      ],
-      "desv_ms": [
-       3,
-       3,
-       3,
-       3,
-       3,
-       3
-      ],
-      "chq": "suave",
-      "antes_abanico_s": 0.075
-     }
     }
    },
    "resto": {
@@ -4192,6 +4123,135 @@
    "resto": {
     "db": null
    }
+  },
+  "gaita_rincon_morales": {
+   "es": "Gaita de furro: Rincón Morales",
+   "en": "Gaita de furro: Rincón Morales",
+   "compas": "6/8",
+   "figura_tempo": "corchea",
+   "tempo": {
+    "min": 280,
+    "grabado": 350,
+    "max": 400
+   },
+   "unidad": "corchea",
+   "unidades_por_compas": 6,
+   "patron": [
+    "ab",
+    "↑",
+    "✕↓",
+    "✕↑",
+    "↓",
+    "↑"
+   ],
+   "posiciones": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "duraciones": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "barras": [
+    3,
+    3
+   ],
+   "figura_por_tempo": 1,
+   "T": [
+    -0.01436,
+    0.00045,
+    -0.00915,
+    0.00225,
+    0.00578,
+    0.00037
+   ],
+   "sesgo": [
+    0.0,
+    0.0133,
+    -0.0121,
+    0.0053,
+    -0.0018,
+    0.0133
+   ],
+   "gdb": [
+    -9.109,
+    -8.065,
+    -18.191,
+    -14.889,
+    -6.488,
+    -9.618
+   ],
+   "desv_ms": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "cierre": {
+    "golpe": "re_abajo_normal",
+    "cg": -7.745,
+    "brillo_db": -2,
+    "desvio_s": -0.0218
+   },
+   "bloque_brillo_db": 3,
+   "metronomo": {
+    "defecto": "sub",
+    "pulso": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      3,
+      "clave2_mf"
+     ]
+    ],
+    "sub": [
+     [
+      0,
+      "clave2_ff"
+     ],
+     [
+      1,
+      "clave4_mf"
+     ],
+     [
+      2,
+      "clave4_mf"
+     ],
+     [
+      3,
+      "clave2_mf"
+     ],
+     [
+      4,
+      "clave4_mf"
+     ],
+     [
+      5,
+      "clave4_mf"
+     ]
+    ]
+   },
+   "nivel": {
+    "lufs": -20.17,
+    "rms_db": -19.28
+   },
+   "resto": {
+    "db": null
+   },
+   "chq": "suave",
+   "antes_abanico_s": 0.075
   },
   "gaita_tambora": {
    "es": "Gaita de tambora",
@@ -4835,5 +4895,249 @@
    "brillo_db": -6,
    "hz": 1500
   }
- }
+ },
+ "catalogo": [
+  {
+   "grupo": "principiante",
+   "familias": [
+    {
+     "id": "tonada",
+     "es": "Tonada",
+     "en": "Tonada",
+     "estilos": [
+      {
+       "ritmo": "tonada",
+       "es": "Tonada",
+       "en": "Tonada"
+      }
+     ]
+    },
+    {
+     "id": "orquidea",
+     "es": "Orquídea",
+     "en": "Orquídea",
+     "estilos": [
+      {
+       "ritmo": "orquidea",
+       "es": "Orquídea",
+       "en": "Orquídea"
+      }
+     ]
+    },
+    {
+     "id": "merengue_principiante",
+     "es": "Merengue",
+     "en": "Merengue",
+     "estilos": [
+      {
+       "ritmo": "merengue_68_basico",
+       "es": "6/8 básico",
+       "en": "6/8 basic"
+      },
+      {
+       "ritmo": "merengue_basico",
+       "es": "Básico",
+       "en": "Basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "grupo": "intermedio",
+   "familias": [
+    {
+     "id": "vals_criollo",
+     "es": "Vals criollo",
+     "en": "Vals criollo",
+     "estilos": [
+      {
+       "ritmo": "vals_criollo",
+       "es": "Vals criollo",
+       "en": "Vals criollo"
+      }
+     ]
+    },
+    {
+     "id": "joropo_llanero",
+     "es": "Joropo llanero",
+     "en": "Joropo llanero",
+     "estilos": [
+      {
+       "ritmo": "pasaje",
+       "es": "Pasaje",
+       "en": "Pasaje"
+      },
+      {
+       "ritmo": "joropo",
+       "es": "Corrío",
+       "en": "Corrío"
+      },
+      {
+       "ritmo": "joropo_por_derecho",
+       "es": "Por derecho",
+       "en": "Por derecho"
+      }
+     ]
+    },
+    {
+     "id": "bambuco",
+     "es": "Bambuco",
+     "en": "Bambuco",
+     "estilos": [
+      {
+       "ritmo": "bambuco",
+       "es": "Bambuco",
+       "en": "Bambuco"
+      }
+     ]
+    },
+    {
+     "id": "contradanza",
+     "es": "Contradanza",
+     "en": "Contradanza",
+     "estilos": [
+      {
+       "ritmo": "contradanza",
+       "es": "Contradanza",
+       "en": "Contradanza"
+      }
+     ]
+    },
+    {
+     "id": "merengue_intermedio",
+     "es": "Merengue",
+     "en": "Merengue",
+     "estilos": [
+      {
+       "ritmo": "merengue",
+       "es": "Con chasquido",
+       "en": "With chasquido"
+      },
+      {
+       "ritmo": "merengue_68",
+       "es": "6/8 con chasquido",
+       "en": "6/8 with chasquido"
+      }
+     ]
+    },
+    {
+     "id": "bolero",
+     "es": "Bolero",
+     "en": "Bolero",
+     "estilos": [
+      {
+       "ritmo": "bolero",
+       "es": "Bolero",
+       "en": "Bolero"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "grupo": "avanzado",
+   "familias": [
+    {
+     "id": "gaita_furro",
+     "es": "Gaita de furro",
+     "en": "Gaita de furro",
+     "estilos": [
+      {
+       "ritmo": "gaita_furro",
+       "es": "Base",
+       "en": "Base"
+      },
+      {
+       "ritmo": "gaita_romantica",
+       "es": "Romántico",
+       "en": "Romantic"
+      },
+      {
+       "ritmo": "gaita_rincon_morales",
+       "es": "Rincón Morales",
+       "en": "Rincón Morales"
+      }
+     ]
+    },
+    {
+     "id": "gaita_tambora",
+     "es": "Gaita de tambora",
+     "en": "Gaita de tambora",
+     "estilos": [
+      {
+       "ritmo": "gaita_tambora",
+       "es": "Gaita de tambora",
+       "en": "Gaita de tambora"
+      },
+      {
+       "ritmo": "gaita_tamborera",
+       "es": "Tamborera",
+       "en": "Tamborera"
+      }
+     ]
+    },
+    {
+     "id": "danza_zuliana",
+     "es": "Danza zuliana",
+     "en": "Danza zuliana",
+     "estilos": [
+      {
+       "ritmo": "danza_zuliana",
+       "es": "Danza zuliana",
+       "en": "Danza zuliana"
+      }
+     ]
+    },
+    {
+     "id": "onda_nueva",
+     "es": "Onda nueva",
+     "en": "Onda nueva",
+     "estilos": [
+      {
+       "ritmo": "onda_nueva",
+       "es": "Onda nueva",
+       "en": "Onda nueva"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "grupo": "foraneos",
+   "familias": [
+    {
+     "id": "regueton",
+     "es": "Reguetón",
+     "en": "Reggaeton",
+     "estilos": [
+      {
+       "ritmo": "skank",
+       "es": "Skank",
+       "en": "Skank"
+      },
+      {
+       "ritmo": "dembow",
+       "es": "Dembow",
+       "en": "Dembow"
+      }
+     ],
+     "nivel": "principiante"
+    },
+    {
+     "id": "cumbia",
+     "es": "Cumbia",
+     "en": "Cumbia",
+     "estilos": [
+      {
+       "ritmo": "cumbia",
+       "es": "Cumbia",
+       "en": "Cumbia"
+      }
+     ],
+     "nivel": "principiante"
+    }
+   ]
+  }
+ ]
 }
