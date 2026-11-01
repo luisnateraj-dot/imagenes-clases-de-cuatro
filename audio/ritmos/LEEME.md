@@ -56,3 +56,4 @@ Todo en MP3 mono a 44,1 kHz, 128 kbps.
 ## Pendiente
 
 Sesión de estudio (4-nov-2026): grabación completa de los 36 acordes de `contexto/08b_Digitaciones_tonada.md`. Re y La7 son las digitaciones D = 0·0·0·3 y A7 = 0·2·1·2.
+- **Mnemotecnia** (`ritmos.json`, 1-nov-2026, noche): `mnemotecnia` = una sílaba por golpe del patrón, la que se dice en Venezuela para recordarlo (tonada: Chi-quin-qui-rá; merengue a 5, básico y con chasquido: to-ca-me-ren-gue; Luis). El Generador la imprime bajo la cuenta.
