@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos.",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos. Resto tras el chasquido por ritmo (31-oct-2026): un ritmo puede traer «resto» ({db, tau_s, …}) que sustituye los campos de fundidos.resto; db null = sin resto.",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -12,8 +12,8 @@
    "caida_s": 0.04
   },
   "resto": {
-   "db": -8,
-   "tau_s": 0.18,
+   "db": -16,
+   "tau_s": 0.1,
    "paso_alto_hz": 300,
    "corte_s": 0.15
   }
@@ -1897,7 +1897,7 @@
     "golpe": "re_abajo_normal",
     "cg": -0.53,
     "brillo_db": -2,
-    "desvio_s": -0.033
+    "desvio_s": -0.015
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -2558,7 +2558,7 @@
     -23.687,
     -11.012,
     -9.493,
-    -16.111
+    -19.111
    ],
    "desv_ms": [
     3,
@@ -2987,6 +2987,9 @@
       }
      ]
     }
+   },
+   "resto": {
+    "db": null
    }
   },
   "gaita_tambora": {
@@ -3469,6 +3472,9 @@
       "chq": "fuerte"
      }
     }
+   },
+   "resto": {
+    "db": null
    }
   },
   "onda_nueva": {
@@ -3549,7 +3555,7 @@
     -11.057,
     -7.964,
     -18.0,
-    -10.8,
+    -16.8,
     -5.216,
     -11.548,
     -12.681
