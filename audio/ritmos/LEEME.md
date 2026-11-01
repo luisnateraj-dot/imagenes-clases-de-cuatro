@@ -6,6 +6,11 @@ Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor 
 
 - **`fichas.json`:** los textos de la ficha de cada familia de ritmos (de dónde viene, dónde se toca, estilos, variantes, piezas con enlaces para escuchar, fuentes), en español e inglés. El Generador la muestra con el botón «Sobre este ritmo» en los ritmos que aparecen en su lista `ritmos`. Las partituras de golpes no están aquí: el Generador las dibuja con los datos de `ritmos.json`. El formato está explicado en la clave `_formato`. Un cambio en este archivo se ve al recargar el Generador, sin tocar GAS. Fichas (30-oct-2026): merengue venezolano (los cuatro merengues), tonada, vals criollo, el orquídea y joropo llanero (joropo corrío, joropo por derecho y pasaje). Las piezas pueden ir en grupos con subtítulo, cada estilo puede llevar su nivel y un párrafo puede enlazar a otro módulo del CEM.
 
+## Desde el 1-nov-2026: segunda grabación en casa
+
+- **`casa01/<clave>_<n>.mp3`:** E, B, Dm, Gm y B7 (claves `mi`, `si`, `rem`, `solm`, `si7`), grabados por Luis el 1-nov-2026 con el mismo equipo; los mismos golpes que `casa31/`, látigo arriba incluido; 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Con los de `casa31/` completan **Re menor** (Dm, Gm, A7) y **Si mayor** (B, E, F♯7), y **Mi mayor** para I–V7–I (E, B7).
+- **Carga por tonalidad:** el Generador (desde el 1-nov) baja al abrir solo los acordes de la tonalidad elegida, más los chasquidos y el metrónomo; al cambiar de tonalidad, baja los que falten.
+
 ## Desde el 31-oct-2026: grabación en casa del 31-oct
 
 - **`casa31/<clave>_<n>.mp3`:** las tomas que usa ahora el motor, grabadas por Luis el 31-oct-2026 con el mismo equipo y en la misma sala (Re, La7, Sol, Si m, Mi m y Fa♯7, digitaciones de `08b`). Sustituyen a las de `informal/`:
