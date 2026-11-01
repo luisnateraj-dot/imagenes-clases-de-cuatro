@@ -6,6 +6,14 @@ Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor 
 
 - **`fichas.json`:** los textos de la ficha de cada familia de ritmos (de dónde viene, dónde se toca, estilos, variantes, piezas con enlaces para escuchar, fuentes), en español e inglés. El Generador la muestra con el botón «Sobre este ritmo» en los ritmos que aparecen en su lista `ritmos`. Las partituras de golpes no están aquí: el Generador las dibuja con los datos de `ritmos.json`. El formato está explicado en la clave `_formato`. Un cambio en este archivo se ve al recargar el Generador, sin tocar GAS. Fichas (30-oct-2026): merengue venezolano (los cuatro merengues), tonada, vals criollo, el orquídea y joropo llanero (joropo corrío, joropo por derecho y pasaje). Las piezas pueden ir en grupos con subtítulo, cada estilo puede llevar su nivel y un párrafo puede enlazar a otro módulo del CEM.
 
+## Desde el 31-oct-2026: grabación en casa del 31-oct
+
+- **`casa31/<clave>_<n>.mp3`:** las tomas que usa ahora el motor, grabadas por Luis el 31-oct-2026 con el mismo equipo y en la misma sala (Re, La7, Sol, Si m, Mi m y Fa♯7, digitaciones de `08b`). Sustituyen a las de `informal/`:
+  - los mismos golpes que la grabación informal, y además los **chasquidos reales en tres niveles** (suave, normal, fuerte);
+  - **`<acorde>_latigo_arriba`** (l↑, látigo arriba: la uña del pulgar pega del golpeador antes de la Si), de la grabación de las 20:52, con 3 a 5 tomas por acorde, cortadas desde 90 ms antes del acorde para que quepa ese golpe previo.
+- **`ritmos.json`:** los 18 ritmos recalibrados con la grabación de Luis del 31-oct y corregidos de oído por él (látigo arriba en la 4.ª corchea de los merengues básicos, +4 dB; onda nueva con ✕↓ en la 7.ª semicorchea; bolero, bambuco, gaita de furro y joropo corrío ajustados). **Resto tras el chasquido por ritmo:** el común baja a −16 dB y τ 100 ms, y la danza zuliana y la gaita de furro van sin resto (`"resto": {"db": null}`); necesita el `MotorRitmos` del 31-oct (noche).
+- Las carpetas `informal/`, `golpes/` y `cierres/` quedan sin usar.
+
 ## Desde el 30-oct-2026: grabación informal
 
 - **`informal/<clave>_<n>.mp3`:** las tomas que usa el motor, de la grabación informal de Luis (29-oct-2026): Re, La7, Sol, Si m, Mi m y Fa♯7 (digitaciones de `08b`), con 5 tomas de cada golpe:
