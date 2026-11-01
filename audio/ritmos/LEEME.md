@@ -9,6 +9,7 @@ Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor 
 ## Desde el 1-nov-2026: segunda grabación en casa
 
 - **`casa01/<clave>_<n>.mp3`:** E, B, Dm, Gm y B7 (claves `mi`, `si`, `rem`, `solm`, `si7`), grabados por Luis el 1-nov-2026 con el mismo equipo; los mismos golpes que `casa31/`, látigo arriba incluido; 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Con los de `casa31/` completan **Re menor** (Dm, Gm, A7) y **Si mayor** (B, E, F♯7), y **Mi mayor** para I–V7–I (E, B7).
+- **`casa01/do_…`, `casa01/re7_…`** (1-nov-2026, 02:36): C y D7, de la tercera grabación en casa; con el G de `casa31/` completan **Sol mayor** (G, C, D7).
 - **Carga por tonalidad:** el Generador (desde el 1-nov) baja al abrir solo los acordes de la tonalidad elegida, más los chasquidos y el metrónomo; al cambiar de tonalidad, baja los que falten.
 
 ## Desde el 31-oct-2026: grabación en casa del 31-oct
