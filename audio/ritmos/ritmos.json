@@ -991,7 +991,7 @@
    "tempo": {
     "min": 80,
     "grabado": 90,
-    "max": 100
+    "max": 110
    },
    "unidad": "semicorchea",
    "unidades_por_compas": 16,
@@ -1200,7 +1200,7 @@
    "tempo": {
     "min": 80,
     "grabado": 90,
-    "max": 100
+    "max": 110
    },
    "unidad": "semicorchea",
    "unidades_por_compas": 16,
@@ -1574,7 +1574,7 @@
    "tempo": {
     "min": 80,
     "grabado": 90,
-    "max": 100
+    "max": 110
    },
    "unidad": "semicorchea",
    "unidades_por_compas": 16,
