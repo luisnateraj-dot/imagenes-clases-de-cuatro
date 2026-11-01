@@ -11,6 +11,8 @@ Golpes sueltos de cuatro grabados por Luis Natera (28-oct-2026) para el **motor 
 - **`casa01/<clave>_<n>.mp3`:** E, B, Dm, Gm y B7 (claves `mi`, `si`, `rem`, `solm`, `si7`), grabados por Luis el 1-nov-2026 con el mismo equipo; los mismos golpes que `casa31/`, látigo arriba incluido; 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Con los de `casa31/` completan **Re menor** (Dm, Gm, A7) y **Si mayor** (B, E, F♯7), y **Mi mayor** para I–V7–I (E, B7).
 - **`casa01/do_…`, `casa01/re7_…`** (1-nov-2026, 02:36): C y D7, de la tercera grabación en casa; con el G de `casa31/` completan **Sol mayor** (G, C, D7).
 - **Carga por tonalidad:** el Generador (desde el 1-nov) baja al abrir solo los acordes de la tonalidad elegida, más los chasquidos y el metrónomo; al cambiar de tonalidad, baja los que falten.
+- **`casa01/la_…`, `lam_…`, `mi7_…`, `sol7_…`** (1-nov-2026, mediodía): A, Am, E7 y G7, de la cuarta grabación en casa (5 tomas por golpe; látigo de Am, 3, los que tienen el golpe en el golpeador). Completan **La mayor** (A, D, E7), **La menor** (Am, Dm, E7), **Mi mayor** (E, A, B7) y **Mi menor** (Em, Am, B7); **Do mayor** queda con I–V7 (C, G7).
+- **Reguetón y cumbia** (`ritmos.json`, 1-nov-2026, tarde): `skank`, `dembow` (con su variante) y `cumbia` (con su variante), calibrados con la grabación de Luis del mismo día. Golpe nuevo **`(X)` = apagado**: no tiene toma; el motor apaga el acorde con la caída de `fundidos.apagado`. Cada uno trae su **`corte`** (el compás del botón «Cortar»). Necesitan el `MotorRitmos` del 1-nov-2026 (tarde): uno anterior no conoce `(X)`.
 
 ## Desde el 31-oct-2026: grabación en casa del 31-oct
 
