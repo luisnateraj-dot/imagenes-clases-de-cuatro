@@ -1,5 +1,5 @@
 {
- "_formato": "audio/ritmos/: tomas de golpes y cierres. Desde el 31-oct-2026, las de la grabación de Luis del 31-oct (casa31/: Re, La7, Sol, Si m, Mi m, Fa♯7 y chasquidos suaves, normales y fuertes; cada golpe tocado después de un fragmento de ritmo, para que suene como dentro del ritmo); las del prototipo (golpes/, cierres/) y las de la prueba informal (informal/) quedan en el repositorio sin usar. Cada toma empieza pre_s antes del ataque. El ataque se calcula al cargar: primera muestra con |x| ≥ umbral × pico (en los primeros 0,21 s) + ataque_desde_umbral_s. pico_db = pico medio de los primeros 60 ms tras el ataque (las tomas de una clave están igualadas a ese pico); la ganancia de un golpe es 10^((gdb − pico_db)/20). Claves: <acorde>_abajo_normal (↓), <acorde>_bloque_suave (⇓), <acorde>_arriba (↑), <acorde>_semichasquido_abajo/arriba (s✕↓/s✕↑), chasquido_abajo/arriba (✕↓/✕↑, normal) y chasquido_<dirección>_suave/fuerte: estas dos llevan el pico_db de la normal, así que suenan con su diferencia real de nivel. Los cierres son las mismas tomas largas (3,5 s) de abajo y bloque suave. «reserva»: tomas grabadas que ningún ritmo usa todavía (bloque fuerte, abanico); el motor no las carga. Desde el 31-oct-2026 (tarde): <acorde>_latigo_arriba (l↑, látigo arriba: pulgar hacia arriba con energía, sin llegar a la La; la Si suena como un látigo). 1-nov-2026: casa01/ = segunda grabación en casa (E, B, Dm, Gm y B7; claves mi, si, rem, solm, si7), 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Las claves «<acorde>_…» se cargan por acorde: el Generador baja solo los acordes de la tonalidad elegida. 1-nov-2026 (02:36): C y D7 (claves do, re7) en casa01/, de la tercera grabación en casa: completan Sol mayor. Abanico (1-nov-2026): sus tomas se alinean por el cenit de la cascada, no por su comienzo: ataque_desde_umbral_s de cada toma = del umbral al máximo de la envolvente (Luis: «el abanico empieza antes, para que en su apogeo coincida con la primera corchea»). Abanico, ajuste (1-nov-2026, tarde): el máximo de 5 ms caía en cualquier punto de la meseta de la cascada y algunas tomas sonaban demasiado pronto; ahora ataque_desde_umbral_s = llegada a −3 dB del máximo (RMS de 20 ms) + 45 ms (desfase que deja la toma típica donde estaba).",
+ "_formato": "audio/ritmos/: tomas de golpes y cierres. Desde el 31-oct-2026, las de la grabación de Luis del 31-oct (casa31/: Re, La7, Sol, Si m, Mi m, Fa♯7 y chasquidos suaves, normales y fuertes; cada golpe tocado después de un fragmento de ritmo, para que suene como dentro del ritmo); las del prototipo (golpes/, cierres/) y las de la prueba informal (informal/) quedan en el repositorio sin usar. Cada toma empieza pre_s antes del ataque. El ataque se calcula al cargar: primera muestra con |x| ≥ umbral × pico (en los primeros 0,21 s) + ataque_desde_umbral_s. pico_db = pico medio de los primeros 60 ms tras el ataque (las tomas de una clave están igualadas a ese pico); la ganancia de un golpe es 10^((gdb − pico_db)/20). Claves: <acorde>_abajo_normal (↓), <acorde>_bloque_suave (⇓), <acorde>_arriba (↑), <acorde>_semichasquido_abajo/arriba (s✕↓/s✕↑), chasquido_abajo/arriba (✕↓/✕↑, normal) y chasquido_<dirección>_suave/fuerte: estas dos llevan el pico_db de la normal, así que suenan con su diferencia real de nivel. Los cierres son las mismas tomas largas (3,5 s) de abajo y bloque suave. «reserva»: tomas grabadas que ningún ritmo usa todavía (bloque fuerte, abanico); el motor no las carga. Desde el 31-oct-2026 (tarde): <acorde>_latigo_arriba (l↑, látigo arriba: pulgar hacia arriba con energía, sin llegar a la La; la Si suena como un látigo). 1-nov-2026: casa01/ = segunda grabación en casa (E, B, Dm, Gm y B7; claves mi, si, rem, solm, si7), 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Las claves «<acorde>_…» se cargan por acorde: el Generador baja solo los acordes de la tonalidad elegida. 1-nov-2026 (02:36): C y D7 (claves do, re7) en casa01/, de la tercera grabación en casa: completan Sol mayor. Abanico (1-nov-2026): sus tomas se alinean por el cenit de la cascada, no por su comienzo: ataque_desde_umbral_s de cada toma = del umbral al máximo de la envolvente (Luis: «el abanico empieza antes, para que en su apogeo coincida con la primera corchea»). Abanico, ajuste (1-nov-2026, tarde): el máximo de 5 ms caía en cualquier punto de la meseta de la cascada y algunas tomas sonaban demasiado pronto; ahora ataque_desde_umbral_s = llegada a −3 dB del máximo (RMS de 20 ms) + 45 ms (desfase que deja la toma típica donde estaba). 2-nov-2026 (03:15): Cm, F y Fm (claves dom, fa, fam) en casa01/, de la quinta grabación en casa (F: 4 tomas de abajo y 3 de látigo).",
  "pre_s": 0.06,
  "umbral": 0.2,
  "golpes": {
@@ -3091,6 +3091,519 @@
      "ataque_desde_umbral_s": 0.092
     }
    ]
+  },
+  "dom_abajo_normal": {
+   "pico_db": -5.34,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "dom_bloque_suave": {
+   "pico_db": -6.99,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "dom_arriba": {
+   "pico_db": -5.71,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "dom_latigo_arriba": {
+   "pico_db": -3.84,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_latigo_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_latigo_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_latigo_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_latigo_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/dom_latigo_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "dom_semichasquido_abajo": {
+   "pico_db": -13.73,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_semichasquido_abajo_1.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_abajo_2.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_abajo_3.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_abajo_4.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_abajo_5.mp3",
+     "ataque_desde_umbral_s": -0.026
+    }
+   ]
+  },
+  "dom_semichasquido_arriba": {
+   "pico_db": -12.9,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_semichasquido_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/dom_semichasquido_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.017
+    }
+   ]
+  },
+  "dom_abanico": {
+   "pico_db": -12.48,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_abanico_1.mp3",
+     "ataque_desde_umbral_s": 0.1305
+    },
+    {
+     "archivo": "casa01/dom_abanico_2.mp3",
+     "ataque_desde_umbral_s": 0.103
+    },
+    {
+     "archivo": "casa01/dom_abanico_3.mp3",
+     "ataque_desde_umbral_s": 0.1385
+    },
+    {
+     "archivo": "casa01/dom_abanico_4.mp3",
+     "ataque_desde_umbral_s": 0.1059
+    },
+    {
+     "archivo": "casa01/dom_abanico_5.mp3",
+     "ataque_desde_umbral_s": 0.0791
+    }
+   ]
+  },
+  "fa_abajo_normal": {
+   "pico_db": -4.21,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fa_bloque_suave": {
+   "pico_db": -6.26,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fa_arriba": {
+   "pico_db": -5.33,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "fa_latigo_arriba": {
+   "pico_db": -6.84,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_latigo_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_latigo_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fa_latigo_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "fa_semichasquido_abajo": {
+   "pico_db": -12.08,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_semichasquido_abajo_1.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_abajo_2.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_abajo_3.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_abajo_4.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_abajo_5.mp3",
+     "ataque_desde_umbral_s": -0.026
+    }
+   ]
+  },
+  "fa_semichasquido_arriba": {
+   "pico_db": -13.71,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_semichasquido_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fa_semichasquido_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.017
+    }
+   ]
+  },
+  "fa_abanico": {
+   "pico_db": -12.92,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_abanico_1.mp3",
+     "ataque_desde_umbral_s": 0.093
+    },
+    {
+     "archivo": "casa01/fa_abanico_2.mp3",
+     "ataque_desde_umbral_s": 0.119
+    },
+    {
+     "archivo": "casa01/fa_abanico_3.mp3",
+     "ataque_desde_umbral_s": 0.0888
+    },
+    {
+     "archivo": "casa01/fa_abanico_4.mp3",
+     "ataque_desde_umbral_s": 0.0874
+    },
+    {
+     "archivo": "casa01/fa_abanico_5.mp3",
+     "ataque_desde_umbral_s": 0.0833
+    }
+   ]
+  },
+  "fam_abajo_normal": {
+   "pico_db": -7.41,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fam_bloque_suave": {
+   "pico_db": -6.89,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fam_arriba": {
+   "pico_db": -5.41,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "fam_latigo_arriba": {
+   "pico_db": -3.24,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_latigo_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_latigo_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_latigo_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_latigo_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.005
+    },
+    {
+     "archivo": "casa01/fam_latigo_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.005
+    }
+   ]
+  },
+  "fam_semichasquido_abajo": {
+   "pico_db": -12.13,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_semichasquido_abajo_1.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_abajo_2.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_abajo_3.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_abajo_4.mp3",
+     "ataque_desde_umbral_s": -0.026
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_abajo_5.mp3",
+     "ataque_desde_umbral_s": -0.026
+    }
+   ]
+  },
+  "fam_semichasquido_arriba": {
+   "pico_db": -12.03,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_semichasquido_arriba_1.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_arriba_2.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_arriba_3.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_arriba_4.mp3",
+     "ataque_desde_umbral_s": -0.017
+    },
+    {
+     "archivo": "casa01/fam_semichasquido_arriba_5.mp3",
+     "ataque_desde_umbral_s": -0.017
+    }
+   ]
+  },
+  "fam_abanico": {
+   "pico_db": -12.56,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_abanico_1.mp3",
+     "ataque_desde_umbral_s": 0.154
+    },
+    {
+     "archivo": "casa01/fam_abanico_2.mp3",
+     "ataque_desde_umbral_s": 0.1472
+    },
+    {
+     "archivo": "casa01/fam_abanico_3.mp3",
+     "ataque_desde_umbral_s": 0.1301
+    },
+    {
+     "archivo": "casa01/fam_abanico_4.mp3",
+     "ataque_desde_umbral_s": 0.0896
+    },
+    {
+     "archivo": "casa01/fam_abanico_5.mp3",
+     "ataque_desde_umbral_s": 0.0801
+    }
+   ]
   }
  },
  "cierres": {
@@ -3939,6 +4452,152 @@
      "ataque_desde_umbral_s": -0.023
     }
    ]
+  },
+  "dom_abajo_normal": {
+   "pico_db": -5.34,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "dom_bloque_suave": {
+   "pico_db": -6.99,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fa_abajo_normal": {
+   "pico_db": -4.21,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fa_bloque_suave": {
+   "pico_db": -6.26,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fam_abajo_normal": {
+   "pico_db": -7.41,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_abajo_normal_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_abajo_normal_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fam_bloque_suave": {
+   "pico_db": -6.89,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_bloque_suave_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_suave_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
   }
  },
  "reserva": {
@@ -4355,6 +5014,81 @@
     },
     {
      "archivo": "casa01/sol7_bloque_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "dom_bloque_fuerte": {
+   "pico_db": -3.83,
+   "tomas": [
+    {
+     "archivo": "casa01/dom_bloque_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/dom_bloque_fuerte_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fa_bloque_fuerte": {
+   "pico_db": -2.32,
+   "tomas": [
+    {
+     "archivo": "casa01/fa_bloque_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fa_bloque_fuerte_5.mp3",
+     "ataque_desde_umbral_s": -0.023
+    }
+   ]
+  },
+  "fam_bloque_fuerte": {
+   "pico_db": -1.9,
+   "tomas": [
+    {
+     "archivo": "casa01/fam_bloque_fuerte_1.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_fuerte_2.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_fuerte_3.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_fuerte_4.mp3",
+     "ataque_desde_umbral_s": -0.023
+    },
+    {
+     "archivo": "casa01/fam_bloque_fuerte_5.mp3",
      "ataque_desde_umbral_s": -0.023
     }
    ]
