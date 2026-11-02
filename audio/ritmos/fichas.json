@@ -6,7 +6,8 @@
     "merengue_basico",
     "merengue",
     "merengue_68_basico",
-    "merengue_68"
+    "merengue_68",
+    "merengue_oriental"
    ],
    "titulo": {
     "es": "Merengue venezolano",
@@ -88,6 +89,18 @@
        "nombre": {
         "es": "Merengue con chasquido",
         "en": "Merengue with chasquido"
+       }
+      },
+      {
+       "ritmo": "merengue_oriental",
+       "nivel": "intermedio",
+       "nombre": {
+        "es": "Merengue oriental",
+        "en": "Eastern merengue"
+       },
+       "texto": {
+        "es": "Del oriente del país: chasquido abajo en el tiempo 1 y la última corchea en dos semicorcheas, abajo y arriba, que los cuatristas alternan libremente con abanico y arriba.",
+        "en": "From eastern Venezuela: chasquido down on beat 1 and the last eighth split into two sixteenths, down and up, which cuatro players freely alternate with an abanico and up."
        }
       },
       {
