@@ -1877,6 +1877,197 @@
      "url": "https://www.musicallanera.net/"
     }
    ]
+  },
+  "vals_ranchero": {
+   "ritmos": [
+    "vals_ranchero"
+   ],
+   "titulo": {
+    "es": "Vals ranchero",
+    "en": "Ranchera waltz"
+   },
+   "etiquetas": [
+    {
+     "es": "México",
+     "en": "Mexico",
+     "destacada": true
+    },
+    {
+     "es": "3/4",
+     "en": "3/4"
+    },
+    {
+     "es": "Nivel principiante",
+     "en": "Beginner level"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "La ranchera es la canción del campo mexicano que el cine de la Época de Oro llevó a todo el mundo, con Jorge Negrete y Pedro Infante y, más tarde, Vicente Fernández. Se canta en varios compases: en 2/4, en 4/4 (el bolero ranchero) y en 3/4, que es el vals ranchero.",
+       "en": "The ranchera is the song of the Mexican countryside that Golden Age cinema carried all over the world, with Jorge Negrete and Pedro Infante and, later, Vicente Fernández. It is sung in several meters: in 2/4, in 4/4 (the bolero ranchero) and in 3/4, which is the ranchera waltz."
+      },
+      {
+       "es": "No hay que confundirlo con el vals mexicano de salón, como Sobre las olas (Juventino Rosas, 1888), que viene del vals europeo y se tocaba al piano o con orquesta. El vals ranchero se canta, con mariachi.",
+       "en": "It should not be confused with the Mexican salon waltz, such as Sobre las olas (Juventino Rosas, 1888), which comes from the European waltz and was played on the piano or by an orchestra. The ranchera waltz is sung, with mariachi."
+      }
+     ]
+    },
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "Cómo suena en el mariachi",
+      "en": "How it sounds in a mariachi"
+     },
+     "parrafos": [
+      {
+       "es": "El guitarrón hace el bajo en el tiempo 1, y las vihuelas y las guitarras responden en el 2 y el 3: «tun, chas, chas».",
+       "en": "The guitarrón plays the bass on beat 1, and the vihuelas and guitars answer on beats 2 and 3: “oom, pah, pah”."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón · vals ranchero",
+      "en": "The pattern · ranchera waltz"
+     },
+     "ritmo": "vals_ranchero",
+     "texto": {
+      "es": "El cuatro hace lo de las guitarras: abajo en el tiempo 2 (una negra) y abajo en el 3 (una blanca), que sigue sonando sobre el tiempo 1 del compás siguiente, donde va el bajo. Por eso el tiempo 1 lleva la cabeza gris ligada: no se toca, pero el acorde suena.",
+      "en": "The cuatro plays the guitars’ part: down on beat 2 (a quarter note) and down on beat 3 (a half note), which keeps ringing over beat 1 of the next bar, where the bass goes. That is why beat 1 has the grey tied head: it is not played, but the chord rings."
+     }
+    },
+    {
+     "tipo": "piezas",
+     "plegable": true,
+     "titulo": {
+      "es": "Piezas para escuchar",
+      "en": "Pieces to listen to"
+     },
+     "items": [
+      {
+       "titulo": "Corazón, corazón",
+       "texto": {
+        "es": "José Alfredo Jiménez.",
+        "en": "José Alfredo Jiménez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Pedro Infante · YouTube",
+          "en": "Pedro Infante · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=qkQHt7C4yZY"
+        }
+       ]
+      },
+      {
+       "titulo": "Cielito lindo",
+       "texto": {
+        "es": "Quirino Mendoza y Cortés (1882).",
+        "en": "Quirino Mendoza y Cortés (1882)."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Mariachi Nuevo Tecalitlán · YouTube",
+          "en": "Mariachi Nuevo Tecalitlán · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=OHeHOb3E-2g"
+        }
+       ]
+      },
+      {
+       "titulo": "El Rey",
+       "texto": {
+        "es": "José Alfredo Jiménez.",
+        "en": "José Alfredo Jiménez."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Vicente Fernández · YouTube",
+          "en": "Vicente Fernández · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=U6qMQnNst9U"
+        }
+       ]
+      },
+      {
+       "titulo": "Mujeres divinas",
+       "texto": {
+        "es": "Martín Urieta.",
+        "en": "Martín Urieta."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Vicente Fernández · YouTube",
+          "en": "Vicente Fernández · YouTube"
+         },
+         "url": "https://www.youtube.com/watch?v=xa2GLqL12Zk"
+        }
+       ]
+      },
+      {
+       "titulo": "Las mañanitas",
+       "texto": {
+        "es": "Tradicional.",
+        "en": "Traditional."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Vicente Fernández · Spotify",
+          "en": "Vicente Fernández · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/7h4q7gttsPboUqLB7nFhQ7"
+        }
+       ]
+      },
+      {
+       "titulo": "Serenata tapatía",
+       "texto": {
+        "es": "Manuel Esperón y Ernesto Cortázar.",
+        "en": "Manuel Esperón and Ernesto Cortázar."
+       },
+       "escuchar": [
+        {
+         "texto": {
+          "es": "Plácido Domingo · Spotify",
+          "en": "Plácido Domingo · Spotify"
+         },
+         "url": "https://open.spotify.com/intl-es/track/4OV1Jzcbsn6BGhLcZ73Me7"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "fuentes": [
+    {
+     "es": "Wikipedia, «Ranchera»",
+     "en": "Wikipedia, “Ranchera”",
+     "url": "https://en.wikipedia.org/wiki/Ranchera"
+    },
+    {
+     "es": "Wikipedia, «Sobre las olas»",
+     "en": "Wikipedia, “Sobre las olas”",
+     "url": "https://en.wikipedia.org/wiki/Sobre_las_olas"
+    },
+    {
+     "es": "Frontera Collection (UCLA)",
+     "en": "Frontera Collection (UCLA)",
+     "url": "https://frontera.library.ucla.edu/recordings/serenata-tapatia-0"
+    }
+   ]
   }
  }
 }
