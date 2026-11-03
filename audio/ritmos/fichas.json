@@ -1,5 +1,5 @@
 {
- "_formato": "Fichas «Sobre este ritmo» del Generador de ritmos (30-oct-2026; contexto/13, sección 10o). Una ficha por familia; «ritmos» = las claves de ritmos.json que la abren. Cada texto va en es/en. Secciones: «texto» (párrafos), «patron» (partitura de golpes de un ritmo o de una variante, dibujada por el Generador con los datos de ritmos.json), «formas» (lista de estilos o variantes, cada uno con su partitura; «tempo»: true añade el rango de tempo de ritmos.json), «piezas» (con enlaces «escuchar», que se abren en otra pestaña) y «dato» (recuadro azul). «plegable»: true = en el teléfono viene cerrada y se abre al tocarla; en PC todo va abierto. Desde el 30-oct-2026 (noche): «nivel» en cada estilo de «formas» (principiante/intermedio/avanzado; en las fichas de varios estilos el nivel va ahí y no en las etiquetas); «grupo» {es, en} en las piezas (subtítulo para las piezas seguidas del mismo grupo); «enlace» {modulo, es, en} en un párrafo (ese trozo lleva al módulo del CEM, si el Generador conoce al alumno).",
+ "_formato": "Fichas «Sobre este ritmo» del Generador de ritmos (30-oct-2026; contexto/13, sección 10o). Una ficha por familia; «ritmos» = las claves de ritmos.json que la abren. Cada texto va en es/en. Secciones: «texto» (párrafos), «patron» (partitura de golpes de un ritmo o de una variante, dibujada por el Generador con los datos de ritmos.json), «formas» (lista de estilos o variantes, cada uno con su partitura; «tempo»: true añade el rango de tempo de ritmos.json), «piezas» (con enlaces «escuchar», que se abren en otra pestaña) y «dato» (recuadro azul). «plegable»: true = en el teléfono viene cerrada y se abre al tocarla; en PC todo va abierto. Desde el 30-oct-2026 (noche): «nivel» en cada estilo de «formas» (principiante/intermedio/avanzado; en las fichas de varios estilos el nivel va ahí y no en las etiquetas); «grupo» {es, en} en las piezas (subtítulo para las piezas seguidas del mismo grupo); «enlace» {modulo, es, en} en un párrafo (ese trozo lleva al módulo del CEM, si el Generador conoce al alumno). 3-nov-2026: ficha de la jota carupanera (provisional, por revisar con Luis).",
  "fichas": {
   "merengue_venezolano": {
    "ritmos": [
@@ -2079,6 +2079,57 @@
      "es": "Frontera Collection (UCLA)",
      "en": "Frontera Collection (UCLA)",
      "url": "https://frontera.library.ucla.edu/recordings/serenata-tapatia-0"
+    }
+   ]
+  },
+  "jota_carupanera": {
+   "ritmos": [
+    "jota_carupanera"
+   ],
+   "titulo": {
+    "es": "Jota carupanera",
+    "en": "Jota carupanera"
+   },
+   "etiquetas": [
+    {
+     "es": "Oriente",
+     "en": "Eastern Venezuela",
+     "destacada": true
+    },
+    {
+     "es": "4/4",
+     "en": "4/4"
+    },
+    {
+     "es": "Nivel intermedio",
+     "en": "Intermediate level"
+    }
+   ],
+   "secciones": [
+    {
+     "tipo": "texto",
+     "titulo": {
+      "es": "De dónde viene",
+      "en": "Where it comes from"
+     },
+     "parrafos": [
+      {
+       "es": "Es un ritmo del oriente del país: la jota de Carúpano, en el estado Sucre. En el cuatro se toca a 4/4, con chasquidos fuertes.",
+       "en": "It is a rhythm from eastern Venezuela: the jota of Carúpano, in Sucre state. On the cuatro it is played in 4/4, with strong chasquidos."
+      }
+     ]
+    },
+    {
+     "tipo": "patron",
+     "titulo": {
+      "es": "El patrón · jota carupanera",
+      "en": "The pattern · jota carupanera"
+     },
+     "ritmo": "jota_carupanera",
+     "texto": {
+      "es": "Empieza con un apagado abajo justo en el tiempo 1: el pulgar se posa sobre las cuerdas y corta la última subida del compás anterior. Después vienen dos subidas con el pulgar, una corchea y una semicorchea, y en los tiempos 2, 3 y 4, un chasquido abajo fuerte seguido de una subida. Para terminar, el último compás lleva un chasquido abajo en el tiempo 3 y un bloque suave en el 4, y el cierre es un bloque fuerte.",
+      "en": "It starts with a mute down right on beat 1: the thumb rests on the strings and cuts off the last up-stroke of the previous bar. Then come two thumb up-strokes, an eighth and a sixteenth, and on beats 2, 3 and 4, a strong chasquido down followed by an up-stroke. To finish, the last bar has a chasquido down on beat 3 and a soft block stroke on beat 4, and the closing stroke is a strong block stroke."
+     }
     }
    ]
   }
