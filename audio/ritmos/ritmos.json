@@ -3981,6 +3981,11 @@
       }
      ]
     }
+   },
+   "bajo": {
+    "sistema": "corrio",
+    "tamboriao": 0.08,
+    "separacion": 6
    }
   },
   "joropo": {
@@ -4188,6 +4193,11 @@
       ]
      }
     }
+   },
+   "bajo": {
+    "sistema": "corrio",
+    "tamboriao": 0.2,
+    "separacion": 3
    }
   },
   "joropo_por_derecho": {
@@ -6668,5 +6678,23 @@
     }
    ]
   }
- ]
+ ],
+ "bajo": {
+  "_formato": "Bajo de contrabajo (3-nov-2026; contexto/15_Bajo_llanero.md). Un ritmo con «bajo» {sistema, tamboriao, separacion} lo lleva. nivel_db: RMS del bajo respecto del RMS del cuatro (nivel.rms_db). Duraciones en negras: uno_negras (tiempo 1), tres_negras (tiempo 3, picado), partio_negras, cruzao_negras; paso: probabilidad de nota de paso en el 3 antes de un cambio; octava: de la octava en vez de la quinta; v7_quinta: probabilidad de empezar el V7 en la quinta [primera vez, si el compás anterior fue el mismo V7 en la fundamental]; cierre_s: cuánto suena la nota del cierre; jitter_ms y gan_desv_db: el azar.",
+  "nivel_db": 1.0,
+  "jitter_ms": 4,
+  "gan_desv_db": 0.6,
+  "fundido_s": 0.03,
+  "uno_negras": 1.0,
+  "tres_negras": 0.5,
+  "paso": 0.5,
+  "octava": 0.15,
+  "v7_quinta": [
+   0.3,
+   0.5
+  ],
+  "partio_negras": 1.4,
+  "cruzao_negras": 1.9,
+  "cierre_s": 2.4
+ }
 }

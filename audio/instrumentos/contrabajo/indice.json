@@ -1,0 +1,149 @@
+{
+ "_formato": "Contrabajo pizzicato (mf), una nota por archivo, de Mi1 a Re3. Claves = número MIDI (Do4 = 60). Cada nota está afinada (cents_corregidos = desvío que tenía) y nivelada: RMS de 10 a 210 ms tras el comienzo = nivel_rms_db. El archivo empieza 10 ms antes del ataque; el motor mide el ataque al cargar (primera muestra ≥ 20 % del pico).",
+ "fuente": "University of Iowa Electronic Music Studios, Musical Instrument Samples: Double Bass, pizzicato, mf (Alison Mann, 2001)",
+ "nivel_rms_db": -20.0,
+ "rango": [
+  28,
+  50
+ ],
+ "notas": {
+  "28": {
+   "nota": "E1",
+   "archivo": "E1.mp3",
+   "cuerda": "E",
+   "cents_corregidos": -7.8
+  },
+  "29": {
+   "nota": "F1",
+   "archivo": "F1.mp3",
+   "cuerda": "E",
+   "cents_corregidos": -16.5
+  },
+  "30": {
+   "nota": "Fs1",
+   "archivo": "Fs1.mp3",
+   "cuerda": "E",
+   "cents_corregidos": -26.6
+  },
+  "31": {
+   "nota": "G1",
+   "archivo": "G1.mp3",
+   "cuerda": "E",
+   "cents_corregidos": -29.2
+  },
+  "32": {
+   "nota": "Ab1",
+   "archivo": "Ab1.mp3",
+   "cuerda": "E",
+   "cents_corregidos": 13.0
+  },
+  "33": {
+   "nota": "A1",
+   "archivo": "A1.mp3",
+   "cuerda": "A",
+   "cents_corregidos": -1.2
+  },
+  "34": {
+   "nota": "Bb1",
+   "archivo": "Bb1.mp3",
+   "cuerda": "A",
+   "cents_corregidos": -9.5
+  },
+  "35": {
+   "nota": "B1",
+   "archivo": "B1.mp3",
+   "cuerda": "A",
+   "cents_corregidos": 3.8
+  },
+  "36": {
+   "nota": "C2",
+   "archivo": "C2.mp3",
+   "cuerda": "A",
+   "cents_corregidos": -3.5
+  },
+  "37": {
+   "nota": "Cs2",
+   "archivo": "Cs2.mp3",
+   "cuerda": "A",
+   "cents_corregidos": -0.1
+  },
+  "38": {
+   "nota": "D2",
+   "archivo": "D2.mp3",
+   "cuerda": "D",
+   "cents_corregidos": -10.9
+  },
+  "39": {
+   "nota": "Eb2",
+   "archivo": "Eb2.mp3",
+   "cuerda": "D",
+   "cents_corregidos": -0.1
+  },
+  "40": {
+   "nota": "E2",
+   "archivo": "E2.mp3",
+   "cuerda": "D",
+   "cents_corregidos": -14.4
+  },
+  "41": {
+   "nota": "F2",
+   "archivo": "F2.mp3",
+   "cuerda": "D",
+   "cents_corregidos": -7.9
+  },
+  "42": {
+   "nota": "Fs2",
+   "archivo": "Fs2.mp3",
+   "cuerda": "D",
+   "cents_corregidos": -7.9
+  },
+  "43": {
+   "nota": "G2",
+   "archivo": "G2.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -8.7
+  },
+  "44": {
+   "nota": "Ab2",
+   "archivo": "Ab2.mp3",
+   "cuerda": "G",
+   "cents_corregidos": 1.8
+  },
+  "45": {
+   "nota": "A2",
+   "archivo": "A2.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -2.4
+  },
+  "46": {
+   "nota": "Bb2",
+   "archivo": "Bb2.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -0.9
+  },
+  "47": {
+   "nota": "B2",
+   "archivo": "B2.mp3",
+   "cuerda": "G",
+   "cents_corregidos": 3.9
+  },
+  "48": {
+   "nota": "C3",
+   "archivo": "C3.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -5.9
+  },
+  "49": {
+   "nota": "Cs3",
+   "archivo": "Cs3.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -7.9
+  },
+  "50": {
+   "nota": "D3",
+   "archivo": "D3.mp3",
+   "cuerda": "G",
+   "cents_corregidos": -2.2
+  }
+ }
+}
