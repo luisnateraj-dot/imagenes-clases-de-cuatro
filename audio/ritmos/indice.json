@@ -6499,7 +6499,7 @@
    ]
   },
   "re_apagado_abajo": {
-   "nivel_antes_db": -27.73,
+   "nivel_antes_db": -21.76,
    "tomas": [
     {
      "archivo": "casa01/re_apagado_abajo_1.mp3"
@@ -6519,7 +6519,7 @@
    ]
   },
   "re_apagado_arriba": {
-   "nivel_antes_db": -21.76,
+   "nivel_antes_db": -27.73,
    "tomas": [
     {
      "archivo": "casa01/re_apagado_arriba_1.mp3"
@@ -6539,7 +6539,7 @@
    ]
   },
   "sol_apagado_abajo": {
-   "nivel_antes_db": -27.86,
+   "nivel_antes_db": -26.39,
    "tomas": [
     {
      "archivo": "casa01/sol_apagado_abajo_1.mp3"
@@ -6559,7 +6559,7 @@
    ]
   },
   "sol_apagado_arriba": {
-   "nivel_antes_db": -26.39,
+   "nivel_antes_db": -27.86,
    "tomas": [
     {
      "archivo": "casa01/sol_apagado_arriba_1.mp3"
@@ -6579,7 +6579,7 @@
    ]
   },
   "la7_apagado_abajo": {
-   "nivel_antes_db": -30.33,
+   "nivel_antes_db": -21.99,
    "tomas": [
     {
      "archivo": "casa01/la7_apagado_abajo_1.mp3"
@@ -6599,7 +6599,7 @@
    ]
   },
   "la7_apagado_arriba": {
-   "nivel_antes_db": -21.99,
+   "nivel_antes_db": -30.33,
    "tomas": [
     {
      "archivo": "casa01/la7_apagado_arriba_1.mp3"
@@ -6619,7 +6619,7 @@
    ]
   },
   "sim_apagado_abajo": {
-   "nivel_antes_db": -28.43,
+   "nivel_antes_db": -26.3,
    "tomas": [
     {
      "archivo": "casa01/sim_apagado_abajo_1.mp3"
@@ -6639,7 +6639,7 @@
    ]
   },
   "sim_apagado_arriba": {
-   "nivel_antes_db": -26.3,
+   "nivel_antes_db": -28.43,
    "tomas": [
     {
      "archivo": "casa01/sim_apagado_arriba_1.mp3"
@@ -6659,7 +6659,7 @@
    ]
   },
   "mim_apagado_abajo": {
-   "nivel_antes_db": -31.88,
+   "nivel_antes_db": -28.5,
    "tomas": [
     {
      "archivo": "casa01/mim_apagado_abajo_1.mp3"
@@ -6679,7 +6679,7 @@
    ]
   },
   "mim_apagado_arriba": {
-   "nivel_antes_db": -28.5,
+   "nivel_antes_db": -31.88,
    "tomas": [
     {
      "archivo": "casa01/mim_apagado_arriba_1.mp3"
@@ -6699,7 +6699,7 @@
    ]
   },
   "fas7_apagado_abajo": {
-   "nivel_antes_db": -30.66,
+   "nivel_antes_db": -26.88,
    "tomas": [
     {
      "archivo": "casa01/fas7_apagado_abajo_1.mp3"
@@ -6719,7 +6719,7 @@
    ]
   },
   "fas7_apagado_arriba": {
-   "nivel_antes_db": -26.88,
+   "nivel_antes_db": -30.66,
    "tomas": [
     {
      "archivo": "casa01/fas7_apagado_arriba_1.mp3"
@@ -6739,7 +6739,7 @@
    ]
   },
   "rem_apagado_abajo": {
-   "nivel_antes_db": -31.74,
+   "nivel_antes_db": -24.03,
    "tomas": [
     {
      "archivo": "casa01/rem_apagado_abajo_1.mp3"
@@ -6759,7 +6759,7 @@
    ]
   },
   "rem_apagado_arriba": {
-   "nivel_antes_db": -24.03,
+   "nivel_antes_db": -31.74,
    "tomas": [
     {
      "archivo": "casa01/rem_apagado_arriba_1.mp3"
@@ -6779,7 +6779,7 @@
    ]
   },
   "solm_apagado_abajo": {
-   "nivel_antes_db": -32.86,
+   "nivel_antes_db": -28.54,
    "tomas": [
     {
      "archivo": "casa01/solm_apagado_abajo_1.mp3"
@@ -6799,7 +6799,7 @@
    ]
   },
   "solm_apagado_arriba": {
-   "nivel_antes_db": -28.54,
+   "nivel_antes_db": -32.86,
    "tomas": [
     {
      "archivo": "casa01/solm_apagado_arriba_1.mp3"
@@ -6819,7 +6819,7 @@
    ]
   },
   "si_apagado_abajo": {
-   "nivel_antes_db": -30.59,
+   "nivel_antes_db": -27.53,
    "tomas": [
     {
      "archivo": "casa01/si_apagado_abajo_1.mp3"
@@ -6839,7 +6839,7 @@
    ]
   },
   "si_apagado_arriba": {
-   "nivel_antes_db": -27.53,
+   "nivel_antes_db": -30.59,
    "tomas": [
     {
      "archivo": "casa01/si_apagado_arriba_1.mp3"
@@ -6859,7 +6859,7 @@
    ]
   },
   "mi_apagado_abajo": {
-   "nivel_antes_db": -31.44,
+   "nivel_antes_db": -30.01,
    "tomas": [
     {
      "archivo": "casa01/mi_apagado_abajo_1.mp3"
@@ -6879,7 +6879,7 @@
    ]
   },
   "mi_apagado_arriba": {
-   "nivel_antes_db": -30.01,
+   "nivel_antes_db": -31.44,
    "tomas": [
     {
      "archivo": "casa01/mi_apagado_arriba_1.mp3"
@@ -6899,7 +6899,7 @@
    ]
   },
   "si7_apagado_abajo": {
-   "nivel_antes_db": -30.49,
+   "nivel_antes_db": -24.58,
    "tomas": [
     {
      "archivo": "casa01/si7_apagado_abajo_1.mp3"
@@ -6919,7 +6919,7 @@
    ]
   },
   "si7_apagado_arriba": {
-   "nivel_antes_db": -24.58,
+   "nivel_antes_db": -30.49,
    "tomas": [
     {
      "archivo": "casa01/si7_apagado_arriba_1.mp3"
@@ -6939,7 +6939,7 @@
    ]
   },
   "la_apagado_abajo": {
-   "nivel_antes_db": -30.57,
+   "nivel_antes_db": -23.82,
    "tomas": [
     {
      "archivo": "casa01/la_apagado_abajo_1.mp3"
@@ -6959,7 +6959,7 @@
    ]
   },
   "la_apagado_arriba": {
-   "nivel_antes_db": -23.82,
+   "nivel_antes_db": -30.57,
    "tomas": [
     {
      "archivo": "casa01/la_apagado_arriba_1.mp3"
@@ -6979,7 +6979,7 @@
    ]
   },
   "lam_apagado_abajo": {
-   "nivel_antes_db": -30.96,
+   "nivel_antes_db": -23.68,
    "tomas": [
     {
      "archivo": "casa01/lam_apagado_abajo_1.mp3"
@@ -6999,7 +6999,7 @@
    ]
   },
   "lam_apagado_arriba": {
-   "nivel_antes_db": -23.68,
+   "nivel_antes_db": -30.96,
    "tomas": [
     {
      "archivo": "casa01/lam_apagado_arriba_1.mp3"
@@ -7019,7 +7019,7 @@
    ]
   },
   "do_apagado_abajo": {
-   "nivel_antes_db": -28.64,
+   "nivel_antes_db": -27.87,
    "tomas": [
     {
      "archivo": "casa01/do_apagado_abajo_1.mp3"
@@ -7039,7 +7039,7 @@
    ]
   },
   "do_apagado_arriba": {
-   "nivel_antes_db": -27.87,
+   "nivel_antes_db": -28.64,
    "tomas": [
     {
      "archivo": "casa01/do_apagado_arriba_1.mp3"
@@ -7059,7 +7059,7 @@
    ]
   },
   "re7_apagado_abajo": {
-   "nivel_antes_db": -25.76,
+   "nivel_antes_db": -21.11,
    "tomas": [
     {
      "archivo": "casa01/re7_apagado_abajo_1.mp3"
@@ -7079,7 +7079,7 @@
    ]
   },
   "re7_apagado_arriba": {
-   "nivel_antes_db": -21.11,
+   "nivel_antes_db": -25.76,
    "tomas": [
     {
      "archivo": "casa01/re7_apagado_arriba_1.mp3"
@@ -7099,7 +7099,7 @@
    ]
   },
   "dom_apagado_abajo": {
-   "nivel_antes_db": -28.79,
+   "nivel_antes_db": -27.65,
    "tomas": [
     {
      "archivo": "casa01/dom_apagado_abajo_1.mp3"
@@ -7119,7 +7119,7 @@
    ]
   },
   "dom_apagado_arriba": {
-   "nivel_antes_db": -27.65,
+   "nivel_antes_db": -28.79,
    "tomas": [
     {
      "archivo": "casa01/dom_apagado_arriba_1.mp3"
@@ -7139,7 +7139,7 @@
    ]
   },
   "mi7_apagado_abajo": {
-   "nivel_antes_db": -30.83,
+   "nivel_antes_db": -27.58,
    "tomas": [
     {
      "archivo": "casa01/mi7_apagado_abajo_1.mp3"
@@ -7159,7 +7159,7 @@
    ]
   },
   "mi7_apagado_arriba": {
-   "nivel_antes_db": -27.58,
+   "nivel_antes_db": -30.83,
    "tomas": [
     {
      "archivo": "casa01/mi7_apagado_arriba_1.mp3"
@@ -7179,7 +7179,7 @@
    ]
   },
   "fa_apagado_abajo": {
-   "nivel_antes_db": -30.31,
+   "nivel_antes_db": -24.63,
    "tomas": [
     {
      "archivo": "casa01/fa_apagado_abajo_1.mp3"
@@ -7199,7 +7199,7 @@
    ]
   },
   "fa_apagado_arriba": {
-   "nivel_antes_db": -24.63,
+   "nivel_antes_db": -30.31,
    "tomas": [
     {
      "archivo": "casa01/fa_apagado_arriba_1.mp3"
@@ -7219,7 +7219,7 @@
    ]
   },
   "sol7_apagado_abajo": {
-   "nivel_antes_db": -29.87,
+   "nivel_antes_db": -27.07,
    "tomas": [
     {
      "archivo": "casa01/sol7_apagado_abajo_1.mp3"
@@ -7239,7 +7239,7 @@
    ]
   },
   "sol7_apagado_arriba": {
-   "nivel_antes_db": -27.07,
+   "nivel_antes_db": -29.87,
    "tomas": [
     {
      "archivo": "casa01/sol7_apagado_arriba_1.mp3"
@@ -7259,7 +7259,7 @@
    ]
   },
   "fam_apagado_abajo": {
-   "nivel_antes_db": -29.41,
+   "nivel_antes_db": -29.01,
    "tomas": [
     {
      "archivo": "casa01/fam_apagado_abajo_1.mp3"
@@ -7279,7 +7279,7 @@
    ]
   },
   "fam_apagado_arriba": {
-   "nivel_antes_db": -29.01,
+   "nivel_antes_db": -29.41,
    "tomas": [
     {
      "archivo": "casa01/fam_apagado_arriba_1.mp3"
