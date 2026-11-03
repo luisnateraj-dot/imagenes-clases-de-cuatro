@@ -54,3 +54,4 @@ Bajo de los ritmos del Generador (pasaje y joropo corrío; `contexto/15_Bajo_lla
   - se niveló: RMS de 10 a 210 ms tras el comienzo = −20 dB (`nivel_rms_db`).
 - **`contrabajo/indice.json`:** claves = número MIDI (Do4 = 60), con `nota`, `archivo`, `cuerda` y `cents_corregidos`, más `rango` y `nivel_rms_db`. El motor mide el ataque al cargar.
 - **Script:** `pruebas/contrabajo_notas.py` (en el proyecto del CEM).
+- **`contrabajo/reglas.json`:** los parámetros del bajo (`parametros`), que usa la pieza `MotorBajo` del CEM: nivel, duraciones, nota de paso, V7 en la quinta, partío y cruzao alternados con la base (`variacion_si` / `variacion_no`) y cierre. Cada ritmo dice su `bajo` en `ritmos/ritmos.json`.

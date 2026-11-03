@@ -1,5 +1,5 @@
 {
- "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos. Resto tras el chasquido por ritmo (31-oct-2026): un ritmo puede traer «resto» ({db, tau_s, …}) que sustituye los campos de fundidos.resto; db null = sin resto. Apagado y corte (1-nov-2026): «(X)» = apagado (los dedos medio, anular y meñique se posan sobre las cuerdas): no tiene toma, solo apaga el acorde que suena con la caída de fundidos.apagado. «corte» (en el ritmo o en una variante) = el compás que toca el botón «Cortar»: media frase y un golpe que corta en el tiempo 3; luego, silencio. Abanico y estilo romántico (1-nov-2026): «ab» = abanico (tomas <acorde>_abanico, alineadas por su cenit; si no hay, el bloque suave). gaita_romantica = gaita de furro, estilo romántico (semichasquidos, sin variantes); variante «rincon_morales» de la gaita de furro: abanico ↑ ✕↓ ✕↑ ↓ ↑, chasquidos suaves. Antes del abanico (1-nov-2026): una forma con «antes_abanico_s» apaga el golpe anterior al abanico a ese tiempo de su ataque (a escala del tempo, como T), con la caída de «fundidos.apagado» (Rincón Morales: 0,075 s, elegido de oído por Luis). Catálogo (1-nov-2026, noche): «catalogo» = grupos (principiante, intermedio, avanzado, foraneos) con sus familias en orden; cada familia = una ficha del Generador, con sus estilos (ritmos de ritmos.json) como botones; los foráneos traen su «nivel». Una familia con estilos de dos niveles (el merengue) va en los dos, con los estilos de cada nivel. Cada ritmo va en una sola familia. Rincón Morales: estilo de la gaita de furro (ritmo «gaita_rincon_morales»), ya no variante (Luis, 1-nov-2026). Orden de las fichas en cada grupo: el de Luis (1-nov-2026, noche). Mnemotecnia (1-nov-2026, noche): «mnemotecnia» = una sílaba por golpe del patrón, la que se dice en Venezuela para recordarlo (tonada: Chi-quin-qui-rá; merengue a 5: to-ca-me-ren-gue; Luis). Se imprime bajo la cuenta, en los dos idiomas igual. Ligaduras sin cambio de acorde (1-nov-2026, noche): «liga» = golpes que siguen sonando sobre la barra (ligadura hacia el compás siguiente) sin tocar su acorde; con «ligada», el compás empieza con su cabeza gris. Solo para la partitura: el sonido ya sigue hasta el golpe siguiente. Merengue oriental (2-nov-2026): estilo del merengue de 5/8 (✕↓ ↑ ↓ ✕↑ ↓↑, la forma «sigue» del repique), con el abanico en la última corchea (ab ↑, centro 25 ms después de la semicorchea, +3 dB; el ↑ a su nivel; «abanico_fin_s» 0,04: el abanico empieza a apagarse 40 ms después de su punto más fuerte, a escala con el tempo; Luis, muestra n.º 6) cada 1, 2 o 4 compases o siempre: variantes y «sigue» en ciclo, en el que {} es el compás del estilo, sin cambios. Ejes (2-nov-2026, merengue oriental): «ejes» = ajustes independientes del ritmo, cada uno con id, es/en, valores (id, es/en), defecto y, si es un botón de sí/no, tipo «interruptor»; cada variante dice en «ejes» los valores que toma (los que no dice, el defecto) y el Generador toca la variante de la combinación elegida (la de todos los defectos es el ritmo, sin variante). Repique: Sí / No (sin repique, la última corchea es un ↓, con los tiempos y niveles del «Merengue chasquido abajo»; con abanico, siempre abanico y ↑, Luis) y Abanico: No · Cada 1 · Cada 2 · Cada 4 · Siempre. Jota carupanera (3-nov-2026): apagado abajo «(X↓)» (el pulgar se posa; el apagado arriba sigue siendo «(X)»); los dos apagados usan la toma grabada del acorde que se apaga (indice.json) y, sin ella, la caída de fundidos.apagado_arriba (la «vertical» que aprobó Luis, −13 dB en 12 ms y τ = 35 ms; fundidos.apagado queda para el golpe que se apaga antes de un abanico) o fundidos.apagado_abajo (la «marcada»: −20 dB en 50 ms y τ = 30 ms); fundidos.apagado_toma: cruce (corte de la nota y entrada de la toma), ventana del nivel de la nota antes del apagado y salida de la toma. «final» = la forma del último compás antes del cierre (la jota: ✕↓ en el tiempo 3 y bloque suave ⇓ en el 4; el cierre, un bloque fuerte, re_bloque_fuerte, que usa el bloque que exista mientras no haya tomas del fuerte).",
+ "_formato": "Datos del motor de ritmos (28-oct-2026). Tiempo de cada golpe: t = inicio_compás + posición·div + T·(div/div_grabado) + sesgo + azar N(0, min(desv/2, 6 ms)), con div = 60/(tempo·figura_por_tempo). Ganancia: gdb − pico_db de la toma + azar N(0; 0,7 dB). Regla de fundidos y del chasquido en «fundidos». nivel: sonoridad del ritmo generado (8 compases, tempo grabado) y RMS de 4 compases, en la escala de las tomas, para igualar ritmos y metrónomo. Variantes de forma (29-oct-2026): «variantes» de un ritmo = {id: {es, en, nivel, entrada?, sigue, salida?}}; cada forma de compás sustituye los campos que trae (patron, posiciones, duraciones, barras, T, sesgo, gdb, desv_ms). «entrada» es el primer compás con la variante, «sigue» los siguientes y «salida» el compás obligado al quitarla. adelanta: índices de los golpes que tocan ya el acorde del compás siguiente; ligada: el compás empieza con el golpe adelantado del anterior sonando (cabeza gris ligada en la partitura). Niveles del chasquido (29-oct-2026): «chasquidos» = {suave, fuerte: {db, brillo_db, hz}} (normal = sin cambio); una forma con «chq» los aplica a todos sus chasquidos. «ligada» lleva el símbolo del golpe ligado (↓ o ⇓). «chq» también puede ir en el ritmo (todas sus formas). Grupo 1 (29-oct-2026, noche): «sigue» puede ser una lista de formas que se alternan compás a compás (ciclo, como el brincaíto); un hueco entre golpes tras un chasquido es silencio (en la partitura, silencio de corchea). ⇓ = bloque suave (3 dedos); ⇓+ = bloque fuerte (4 dedos). Semichasquidos: s✕↓ y s✕↑ (hasta grabar sus tomas, suenan como chasquidos). Una forma vacía ({}) en un ciclo es el compás del ritmo. Látigo arriba (31-oct-2026, tarde): «l↑» = pulgar hacia arriba con energía, sin llegar a la La, con efecto de látigo en la Si; usa <acorde>_latigo_arriba (si no hay, el ↑ normal). Va en la 4.ª corchea de los merengues básicos. Resto tras el chasquido por ritmo (31-oct-2026): un ritmo puede traer «resto» ({db, tau_s, …}) que sustituye los campos de fundidos.resto; db null = sin resto. Apagado y corte (1-nov-2026): «(X)» = apagado (los dedos medio, anular y meñique se posan sobre las cuerdas): no tiene toma, solo apaga el acorde que suena con la caída de fundidos.apagado. «corte» (en el ritmo o en una variante) = el compás que toca el botón «Cortar»: media frase y un golpe que corta en el tiempo 3; luego, silencio. Abanico y estilo romántico (1-nov-2026): «ab» = abanico (tomas <acorde>_abanico, alineadas por su cenit; si no hay, el bloque suave). gaita_romantica = gaita de furro, estilo romántico (semichasquidos, sin variantes); variante «rincon_morales» de la gaita de furro: abanico ↑ ✕↓ ✕↑ ↓ ↑, chasquidos suaves. Antes del abanico (1-nov-2026): una forma con «antes_abanico_s» apaga el golpe anterior al abanico a ese tiempo de su ataque (a escala del tempo, como T), con la caída de «fundidos.apagado» (Rincón Morales: 0,075 s, elegido de oído por Luis). Catálogo (1-nov-2026, noche): «catalogo» = grupos (principiante, intermedio, avanzado, foraneos) con sus familias en orden; cada familia = una ficha del Generador, con sus estilos (ritmos de ritmos.json) como botones; los foráneos traen su «nivel». Una familia con estilos de dos niveles (el merengue) va en los dos, con los estilos de cada nivel. Cada ritmo va en una sola familia. Rincón Morales: estilo de la gaita de furro (ritmo «gaita_rincon_morales»), ya no variante (Luis, 1-nov-2026). Orden de las fichas en cada grupo: el de Luis (1-nov-2026, noche). Mnemotecnia (1-nov-2026, noche): «mnemotecnia» = una sílaba por golpe del patrón, la que se dice en Venezuela para recordarlo (tonada: Chi-quin-qui-rá; merengue a 5: to-ca-me-ren-gue; Luis). Se imprime bajo la cuenta, en los dos idiomas igual. Ligaduras sin cambio de acorde (1-nov-2026, noche): «liga» = golpes que siguen sonando sobre la barra (ligadura hacia el compás siguiente) sin tocar su acorde; con «ligada», el compás empieza con su cabeza gris. Solo para la partitura: el sonido ya sigue hasta el golpe siguiente. Merengue oriental (2-nov-2026): estilo del merengue de 5/8 (✕↓ ↑ ↓ ✕↑ ↓↑, la forma «sigue» del repique), con el abanico en la última corchea (ab ↑, centro 25 ms después de la semicorchea, +3 dB; el ↑ a su nivel; «abanico_fin_s» 0,04: el abanico empieza a apagarse 40 ms después de su punto más fuerte, a escala con el tempo; Luis, muestra n.º 6) cada 1, 2 o 4 compases o siempre: variantes y «sigue» en ciclo, en el que {} es el compás del estilo, sin cambios. Ejes (2-nov-2026, merengue oriental): «ejes» = ajustes independientes del ritmo, cada uno con id, es/en, valores (id, es/en), defecto y, si es un botón de sí/no, tipo «interruptor»; cada variante dice en «ejes» los valores que toma (los que no dice, el defecto) y el Generador toca la variante de la combinación elegida (la de todos los defectos es el ritmo, sin variante). Repique: Sí / No (sin repique, la última corchea es un ↓, con los tiempos y niveles del «Merengue chasquido abajo»; con abanico, siempre abanico y ↑, Luis) y Abanico: No · Cada 1 · Cada 2 · Cada 4 · Siempre. Jota carupanera (3-nov-2026): apagado abajo «(X↓)» (el pulgar se posa; el apagado arriba sigue siendo «(X)»); los dos apagados usan la toma grabada del acorde que se apaga (indice.json) y, sin ella, la caída de fundidos.apagado_arriba (la «vertical» que aprobó Luis, −13 dB en 12 ms y τ = 35 ms; fundidos.apagado queda para el golpe que se apaga antes de un abanico) o fundidos.apagado_abajo (la «marcada»: −20 dB en 50 ms y τ = 30 ms); fundidos.apagado_toma: cruce (corte de la nota y entrada de la toma), ventana del nivel de la nota antes del apagado y salida de la toma. «final» = la forma del último compás antes del cierre (la jota: ✕↓ en el tiempo 3 y bloque suave ⇓ en el 4; el cierre, un bloque fuerte, re_bloque_fuerte, que usa el bloque que exista mientras no haya tomas del fuerte). Repique alternado (3-nov-2026): una variante con «sitio» suena su forma «sigue» solo en algunos compases: «alterno» = 1 sí, 1 no (desde que se activa); «vuelta» = el último compás de cada vuelta de la progresión (con un solo acorde, cada 4 compases); «repetido» = el primer compás de un acorde que dura dos o más (sin acordes repetidos, como «vuelta»). Los demás compases son los del ritmo.",
  "fundidos": {
   "rasgueo": {
    "ataque_s": 0.0,
@@ -3802,9 +3802,162 @@
    "chq": "suave",
    "variantes": {
     "repique": {
-     "es": "Repique",
-     "en": "Repique",
+     "es": "Repique 1 sí, 1 no",
+     "en": "Repique every other bar",
      "nivel": "intermedio",
+     "sitio": "alterno",
+     "sigue": {
+      "patron": [
+       "↓",
+       "↓",
+       "↑",
+       "↓",
+       "↑",
+       "↓",
+       "✕↑"
+      ],
+      "posiciones": [
+       0,
+       2,
+       2.5,
+       3,
+       3.5,
+       4,
+       5
+      ],
+      "duraciones": [
+       2,
+       0.5,
+       0.5,
+       0.5,
+       0.5,
+       1,
+       1
+      ],
+      "barras": [
+       1,
+       4,
+       2
+      ],
+      "T": [
+       0.00045,
+       0.008,
+       0.008,
+       -0.00602,
+       -0.008,
+       0.00134,
+       0.0028
+      ],
+      "sesgo": [
+       -0.00336,
+       0,
+       0,
+       0,
+       0,
+       -0.00559,
+       -3e-05
+      ],
+      "gdb": [
+       -7.443,
+       -7.416,
+       -11.323,
+       -10.428,
+       -12.169,
+       -8.595,
+       -13.097
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_vuelta": {
+     "es": "Repique una vez por vuelta",
+     "en": "Repique once per round",
+     "nivel": "intermedio",
+     "sitio": "vuelta",
+     "sigue": {
+      "patron": [
+       "↓",
+       "↓",
+       "↑",
+       "↓",
+       "↑",
+       "↓",
+       "✕↑"
+      ],
+      "posiciones": [
+       0,
+       2,
+       2.5,
+       3,
+       3.5,
+       4,
+       5
+      ],
+      "duraciones": [
+       2,
+       0.5,
+       0.5,
+       0.5,
+       0.5,
+       1,
+       1
+      ],
+      "barras": [
+       1,
+       4,
+       2
+      ],
+      "T": [
+       0.00045,
+       0.008,
+       0.008,
+       -0.00602,
+       -0.008,
+       0.00134,
+       0.0028
+      ],
+      "sesgo": [
+       -0.00336,
+       0,
+       0,
+       0,
+       0,
+       -0.00559,
+       -3e-05
+      ],
+      "gdb": [
+       -7.443,
+       -7.416,
+       -11.323,
+       -10.428,
+       -12.169,
+       -8.595,
+       -13.097
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_repetido": {
+     "es": "Repique en el acorde repetido",
+     "en": "Repique on the repeated chord",
+     "nivel": "intermedio",
+     "sitio": "repetido",
      "sigue": {
       "patron": [
        "↓",
@@ -4119,9 +4272,162 @@
    "chq": null,
    "variantes": {
     "repique": {
-     "es": "Repique",
-     "en": "Repique",
+     "es": "Repique 1 sí, 1 no",
+     "en": "Repique every other bar",
      "nivel": "intermedio",
+     "sitio": "alterno",
+     "sigue": {
+      "patron": [
+       "↓",
+       "↓",
+       "↑",
+       "↓",
+       "↑",
+       "↓",
+       "✕↑"
+      ],
+      "posiciones": [
+       0,
+       2,
+       2.5,
+       3,
+       3.5,
+       4,
+       5
+      ],
+      "duraciones": [
+       2,
+       0.5,
+       0.5,
+       0.5,
+       0.5,
+       1,
+       1
+      ],
+      "barras": [
+       1,
+       4,
+       2
+      ],
+      "T": [
+       -0.0016,
+       0.00154,
+       -0.00619,
+       -0.00767,
+       -0.01065,
+       0.00786,
+       0.01653
+      ],
+      "sesgo": [
+       -0.00336,
+       0,
+       0,
+       0,
+       0,
+       -0.00559,
+       -3e-05
+      ],
+      "gdb": [
+       -8.216,
+       -5.473,
+       -7.643,
+       -11.409,
+       -10.41,
+       -8.501,
+       -15.307
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_vuelta": {
+     "es": "Repique una vez por vuelta",
+     "en": "Repique once per round",
+     "nivel": "intermedio",
+     "sitio": "vuelta",
+     "sigue": {
+      "patron": [
+       "↓",
+       "↓",
+       "↑",
+       "↓",
+       "↑",
+       "↓",
+       "✕↑"
+      ],
+      "posiciones": [
+       0,
+       2,
+       2.5,
+       3,
+       3.5,
+       4,
+       5
+      ],
+      "duraciones": [
+       2,
+       0.5,
+       0.5,
+       0.5,
+       0.5,
+       1,
+       1
+      ],
+      "barras": [
+       1,
+       4,
+       2
+      ],
+      "T": [
+       -0.0016,
+       0.00154,
+       -0.00619,
+       -0.00767,
+       -0.01065,
+       0.00786,
+       0.01653
+      ],
+      "sesgo": [
+       -0.00336,
+       0,
+       0,
+       0,
+       0,
+       -0.00559,
+       -3e-05
+      ],
+      "gdb": [
+       -8.216,
+       -5.473,
+       -7.643,
+       -11.409,
+       -10.41,
+       -8.501,
+       -15.307
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_repetido": {
+     "es": "Repique en el acorde repetido",
+     "en": "Repique on the repeated chord",
+     "nivel": "intermedio",
+     "sitio": "repetido",
      "sigue": {
       "patron": [
        "↓",
@@ -4331,9 +4637,176 @@
    "chq": "fuerte",
    "variantes": {
     "repique": {
-     "es": "Repique",
-     "en": "Repique",
+     "es": "Repique 1 sí, 1 no",
+     "en": "Repique every other bar",
      "nivel": "intermedio",
+     "sitio": "alterno",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓",
+       "↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       4.5,
+       5,
+       5.5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1,
+       0.5,
+       0.5,
+       0.5,
+       0.5
+      ],
+      "barras": [
+       2,
+       2,
+       4
+      ],
+      "T": [
+       -0.00915,
+       0.02366,
+       -0.01022,
+       0.0129,
+       0.00169,
+       -0.0006,
+       0.00723,
+       -0.01026
+      ],
+      "sesgo": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "gdb": [
+       -10.651,
+       -12.41,
+       -7.418,
+       -16.906,
+       -7.523,
+       -7.522,
+       -10.255,
+       -13.125
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_vuelta": {
+     "es": "Repique una vez por vuelta",
+     "en": "Repique once per round",
+     "nivel": "intermedio",
+     "sitio": "vuelta",
+     "sigue": {
+      "patron": [
+       "✕↓",
+       "↑",
+       "↓",
+       "✕↑",
+       "↓",
+       "↑",
+       "↓",
+       "↑"
+      ],
+      "posiciones": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       4.5,
+       5,
+       5.5
+      ],
+      "duraciones": [
+       1,
+       1,
+       1,
+       1,
+       0.5,
+       0.5,
+       0.5,
+       0.5
+      ],
+      "barras": [
+       2,
+       2,
+       4
+      ],
+      "T": [
+       -0.00915,
+       0.02366,
+       -0.01022,
+       0.0129,
+       0.00169,
+       -0.0006,
+       0.00723,
+       -0.01026
+      ],
+      "sesgo": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "gdb": [
+       -10.651,
+       -12.41,
+       -7.418,
+       -16.906,
+       -7.523,
+       -7.522,
+       -10.255,
+       -13.125
+      ],
+      "desv_ms": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "repique_repetido": {
+     "es": "Repique en el acorde repetido",
+     "en": "Repique on the repeated chord",
+     "nivel": "intermedio",
+     "sitio": "repetido",
      "sigue": {
       "patron": [
        "✕↓",
@@ -6678,23 +7151,5 @@
     }
    ]
   }
- ],
- "bajo": {
-  "_formato": "Bajo de contrabajo (3-nov-2026; contexto/15_Bajo_llanero.md). Un ritmo con «bajo» {sistema, tamboriao, separacion} lo lleva. nivel_db: RMS del bajo respecto del RMS del cuatro (nivel.rms_db). Duraciones en negras: uno_negras (tiempo 1), tres_negras (tiempo 3, picado), partio_negras, cruzao_negras; paso: probabilidad de nota de paso en el 3 antes de un cambio; octava: de la octava en vez de la quinta; v7_quinta: probabilidad de empezar el V7 en la quinta [primera vez, si el compás anterior fue el mismo V7 en la fundamental]; cierre_s: cuánto suena la nota del cierre; jitter_ms y gan_desv_db: el azar.",
-  "nivel_db": 1.0,
-  "jitter_ms": 4,
-  "gan_desv_db": 0.6,
-  "fundido_s": 0.03,
-  "uno_negras": 1.0,
-  "tres_negras": 0.5,
-  "paso": 0.5,
-  "octava": 0.15,
-  "v7_quinta": [
-   0.3,
-   0.5
-  ],
-  "partio_negras": 1.4,
-  "cruzao_negras": 1.9,
-  "cierre_s": 2.4
- }
+ ]
 }
