@@ -4614,7 +4614,22 @@
     "golpe": "re_abajo_normal",
     "cg": -6.907,
     "brillo_db": -2,
-    "desvio_s": -0.0274
+    "desvio_s": -0.0274,
+    "figura": {
+     "patron": [
+      "✕↓",
+      "↑"
+     ],
+     "posiciones": [
+      0,
+      1
+     ],
+     "gdb": [
+      -11.65,
+      -11.124
+     ],
+     "golpe": 2
+    }
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -4920,7 +4935,8 @@
     "sistema": "derecho",
     "tamboriao": 0.2,
     "separacion": 3,
-    "partio": 0.15
+    "partio": 0.15,
+    "cierre_negra": 1
    }
   },
   "bambuco": {
