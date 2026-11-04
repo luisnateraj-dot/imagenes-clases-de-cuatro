@@ -4138,7 +4138,8 @@
    "bajo": {
     "sistema": "corrio",
     "tamboriao": 0.08,
-    "separacion": 6
+    "separacion": 6,
+    "partio": 0.08
    }
   },
   "joropo": {
@@ -4503,7 +4504,8 @@
    "bajo": {
     "sistema": "corrio",
     "tamboriao": 0.2,
-    "separacion": 3
+    "separacion": 3,
+    "partio": 0.15
    }
   },
   "joropo_por_derecho": {
@@ -4885,6 +4887,12 @@
       ]
      }
     }
+   },
+   "bajo": {
+    "sistema": "derecho",
+    "tamboriao": 0.2,
+    "separacion": 3,
+    "partio": 0.15
    }
   },
   "bambuco": {
