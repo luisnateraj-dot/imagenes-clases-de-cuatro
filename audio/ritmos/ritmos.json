@@ -950,10 +950,31 @@
     3
    ],
    "cierre": {
-    "golpe": "re_abajo_normal",
-    "cg": -0.732,
+    "golpe": "re_bloque_suave",
+    "cg": -6,
     "brillo_db": 0,
-    "desvio_s": -0.0108
+    "desvio_s": 0,
+    "figura": {
+     "patron": [
+      "⇓",
+      "⇓",
+      "↓",
+      "↑"
+     ],
+     "posiciones": [
+      0,
+      2,
+      6,
+      7
+     ],
+     "gdb": [
+      -8,
+      -8,
+      -12,
+      -14
+     ],
+     "golpe": 8
+    }
    },
    "bloque_brillo_db": 0,
    "metronomo": {
@@ -1014,6 +1035,13 @@
    "nivel": {
     "lufs": -22.77,
     "rms_db": -21.84
+   },
+   "bajo": {
+    "sistema": "orquidea",
+    "negras": 4,
+    "tamboriao": 0,
+    "separacion": 99,
+    "paso": 0.35
    }
   },
   "skank": {
