@@ -5,7 +5,7 @@
   "jitter_ms": 4,
   "gan_desv_db": 0.6,
   "fundido_s": 0.03,
-  "uno_negras": 1.0,
+  "uno_negras": 1.5,
   "tres_negras": 0.5,
   "paso": 0.5,
   "octava": 0.15,
