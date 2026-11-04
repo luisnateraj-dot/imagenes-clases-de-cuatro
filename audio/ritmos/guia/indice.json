@@ -1,0 +1,119 @@
+{
+ "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo).",
+ "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba).",
+ "acentos_db": {
+  "uno": 0,
+  "tiempo": -4,
+  "otro": -8
+ },
+ "chasquido_db": -2,
+ "semichasquido_db": -4,
+ "clic": {
+  "sonido": "clave2_ff",
+  "db": -2
+ },
+ "golpes": {
+  "abajo": {
+   "alinear": "umbral",
+   "tomas": [
+    "abajo_1.mp3",
+    "abajo_2.mp3",
+    "abajo_3.mp3",
+    "abajo_4.mp3",
+    "abajo_5.mp3"
+   ]
+  },
+  "arriba": {
+   "alinear": "umbral",
+   "tomas": [
+    "arriba_1.mp3",
+    "arriba_2.mp3",
+    "arriba_3.mp3",
+    "arriba_4.mp3",
+    "arriba_5.mp3"
+   ]
+  },
+  "bloque_suave": {
+   "alinear": "umbral",
+   "tomas": [
+    "bloque_suave_1.mp3",
+    "bloque_suave_2.mp3",
+    "bloque_suave_3.mp3",
+    "bloque_suave_4.mp3",
+    "bloque_suave_5.mp3"
+   ]
+  },
+  "bloque_fuerte": {
+   "alinear": "umbral",
+   "tomas": [
+    "bloque_fuerte_1.mp3",
+    "bloque_fuerte_2.mp3",
+    "bloque_fuerte_3.mp3",
+    "bloque_fuerte_4.mp3"
+   ]
+  },
+  "latigo_arriba": {
+   "alinear": "umbral",
+   "tomas": [
+    "latigo_arriba_1.mp3",
+    "latigo_arriba_2.mp3",
+    "latigo_arriba_3.mp3",
+    "latigo_arriba_4.mp3",
+    "latigo_arriba_5.mp3"
+   ]
+  },
+  "abanico": {
+   "alinear": "llegada",
+   "desfase_s": 0.045,
+   "tomas": [
+    "abanico_1.mp3",
+    "abanico_2.mp3",
+    "abanico_3.mp3",
+    "abanico_4.mp3",
+    "abanico_5.mp3"
+   ]
+  },
+  "abanico_fino": {
+   "alinear": "llegada",
+   "desfase_s": 0.045,
+   "tomas": [
+    "abanico_fino_1.mp3",
+    "abanico_fino_2.mp3",
+    "abanico_fino_3.mp3",
+    "abanico_fino_4.mp3",
+    "abanico_fino_5.mp3"
+   ]
+  },
+  "abanico_reentrante": {
+   "alinear": "llegada",
+   "desfase_s": 0.045,
+   "tomas": [
+    "abanico_reentrante_1.mp3",
+    "abanico_reentrante_2.mp3",
+    "abanico_reentrante_3.mp3",
+    "abanico_reentrante_4.mp3",
+    "abanico_reentrante_5.mp3"
+   ]
+  },
+  "apagado_arriba": {
+   "alinear": "umbral",
+   "tomas": [
+    "apagado_arriba_1.mp3",
+    "apagado_arriba_2.mp3",
+    "apagado_arriba_3.mp3",
+    "apagado_arriba_4.mp3",
+    "apagado_arriba_5.mp3"
+   ]
+  },
+  "apagado_abajo": {
+   "alinear": "umbral",
+   "tomas": [
+    "apagado_abajo_1.mp3",
+    "apagado_abajo_2.mp3",
+    "apagado_abajo_3.mp3",
+    "apagado_abajo_4.mp3",
+    "apagado_abajo_5.mp3"
+   ]
+  }
+ }
+}
