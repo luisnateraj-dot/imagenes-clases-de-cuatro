@@ -2461,7 +2461,13 @@
     "me",
     "ren",
     "gue"
-   ]
+   ],
+   "bajo": {
+    "sistema": "merengue",
+    "negras": 5,
+    "tamboriao": 0,
+    "separacion": 99
+   }
   },
   "merengue_oriental": {
    "es": "Merengue oriental",
