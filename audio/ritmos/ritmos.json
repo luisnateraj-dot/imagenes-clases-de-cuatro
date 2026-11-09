@@ -164,7 +164,22 @@
     "quin",
     "qui",
     "rá"
-   ]
+   ],
+   "bajo": {
+    "sistema": "corrio",
+    "perfil": "tonada",
+    "tamboriao": 0.15,
+    "separacion": 8,
+    "partio": 0,
+    "solo_cambio": true,
+    "sube": 0.6,
+    "repite": 0.2,
+    "dur": {
+     "uno_negras": 1.95,
+     "tres_negras": 0.95,
+     "cruzao_negras": 1.9
+    }
+   }
   },
   "vals_criollo": {
    "es": "Vals criollo",
