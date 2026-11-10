@@ -825,7 +825,7 @@
    "compas": "4/4",
    "figura_tempo": "negra",
    "tempo": {
-    "min": 80,
+    "min": 60,
     "grabado": 100,
     "max": 125
    },
