@@ -5375,7 +5375,7 @@
    "compas": "6/8",
    "figura_tempo": "corchea",
    "tempo": {
-    "min": 280,
+    "min": 210,
     "grabado": 350,
     "max": 400
    },
@@ -5730,7 +5730,7 @@
    "compas": "6/8",
    "figura_tempo": "corchea",
    "tempo": {
-    "min": 250,
+    "min": 210,
     "grabado": 300,
     "max": 350
    },
@@ -5857,7 +5857,7 @@
    "compas": "6/8",
    "figura_tempo": "corchea",
    "tempo": {
-    "min": 280,
+    "min": 210,
     "grabado": 350,
     "max": 400
    },
