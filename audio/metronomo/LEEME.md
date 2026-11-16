@@ -25,3 +25,13 @@ University of Iowa Electronic Music Studios, *Musical Instrument Samples*, colec
   - `pico_dbfs`: el pico.
 
   Incluye además las reglas de uso (`uso`).
+
+## Sonidos de las pistas del Metrónomo inteligente (16-nov-2026)
+
+Carpeta **`vcsl/`** e índice **`instrumentos.json`** (aparte de `indice.json`, que carga entero `MotorRitmos`: así el Generador no los baja). Los usa el Metrónomo inteligente para sus cuatro pistas (`contexto/23`, §5.8.1 y §9).
+
+- **Origen y licencia:** *Versilian Community Sample Library* (VCSL), <https://github.com/sgossner/VCSL>, **CC0 1.0** (dominio público, sin pedir crédito).
+- **Instrumentos** (18 sonidos): claves (otras), woodblock, cencerro (abierto · apagado), cabasa (golpe · frotado), shaker (hacia abajo · hacia arriba · golpe seco), bombo (de batería · de orquesta), tambores de mano (tumba · conga · quinto · bongó), palmas y pandereta (golpe · sacudida).
+- **Archivos:** `vcsl/<instrumento>_<sonido>_<f|m|s>.mp3`, MP3 mono 44,1 kHz, 128 kbps; *f* = fuerte, *m* = medio, *s* = suave, ya con su nivel. El *f* de cada sonido está igualado con la clave 2 *ff*; *m* y *s* usan la capa dinámica de VCSL si la hay (su diferencia natural, entre −4 y −9 dB y entre −9 y −15 dB) o, si no, otra toma a −6 y −12 dB.
+- **`instrumentos.json`:** por instrumento, su nombre (es/en) y sus sonidos, cada uno con la letra de la casilla (es/en; vacía si el instrumento tiene un solo sonido), su nombre y, por nivel, `archivo`, `ataque_s`, `duracion_s` y `nivel_db`.
+- Los arma `muestras/construir_sonidos_metronomo.py` del repositorio `cem-codigo`, con la copia local de VCSL.
