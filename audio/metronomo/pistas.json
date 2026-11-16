@@ -1,0 +1,683 @@
+{
+ "_formato": "Metrónomo inteligente (contexto/23 §10): una pista = un sonido. pistas/<sonido>_<n>.mp3, MP3 mono 44,1 kHz, 128 kbps; niveles = las intensidades grabadas, de la más suave a la más fuerte (1 a 3), ya con su nivel. ataque_s = el golpe en el MP3 decodificado; nivel_db = RMS de los primeros 50 ms respecto de la clave 2 ff. Las claves 2 y 4 son las de indice.json (archivo sin carpeta).",
+ "origen": "Versilian Community Sample Library (VCSL), https://github.com/sgossner/VCSL — CC0 1.0. Claves 2 y 4: University of Iowa MIS, Hand Percussion (ver indice.json). Recortados, igualados y codificados por construir_sonidos_pistas.py (cem-codigo/muestras), 16-nov-2026.",
+ "grupos": {
+  "claves": {
+   "es": "Claves",
+   "en": "Claves"
+  },
+  "woodblock": {
+   "es": "Woodblock",
+   "en": "Woodblock"
+  },
+  "cencerro": {
+   "es": "Cencerro",
+   "en": "Cowbell"
+  },
+  "cabasa": {
+   "es": "Cabasa",
+   "en": "Cabasa"
+  },
+  "shaker": {
+   "es": "Shaker",
+   "en": "Shaker"
+  },
+  "bombo": {
+   "es": "Bombo",
+   "en": "Bass drum"
+  },
+  "tambores": {
+   "es": "Tambores de mano",
+   "en": "Hand drums"
+  },
+  "palmas": {
+   "es": "Palmas",
+   "en": "Hand claps"
+  },
+  "pandereta": {
+   "es": "Pandereta",
+   "en": "Tambourine"
+  }
+ },
+ "sonidos": {
+  "clave2": {
+   "grupo": "claves",
+   "nombre": {
+    "es": "Clave 2 (la de siempre)",
+    "en": "Clave 2 (the usual)"
+   },
+   "niveles": [
+    {
+     "archivo": "clave2_mf.mp3",
+     "ataque_s": 0.0054,
+     "duracion_s": 0.681,
+     "nivel_db": -6.8
+    },
+    {
+     "archivo": "clave2_ff.mp3",
+     "ataque_s": 0.0055,
+     "duracion_s": 0.571,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "clave4": {
+   "grupo": "claves",
+   "nombre": {
+    "es": "Clave 4 (más grave)",
+    "en": "Clave 4 (lower)"
+   },
+   "niveles": [
+    {
+     "archivo": "clave4_mf.mp3",
+     "ataque_s": 0.0053,
+     "duracion_s": 0.526,
+     "nivel_db": -9.7
+    },
+    {
+     "archivo": "clave4_ff.mp3",
+     "ataque_s": 0.0051,
+     "duracion_s": 0.945,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "claves_a": {
+   "grupo": "claves",
+   "nombre": {
+    "es": "Claves A",
+    "en": "Claves A"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/claves_a_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.339,
+     "nivel_db": -9.9
+    },
+    {
+     "archivo": "pistas/claves_a_2.mp3",
+     "ataque_s": 0.0032,
+     "duracion_s": 0.312,
+     "nivel_db": -3.0
+    },
+    {
+     "archivo": "pistas/claves_a_3.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.296,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "claves_b": {
+   "grupo": "claves",
+   "nombre": {
+    "es": "Claves B",
+    "en": "Claves B"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/claves_b_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.8,
+     "nivel_db": -18.0
+    },
+    {
+     "archivo": "pistas/claves_b_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.644,
+     "nivel_db": -7.5
+    },
+    {
+     "archivo": "pistas/claves_b_3.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.493,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "claves_c": {
+   "grupo": "claves",
+   "nombre": {
+    "es": "Claves C",
+    "en": "Claves C"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/claves_c_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.562,
+     "nivel_db": -15.8
+    },
+    {
+     "archivo": "pistas/claves_c_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.672,
+     "nivel_db": -3.0
+    },
+    {
+     "archivo": "pistas/claves_c_3.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.547,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "woodblock": {
+   "grupo": "woodblock",
+   "nombre": {
+    "es": "Woodblock",
+    "en": "Woodblock"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/woodblock_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.396,
+     "nivel_db": -16.0
+    },
+    {
+     "archivo": "pistas/woodblock_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.312,
+     "nivel_db": -3.0
+    },
+    {
+     "archivo": "pistas/woodblock_3.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.347,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "woodblock2": {
+   "grupo": "woodblock",
+   "nombre": {
+    "es": "Woodblock · otro golpe",
+    "en": "Woodblock · another hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/woodblock2_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.8,
+     "nivel_db": -0.0
+    }
+   ]
+  },
+  "woodblock3": {
+   "grupo": "woodblock",
+   "nombre": {
+    "es": "Woodblock · tercer golpe",
+    "en": "Woodblock · third hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/woodblock3_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.363,
+     "nivel_db": -6.3
+    },
+    {
+     "archivo": "pistas/woodblock3_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.335,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cencerro1_abierto": {
+   "grupo": "cencerro",
+   "nombre": {
+    "es": "Cencerro 1 · abierto",
+    "en": "Cowbell 1 · open"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cencerro1_abierto_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.564,
+     "nivel_db": -13.3
+    },
+    {
+     "archivo": "pistas/cencerro1_abierto_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.548,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cencerro1_apagado": {
+   "grupo": "cencerro",
+   "nombre": {
+    "es": "Cencerro 1 · apagado",
+    "en": "Cowbell 1 · muted"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cencerro1_apagado_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.47,
+     "nivel_db": -8.3
+    },
+    {
+     "archivo": "pistas/cencerro1_apagado_2.mp3",
+     "ataque_s": 0.0031,
+     "duracion_s": 0.464,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cencerro2_abierto": {
+   "grupo": "cencerro",
+   "nombre": {
+    "es": "Cencerro 2 · abierto",
+    "en": "Cowbell 2 · open"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cencerro2_abierto_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.505,
+     "nivel_db": -9.7
+    },
+    {
+     "archivo": "pistas/cencerro2_abierto_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.493,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cencerro2_apagado": {
+   "grupo": "cencerro",
+   "nombre": {
+    "es": "Cencerro 2 · apagado",
+    "en": "Cowbell 2 · muted"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cencerro2_apagado_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.477,
+     "nivel_db": -12.9
+    },
+    {
+     "archivo": "pistas/cencerro2_apagado_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.442,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cabasa_golpe": {
+   "grupo": "cabasa",
+   "nombre": {
+    "es": "Cabasa · golpe",
+    "en": "Cabasa · hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cabasa_golpe_1.mp3",
+     "ataque_s": 0.0007,
+     "duracion_s": 0.328,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "cabasa_frotado": {
+   "grupo": "cabasa",
+   "nombre": {
+    "es": "Cabasa · frotado",
+    "en": "Cabasa · rub"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/cabasa_frotado_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.8,
+     "nivel_db": -11.5
+    },
+    {
+     "archivo": "pistas/cabasa_frotado_2.mp3",
+     "ataque_s": 0.0032,
+     "duracion_s": 0.486,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "shaker_abajo": {
+   "grupo": "shaker",
+   "nombre": {
+    "es": "Shaker pequeño · hacia abajo",
+    "en": "Small shaker · down"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/shaker_abajo_1.mp3",
+     "ataque_s": 0.0019,
+     "duracion_s": 0.179,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "shaker_arriba": {
+   "grupo": "shaker",
+   "nombre": {
+    "es": "Shaker pequeño · hacia arriba",
+    "en": "Small shaker · up"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/shaker_arriba_1.mp3",
+     "ataque_s": 0.0029,
+     "duracion_s": 0.174,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "shaker_seco": {
+   "grupo": "shaker",
+   "nombre": {
+    "es": "Shaker pequeño · golpe seco",
+    "en": "Small shaker · slap"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/shaker_seco_1.mp3",
+     "ataque_s": 0.0027,
+     "duracion_s": 0.674,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "shakerg_golpe": {
+   "grupo": "shaker",
+   "nombre": {
+    "es": "Shaker grande · golpe",
+    "en": "Large shaker · hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/shakerg_golpe_1.mp3",
+     "ataque_s": 0.0037,
+     "duracion_s": 0.461,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "shakerg_sacudida": {
+   "grupo": "shaker",
+   "nombre": {
+    "es": "Shaker grande · sacudida",
+    "en": "Large shaker · shake"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/shakerg_sacudida_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.768,
+     "nivel_db": -1.6
+    }
+   ]
+  },
+  "bombo_bateria": {
+   "grupo": "bombo",
+   "nombre": {
+    "es": "Bombo de batería",
+    "en": "Kick drum"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/bombo_bateria_1.mp3",
+     "ataque_s": 0.001,
+     "duracion_s": 1.345,
+     "nivel_db": -11.4
+    },
+    {
+     "archivo": "pistas/bombo_bateria_2.mp3",
+     "ataque_s": 0.0007,
+     "duracion_s": 1.4,
+     "nivel_db": -4.8
+    },
+    {
+     "archivo": "pistas/bombo_bateria_3.mp3",
+     "ataque_s": 0.0008,
+     "duracion_s": 1.4,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "bombo_orquesta": {
+   "grupo": "bombo",
+   "nombre": {
+    "es": "Bombo de orquesta",
+    "en": "Concert bass drum"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/bombo_orquesta_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 1.4,
+     "nivel_db": -11.3
+    },
+    {
+     "archivo": "pistas/bombo_orquesta_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 1.4,
+     "nivel_db": -3.9
+    },
+    {
+     "archivo": "pistas/bombo_orquesta_3.mp3",
+     "ataque_s": 0.0026,
+     "duracion_s": 1.4,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "tumba": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Tumba",
+    "en": "Tumba"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/tumba_1.mp3",
+     "ataque_s": 0.0007,
+     "duracion_s": 0.642,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "conga": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Conga · abierto",
+    "en": "Conga · open"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/conga_1.mp3",
+     "ataque_s": 0.0003,
+     "duracion_s": 0.61,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "conga_apagada": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Conga · apagado",
+    "en": "Conga · muted"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/conga_apagada_1.mp3",
+     "ataque_s": 0.0006,
+     "duracion_s": 0.734,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "quinto": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Quinto",
+    "en": "Quinto"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/quinto_1.mp3",
+     "ataque_s": 0.0009,
+     "duracion_s": 0.646,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "bongo_grave": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Bongó grave",
+    "en": "Low bongo"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/bongo_grave_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.627,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "bongo_agudo": {
+   "grupo": "tambores",
+   "nombre": {
+    "es": "Bongó agudo",
+    "en": "High bongo"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/bongo_agudo_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.576,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "palmas": {
+   "grupo": "palmas",
+   "nombre": {
+    "es": "Palmas (varias)",
+    "en": "Claps (group)"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/palmas_1.mp3",
+     "ataque_s": 0.0015,
+     "duracion_s": 0.325,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "palma": {
+   "grupo": "palmas",
+   "nombre": {
+    "es": "Una palma",
+    "en": "Single clap"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/palma_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.157,
+     "nivel_db": -8.9
+    },
+    {
+     "archivo": "pistas/palma_2.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.164,
+     "nivel_db": -5.5
+    },
+    {
+     "archivo": "pistas/palma_3.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.164,
+     "nivel_db": -1.7
+    }
+   ]
+  },
+  "pandereta1_golpe": {
+   "grupo": "pandereta",
+   "nombre": {
+    "es": "Pandereta 1 · golpe",
+    "en": "Tambourine 1 · hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/pandereta1_golpe_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.9,
+     "nivel_db": -13.9
+    },
+    {
+     "archivo": "pistas/pandereta1_golpe_2.mp3",
+     "ataque_s": 0.0021,
+     "duracion_s": 0.683,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "pandereta1_sacudida": {
+   "grupo": "pandereta",
+   "nombre": {
+    "es": "Pandereta 1 · sacudida",
+    "en": "Tambourine 1 · shake"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/pandereta1_sacudida_1.mp3",
+     "ataque_s": 0.0029,
+     "duracion_s": 0.515,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "pandereta2_golpe": {
+   "grupo": "pandereta",
+   "nombre": {
+    "es": "Pandereta 2 · golpe",
+    "en": "Tambourine 2 · hit"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/pandereta2_golpe_1.mp3",
+     "ataque_s": 0.003,
+     "duracion_s": 0.8,
+     "nivel_db": -11.9
+    },
+    {
+     "archivo": "pistas/pandereta2_golpe_2.mp3",
+     "ataque_s": 0.0017,
+     "duracion_s": 0.441,
+     "nivel_db": 0.0
+    }
+   ]
+  },
+  "pandereta2_sacudida": {
+   "grupo": "pandereta",
+   "nombre": {
+    "es": "Pandereta 2 · sacudida",
+    "en": "Tambourine 2 · shake"
+   },
+   "niveles": [
+    {
+     "archivo": "pistas/pandereta2_sacudida_1.mp3",
+     "ataque_s": 0.0031,
+     "duracion_s": 0.454,
+     "nivel_db": -14.6
+    }
+   ]
+  }
+ }
+}

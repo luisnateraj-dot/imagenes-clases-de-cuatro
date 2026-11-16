@@ -35,3 +35,12 @@ Carpeta **`vcsl/`** e índice **`instrumentos.json`** (aparte de `indice.json`, 
 - **Archivos:** `vcsl/<instrumento>_<sonido>_<f|m|s>.mp3`, MP3 mono 44,1 kHz, 128 kbps; *f* = fuerte, *m* = medio, *s* = suave, ya con su nivel. El *f* de cada sonido está igualado con la clave 2 *ff*; *m* y *s* usan la capa dinámica de VCSL si la hay (su diferencia natural, entre −4 y −9 dB y entre −9 y −15 dB) o, si no, otra toma a −6 y −12 dB.
 - **`instrumentos.json`:** por instrumento, su nombre (es/en) y sus sonidos, cada uno con la letra de la casilla (es/en; vacía si el instrumento tiene un solo sonido), su nombre y, por nivel, `archivo`, `ataque_s`, `duracion_s` y `nivel_db`.
 - Los arma `muestras/construir_sonidos_metronomo.py` del repositorio `cem-codigo`, con la copia local de VCSL.
+
+## Una pista = un sonido (16-nov-2026, segunda tanda)
+
+Carpeta **`pistas/`** e índice **`pistas.json`**, para el Metrónomo inteligente después de la revisión del 16-nov-2026 (`contexto/23`, §10): **cada pista es un solo sonido** (un gesto de un instrumento: el cencerro 1 abierto, el cencerro 1 apagado…) y las secciones de una casilla son **sus intensidades reales**.
+
+- 33 sonidos en 9 grupos: claves (la 2 y la 4 de Iowa, que son las de arriba, sin copiar; y tres pares de VCSL), woodblock (3), cencerro (2 cencerros, abierto y apagado), cabasa (golpe, frotado), shaker (pequeño: hacia abajo, hacia arriba, golpe seco; grande: golpe, sacudida), bombo (de batería, de orquesta), tambores de mano (tumba, conga abierta y apagada, quinto, bongó grave y agudo), palmas (varias, una) y pandereta (2 panderetas, golpe y sacudida).
+- `pistas/<sonido>_<n>.mp3`: n = 1 la intensidad más suave … la más fuerte (1, 2 o 3 capas, las que grabó VCSL; no se inventan con ganancia). La más fuerte, igualada con la clave 2 *ff*; las demás, con su diferencia natural (entre −3 y −18 dB).
+- `pistas.json`: los grupos (es/en) y, por sonido, su grupo, su nombre (es/en) y sus niveles (`archivo`, `ataque_s`, `duracion_s`, `nivel_db`).
+- Los arma `muestras/construir_sonidos_pistas.py` de `cem-codigo`. **`vcsl/` e `instrumentos.json` quedan** mientras esté instalada la versión anterior del Metrónomo; después se pueden borrar.
