@@ -1,6 +1,6 @@
 {
  "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo). Los apagados (17-nov-2026): «alinear: fijo» = el apagado está a «a_s» del comienzo; «db» = ganancia que se suma al tocar, para que conserven su diferencia natural con el abajo (se grabaron en otra sesión).",
- "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba). Apagados arriba y abajo: de la grabación del 17-nov-2026 (audio/metronomo/cuatro/, PR #70), cortados en el apagado mismo, sin el golpe de preparación; a su nivel real (Luis: el gesto se nota, aunque sea sutil).",
+ "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba). Apagados arriba y abajo: de la grabación del 17-nov-2026 (audio/metronomo/cuatro/, PR #70), cortados en el apagado mismo, sin el golpe de preparación; a su nivel real (Luis: el gesto se nota, aunque sea sutil). Redondo arriba (17-nov-2026): de la misma grabación, con el mismo «db».",
  "acentos_db": {
   "uno": 0,
   "tiempo": -4,
@@ -117,6 +117,18 @@
     "apagado_abajo_3.mp3",
     "apagado_abajo_4.mp3",
     "apagado_abajo_5.mp3"
+   ]
+  },
+  "arriba_redondo": {
+   "alinear": "fijo",
+   "a_s": 0.06,
+   "db": 3.3,
+   "tomas": [
+    "arriba_redondo_1.mp3",
+    "arriba_redondo_2.mp3",
+    "arriba_redondo_3.mp3",
+    "arriba_redondo_4.mp3",
+    "arriba_redondo_5.mp3"
    ]
   }
  }
