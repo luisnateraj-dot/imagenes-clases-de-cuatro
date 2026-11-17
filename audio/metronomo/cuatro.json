@@ -1,0 +1,512 @@
+{
+ "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su punto más fuerte + 45 ms; en el arpegio con el pulgar, la llegada a la tercera cuerda, la más aguda). «db» = ganancia que se suma al tocar (los apagados).",
+ "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados se grabaron con su golpe de preparación delante; el apagado es el segundo golpe de cada par, y es el que se cortó.",
+ "golpes": {
+  "abajo": {
+   "tomas": [
+    {
+     "f": "abajo_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "arriba": {
+   "tomas": [
+    {
+     "f": "arriba_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "bloque_suave": {
+   "tomas": [
+    {
+     "f": "bloque_suave_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_suave_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_suave_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_suave_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_suave_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "bloque_fuerte": {
+   "tomas": [
+    {
+     "f": "bloque_fuerte_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_fuerte_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_fuerte_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_fuerte_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "bloque_fuerte_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "latigo_arriba": {
+   "tomas": [
+    {
+     "f": "latigo_arriba_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "latigo_arriba_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "latigo_arriba_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "latigo_arriba_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "latigo_arriba_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "abanico": {
+   "tomas": [
+    {
+     "f": "abanico_1.mp3",
+     "a": 0.169
+    },
+    {
+     "f": "abanico_2.mp3",
+     "a": 0.112
+    },
+    {
+     "f": "abanico_3.mp3",
+     "a": 0.123
+    },
+    {
+     "f": "abanico_4.mp3",
+     "a": 0.13
+    },
+    {
+     "f": "abanico_5.mp3",
+     "a": 0.138
+    }
+   ]
+  },
+  "abanico_fino": {
+   "tomas": [
+    {
+     "f": "abanico_fino_1.mp3",
+     "a": 0.106
+    },
+    {
+     "f": "abanico_fino_2.mp3",
+     "a": 0.106
+    },
+    {
+     "f": "abanico_fino_3.mp3",
+     "a": 0.105
+    },
+    {
+     "f": "abanico_fino_4.mp3",
+     "a": 0.11
+    },
+    {
+     "f": "abanico_fino_5.mp3",
+     "a": 0.104
+    }
+   ]
+  },
+  "abanico_reentrante": {
+   "tomas": [
+    {
+     "f": "abanico_reentrante_1.mp3",
+     "a": 0.207
+    },
+    {
+     "f": "abanico_reentrante_2.mp3",
+     "a": 0.237
+    },
+    {
+     "f": "abanico_reentrante_3.mp3",
+     "a": 0.151
+    },
+    {
+     "f": "abanico_reentrante_4.mp3",
+     "a": 0.147
+    },
+    {
+     "f": "abanico_reentrante_5.mp3",
+     "a": 0.152
+    }
+   ]
+  },
+  "chasquido_abajo_suave": {
+   "tomas": [
+    {
+     "f": "chasquido_abajo_suave_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_suave_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_suave_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_suave_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_suave_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "chasquido_abajo": {
+   "tomas": [
+    {
+     "f": "chasquido_abajo_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "chasquido_abajo_fuerte": {
+   "tomas": [
+    {
+     "f": "chasquido_abajo_fuerte_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_fuerte_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_fuerte_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_fuerte_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_abajo_fuerte_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "chasquido_arriba_suave": {
+   "tomas": [
+    {
+     "f": "chasquido_arriba_suave_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_suave_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_suave_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_suave_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_suave_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "chasquido_arriba": {
+   "tomas": [
+    {
+     "f": "chasquido_arriba_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "chasquido_arriba_fuerte": {
+   "tomas": [
+    {
+     "f": "chasquido_arriba_fuerte_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_fuerte_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_fuerte_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_fuerte_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "chasquido_arriba_fuerte_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "apagado_abajo": {
+   "tomas": [
+    {
+     "f": "apagado_abajo_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_abajo_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_abajo_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_abajo_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_abajo_5.mp3",
+     "a": 0.06
+    }
+   ],
+   "db": 24
+  },
+  "apagado_arriba": {
+   "tomas": [
+    {
+     "f": "apagado_arriba_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_arriba_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_arriba_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_arriba_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "apagado_arriba_5.mp3",
+     "a": 0.06
+    }
+   ],
+   "db": 24
+  },
+  "abajo_redondo": {
+   "tomas": [
+    {
+     "f": "abajo_redondo_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_redondo_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_redondo_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_redondo_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "abajo_redondo_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "arriba_redondo": {
+   "tomas": [
+    {
+     "f": "arriba_redondo_1.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_redondo_2.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_redondo_3.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_redondo_4.mp3",
+     "a": 0.06
+    },
+    {
+     "f": "arriba_redondo_5.mp3",
+     "a": 0.06
+    }
+   ]
+  },
+  "arpegio_pulgar_lento": {
+   "tomas": [
+    {
+     "f": "arpegio_pulgar_lento_1.mp3",
+     "a": 0.1909
+    },
+    {
+     "f": "arpegio_pulgar_lento_2.mp3",
+     "a": 0.1953
+    },
+    {
+     "f": "arpegio_pulgar_lento_3.mp3",
+     "a": 0.175
+    },
+    {
+     "f": "arpegio_pulgar_lento_4.mp3",
+     "a": 0.1931
+    },
+    {
+     "f": "arpegio_pulgar_lento_5.mp3",
+     "a": 0.2236
+    }
+   ]
+  },
+  "arpegio_pulgar_medio": {
+   "tomas": [
+    {
+     "f": "arpegio_pulgar_medio_1.mp3",
+     "a": 0.1445
+    },
+    {
+     "f": "arpegio_pulgar_medio_2.mp3",
+     "a": 0.1467
+    },
+    {
+     "f": "arpegio_pulgar_medio_3.mp3",
+     "a": 0.1488
+    },
+    {
+     "f": "arpegio_pulgar_medio_4.mp3",
+     "a": 0.1416
+    },
+    {
+     "f": "arpegio_pulgar_medio_5.mp3",
+     "a": 0.1322
+    }
+   ]
+  },
+  "arpegio_pulgar_rapido": {
+   "tomas": [
+    {
+     "f": "arpegio_pulgar_rapido_1.mp3",
+     "a": 0.1155
+    },
+    {
+     "f": "arpegio_pulgar_rapido_2.mp3",
+     "a": 0.1147
+    },
+    {
+     "f": "arpegio_pulgar_rapido_3.mp3",
+     "a": 0.1147
+    },
+    {
+     "f": "arpegio_pulgar_rapido_4.mp3",
+     "a": 0.1205
+    },
+    {
+     "f": "arpegio_pulgar_rapido_5.mp3",
+     "a": 0.1205
+    }
+   ]
+  }
+ }
+}

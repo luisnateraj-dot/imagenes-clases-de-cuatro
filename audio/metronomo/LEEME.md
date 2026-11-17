@@ -44,3 +44,11 @@ Carpeta **`pistas/`** e índice **`pistas.json`**, para el Metrónomo inteligent
 - `pistas/<sonido>_<n>.mp3`: n = 1 la intensidad más suave … la más fuerte (1, 2 o 3 capas, las que grabó VCSL; no se inventan con ganancia). La más fuerte, igualada con la clave 2 *ff*; las demás, con su diferencia natural (entre −3 y −18 dB).
 - `pistas.json`: los grupos (es/en) y, por sonido, su grupo, su nombre (es/en) y sus niveles (`archivo`, `ataque_s`, `duracion_s`, `nivel_db`).
 - Los arma `muestras/construir_sonidos_pistas.py` de `cem-codigo`. **`vcsl/` e `instrumentos.json` quedan** mientras esté instalada la versión anterior del Metrónomo; después se pueden borrar.
+
+## El cuatro con las cuerdas apagadas (17-nov-2026)
+
+- `cuatro/<golpe>_<n>.mp3` y **`cuatro.json`**: los golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. Grabados por Luis Natera el 17-nov-2026 (`Golpes_apagados.wav`): 21 golpes o variantes, 5 tomas de cada uno (105). Abajo, arriba, golpe suave y fuerte, látigo arriba, abanico, abanico fino, abanico reentrante, chasquido abajo y arriba (suave, normal, fuerte), apagado abajo y arriba, redondo abajo y arriba, y arpegio con el pulgar (lento, medio, rápido).
+- MP3 mono 44,1 kHz, 192 kbps, **sin normalizar** (conservan su diferencia natural de nivel); cada toma empieza 60 ms antes del golpe.
+- En `cuatro.json`, cada toma lleva **`a`**, el punto que cae en el tiempo (en segundos desde el comienzo del archivo): el comienzo del golpe; en los abanicos, su punto más fuerte + 45 ms; en el arpegio con el pulgar, la llegada a la tercera cuerda, la más aguda (Luis, 17-nov). Los apagados llevan **`db`: 24**, la ganancia que se suma al tocar (son unos 30 dB más suaves que los demás golpes).
+- Los apagados se grabaron con un golpe de preparación delante; **el apagado es el segundo golpe de cada par** (Luis, 17-nov), y es el que se cortó.
+- Los arma `muestras/construir_sonidos_cuatro.py` del repositorio de código (después de `cortar_golpes_apagados.py` y `arpegio_tercera_cuerda.py`).
