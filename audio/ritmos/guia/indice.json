@@ -1,6 +1,6 @@
 {
- "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo). Los apagados (17-nov-2026): «alinear: fijo» = el apagado está a «a_s» del comienzo; «db» = ganancia que se suma al tocar, para que conserven su diferencia natural con el abajo (se grabaron en otra sesión).",
- "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba). Apagados arriba y abajo: de la grabación del 17-nov-2026 (audio/metronomo/cuatro/, PR #70), cortados en el apagado mismo, sin el golpe de preparación; a su nivel real (Luis: el gesto se nota, aunque sea sutil). Redondo arriba (17-nov-2026): de la misma grabación, con el mismo «db».",
+ "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo). Los apagados (17-nov-2026): «alinear: fijo» = el apagado está a «a_s» del comienzo; «db» = ganancia que se suma al tocar, para que conserven su diferencia natural con el abajo (se grabaron en otra sesión). «a» (17-nov-2026, golpes compuestos): el punto que cae en el tiempo de cada toma, en s desde el comienzo, en el orden de «tomas»: el último golpe (abanico: la yema del pulgar; fino: el pulgar; reentrante: la uña del índice). Quien lo lea lo prefiere a «alinear» (que se conserva para los lectores viejos).",
+ "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba). Apagados arriba y abajo: de la grabación del 17-nov-2026 (audio/metronomo/cuatro/, PR #70), cortados en el apagado mismo, sin el golpe de preparación; a su nivel real (Luis: el gesto se nota, aunque sea sutil). Redondo arriba (17-nov-2026): de la misma grabación, con el mismo «db». Abanicos (17-nov-2026): de la misma grabación del 17-nov, con su «a» del último golpe (PR #72; criterio de Luis, 12:25).",
  "acentos_db": {
   "uno": 0,
   "tiempo": -4,
@@ -71,7 +71,15 @@
     "abanico_3.mp3",
     "abanico_4.mp3",
     "abanico_5.mp3"
-   ]
+   ],
+   "a": [
+    0.1975,
+    0.1728,
+    0.1917,
+    0.1793,
+    0.1931
+   ],
+   "db": 3.3
   },
   "abanico_fino": {
    "alinear": "llegada",
@@ -82,7 +90,15 @@
     "abanico_fino_3.mp3",
     "abanico_fino_4.mp3",
     "abanico_fino_5.mp3"
-   ]
+   ],
+   "a": [
+    0.1256,
+    0.1322,
+    0.1205,
+    0.1126,
+    0.1162
+   ],
+   "db": 3.3
   },
   "abanico_reentrante": {
    "alinear": "llegada",
@@ -93,7 +109,15 @@
     "abanico_reentrante_3.mp3",
     "abanico_reentrante_4.mp3",
     "abanico_reentrante_5.mp3"
-   ]
+   ],
+   "a": [
+    0.3005,
+    0.302,
+    0.3288,
+    0.3194,
+    0.3361
+   ],
+   "db": 3.3
   },
   "apagado_arriba": {
    "alinear": "fijo",
