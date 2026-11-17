@@ -1,6 +1,6 @@
 {
- "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo).",
- "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba).",
+ "_formato": "Golpes con las cuerdas apagadas para la guía de golpes (metrónomo «Golpes», sobre todo en el modo práctica). MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; el punto de ataque se calcula al cargar: «umbral» = primera muestra ≥ 20 % del pico; «llegada» = primer punto a −3 dB del máximo de la envolvente RMS de 20 ms, más desfase_s (los abanicos: su punto más fuerte cae en el tiempo). Los apagados (17-nov-2026): «alinear: fijo» = el apagado está a «a_s» del comienzo; «db» = ganancia que se suma al tocar, para que conserven su diferencia natural con el abajo (se grabaron en otra sesión).",
+ "origen": "Luis Natera, 4-nov-2026, golpes_para_metronomo_figurador.wav (mismo equipo que casa31/casa01). Elegidas las 5 tomas más parecidas a la mediana de cada grupo; bloque fuerte con 4 (la 1.ª saturaba). Apagados arriba y abajo: de la grabación del 17-nov-2026 (audio/metronomo/cuatro/, PR #70), cortados en el apagado mismo, sin el golpe de preparación; a su nivel real (Luis: el gesto se nota, aunque sea sutil).",
  "acentos_db": {
   "uno": 0,
   "tiempo": -4,
@@ -96,7 +96,9 @@
    ]
   },
   "apagado_arriba": {
-   "alinear": "umbral",
+   "alinear": "fijo",
+   "a_s": 0.06,
+   "db": 3.3,
    "tomas": [
     "apagado_arriba_1.mp3",
     "apagado_arriba_2.mp3",
@@ -106,7 +108,9 @@
    ]
   },
   "apagado_abajo": {
-   "alinear": "umbral",
+   "alinear": "fijo",
+   "a_s": 0.06,
+   "db": 3.3,
    "tomas": [
     "apagado_abajo_1.mp3",
     "apagado_abajo_2.mp3",
