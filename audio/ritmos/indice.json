@@ -1,5 +1,5 @@
 {
- "_formato": "audio/ritmos/: tomas de golpes y cierres. Desde el 31-oct-2026, las de la grabación de Luis del 31-oct (casa31/: Re, La7, Sol, Si m, Mi m, Fa♯7 y chasquidos suaves, normales y fuertes; cada golpe tocado después de un fragmento de ritmo, para que suene como dentro del ritmo); las del prototipo (golpes/, cierres/) y las de la prueba informal (informal/) quedan en el repositorio sin usar. Cada toma empieza pre_s antes del ataque. El ataque se calcula al cargar: primera muestra con |x| ≥ umbral × pico (en los primeros 0,21 s) + ataque_desde_umbral_s. pico_db = pico medio de los primeros 60 ms tras el ataque (las tomas de una clave están igualadas a ese pico); la ganancia de un golpe es 10^((gdb − pico_db)/20). Claves: <acorde>_abajo_normal (↓), <acorde>_bloque_suave (⇓), <acorde>_arriba (↑), <acorde>_semichasquido_abajo/arriba (s✕↓/s✕↑), chasquido_abajo/arriba (✕↓/✕↑, normal) y chasquido_<dirección>_suave/fuerte: estas dos llevan el pico_db de la normal, así que suenan con su diferencia real de nivel. Los cierres son las mismas tomas largas (3,5 s) de abajo y bloque suave. «reserva»: tomas grabadas que ningún ritmo usa todavía (bloque fuerte, abanico); el motor no las carga. Desde el 31-oct-2026 (tarde): <acorde>_latigo_arriba (l↑, látigo arriba: pulgar hacia arriba con energía, sin llegar a la La; la Si suena como un látigo). 1-nov-2026: casa01/ = segunda grabación en casa (E, B, Dm, Gm y B7; claves mi, si, rem, solm, si7), 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Las claves «<acorde>_…» se cargan por acorde: el Generador baja solo los acordes de la tonalidad elegida. 1-nov-2026 (02:36): C y D7 (claves do, re7) en casa01/, de la tercera grabación en casa: completan Sol mayor. Abanico (1-nov-2026): sus tomas se alinean por el cenit de la cascada, no por su comienzo: ataque_desde_umbral_s de cada toma = del umbral al máximo de la envolvente (Luis: «el abanico empieza antes, para que en su apogeo coincida con la primera corchea»). Abanico, ajuste (1-nov-2026, tarde): el máximo de 5 ms caía en cualquier punto de la meseta de la cascada y algunas tomas sonaban demasiado pronto; ahora ataque_desde_umbral_s = llegada a −3 dB del máximo (RMS de 20 ms) + 45 ms (desfase que deja la toma típica donde estaba). 2-nov-2026 (03:15): Cm, F y Fm (claves dom, fa, fam) en casa01/, de la quinta grabación en casa (F: 4 tomas de abajo y 3 de látigo). 3-nov-2026: F♯m (clave fasm; 6.ª grabación en casa, 2/11) con sus 8 golpes. En «reserva», para la jota carupanera (aún no los usa ningún ritmo): <acorde>_abanico_reentrante y <acorde>_arriba_redondo en 21 acordes (el reentrante, alineado por ahora en el golpe del pulgar; «llegada_s» = llegada de la cascada), y <acorde>_apagado_abajo / <acorde>_apagado_arriba en 20 (todos menos F♯m): cada toma empieza pre_s antes del instante del apagado y dura 250 ms más; «nivel_antes_db» = nivel (RMS de −35 a −15 ms) de la nota justo antes del apagado, al que se igualaron las tomas. 3-nov-2026 (jota carupanera): los apagados <acorde>_apagado_abajo / _apagado_arriba pasan de «reserva» a «golpes» (20 acordes): el motor los usa en «(X↓)» y «(X)», con la toma del acorde que se apaga, al nivel de la nota justo antes («nivel_antes_db»). 4-nov-2026: <acorde>_abanico_fino (abf) en «reserva», 5 tomas sueltas por acorde en 20 acordes (falta A; C con 4), de la grabación de Luis del 4/11 (casa01/). Alineadas por el golpe del índice + 48 ms (llegada de la envolvente media de todas las tomas + 45 ms, como el abanico; el abanico fino tiene dos jorobas casi iguales, índice y pulgar, y la llegada de cada toma salta entre ellas). 4-nov-2026 (tarde): actualización n.º 3 de Luis: una toma más de abanico fino en C; látigos en D, Em, F♯7, Am y F; un abajo en F; dos bloques fuertes en G7; y los apagados de F♯m (fasm_apagado_abajo / _arriba, en «golpes»): F♯m deja de usar la curva de respaldo. Cada toma nueva, igualada al pico_db de su clave. Mi mayor: +1 abajo y +1 arriba (actualización n.º 3; Luis confirmó cuáles eran). 4-nov-2026 (16:14): actualización n.º 4: la_abanico_fino (5 tomas, «reserva») y una toma más de chasquido_arriba_fuerte (casa01/), igualada al pico real de las otras cuatro. 6-nov-2026: 8.ª grabación en casa, C7, C♯7, F♯, B♭ y F7 (claves do7, dos7, fas, sib, fa7) en casa01/, con los 13 grupos de la guía: los 8 golpes de siempre, el abanico reentrante, el arriba redondo y el abanico fino («reserva») y los apagados («golpes»). 5 tomas por golpe. Arriba redondo (9-nov-2026): las tomas «<acorde>_arriba_redondo» pasan de la reserva a los golpes; MotorRitmos las toca con «r↑» (en los compases de dos acordes, donde el segundo solo tendría chasquidos). 12-nov-2026 (provisional): de la 1.ª sesión en el estudio (11-nov, SM81) solo los 8 acordes que faltaban, en estudio01/ (claves dos, dosm, res7, resm, sols7, solsm, sib7, sibm), con los 13 grupos de la guía y un ecualizador que los acerca al sonido de casa (banco_estudio1.py --eq); 5 tomas por golpe (4 en resm_abajo_normal y solsm_semichasquido_arriba). Alias enarmónicos con las mismas tomas: reb, solb, lab7, mib7, mibm, labm. Cuando estén las tres sesiones, el banco pasa entero al estudio, sin ecualizar. 13-nov-2026: grabación en casa de E♭ (mib, 1·1·1·4) y C°7 (dodim7, 0·1·0·1; sirve a C°7, E♭°7, F♯°7, A°7 y a D7♭9, F7♭9, A♭7♭9, B7♭9: MotorRitmos.fuente) en casa02/, con los 13 grupos de la guía; 5 tomas por golpe. Solo para la Sala de práctica por ahora. 13-nov-2026 (tarde): grabación en casa de G♯ (sols) y B°7 (redim7, la clave del grupo de B°7, D°7, F°7 y G♯°7/A♭°7, con la posición de B°7; sirve también a E7♭9, G7♭9, B♭7♭9 y C♯7♭9/D♭7♭9: MotorRitmos.fuente) en casa03/, con los 13 grupos de la guía; 5 tomas por golpe (4 en el bloque suave: cola limpia). 14-nov-2026: grabación en casa de B♭Δ7 (sibmaj7, 1·3·3·3; Sala de práctica, 16 §20) en casa04/, con los 13 grupos de la guía y los dos golpes nuevos (13b), en la reserva: redondo abajo (<acorde>_abajo_redondo, alineado como el ↓) y arpegio del pulgar (<acorde>_arpegio_pulgar, 3,5 s; ataque = la llegada de la cuerda Fa♯, donde cae el pulso; cuerdas_s = la entrada de La, Re, Fa♯ y Si desde el umbral; duracion_s = de la La a la Si). 5 tomas por golpe (4 en el bloque suave). 14-nov-2026 (madrugada): en casa05/, los dos golpes nuevos de B♭Δ7 otra vez, con el arpegio a tres velocidades (reemplazan a los de casa04), y A m7 (lam7, 0·2·1·1) completo. Cada toma del arpegio lleva su velocidad (lenta, media o rápida, como se tocó). 14-nov-2026 (madrugada): B♭m7 (sibm7, 1·3·2·2; alias lasm7) en casa06/, completo: los 13 grupos y los dos golpes nuevos. 14-nov-2026: do7_arriba, cambiado. Las tomas de casa01 eran golpes hacia abajo (del bloque fuerte); ahora, el ↑ de C7 del estudio (11-nov), con el ecualizador del banco provisional y bajado 19 cents (el cuatro del estudio estaba alto), en estudio01/. 14-nov-2026: los acordes de estudio01/ quedan afinados a La = 440 (la 1.ª sesión del estudio estaba de 4 a 22 cents alta; banco_estudio1.py --afinar). 14-nov-2026 (tarde): apagados corregidos (Luis los grabó de nuevo; tomas elegidas por el hilo de la Sala): lam7 ↑ y ↓, mib ↑ y ↓, dodim7 ↓, sols ↑ y sibmaj7 ↓, en casa07/ (cola de 80 a 250 ms ≤ −25 dB frente a la nota). Fuera, hasta grabarlas de nuevo, las tomas con la cola sucia de dosm ↓ (1–4), solsm ↓ (1 y 3), sibm ↓ (3) y ↑ (2), sib7 ↓ (5) y res7 ↓ (1). 14-nov-2026 (16:45): fuera las tomas 2 y 4 de lam7_apagado_arriba (casa07): un rebote antes de apagarse; no suenan naturales (Luis, de oído, en la jota). 16-nov-2026 (noche): C m7 (dom7, 1·1·1·1) en casa08/: los 13 grupos, el arpegio del pulgar y los apagados; los redondos, de una segunda grabación.",
+ "_formato": "audio/ritmos/: tomas de golpes y cierres. Desde el 31-oct-2026, las de la grabación de Luis del 31-oct (casa31/: Re, La7, Sol, Si m, Mi m, Fa♯7 y chasquidos suaves, normales y fuertes; cada golpe tocado después de un fragmento de ritmo, para que suene como dentro del ritmo); las del prototipo (golpes/, cierres/) y las de la prueba informal (informal/) quedan en el repositorio sin usar. Cada toma empieza pre_s antes del ataque. El ataque se calcula al cargar: primera muestra con |x| ≥ umbral × pico (en los primeros 0,21 s) + ataque_desde_umbral_s. pico_db = pico medio de los primeros 60 ms tras el ataque (las tomas de una clave están igualadas a ese pico); la ganancia de un golpe es 10^((gdb − pico_db)/20). Claves: <acorde>_abajo_normal (↓), <acorde>_bloque_suave (⇓), <acorde>_arriba (↑), <acorde>_semichasquido_abajo/arriba (s✕↓/s✕↑), chasquido_abajo/arriba (✕↓/✕↑, normal) y chasquido_<dirección>_suave/fuerte: estas dos llevan el pico_db de la normal, así que suenan con su diferencia real de nivel. Los cierres son las mismas tomas largas (3,5 s) de abajo y bloque suave. «reserva»: tomas grabadas que ningún ritmo usa todavía (bloque fuerte, abanico); el motor no las carga. Desde el 31-oct-2026 (tarde): <acorde>_latigo_arriba (l↑, látigo arriba: pulgar hacia arriba con energía, sin llegar a la La; la Si suena como un látigo). 1-nov-2026: casa01/ = segunda grabación en casa (E, B, Dm, Gm y B7; claves mi, si, rem, solm, si7), 5 tomas elegidas por golpe (en E, 4 de abajo y 4 de arriba). Las claves «<acorde>_…» se cargan por acorde: el Generador baja solo los acordes de la tonalidad elegida. 1-nov-2026 (02:36): C y D7 (claves do, re7) en casa01/, de la tercera grabación en casa: completan Sol mayor. Abanico (1-nov-2026): sus tomas se alinean por el cenit de la cascada, no por su comienzo: ataque_desde_umbral_s de cada toma = del umbral al máximo de la envolvente (Luis: «el abanico empieza antes, para que en su apogeo coincida con la primera corchea»). Abanico, ajuste (1-nov-2026, tarde): el máximo de 5 ms caía en cualquier punto de la meseta de la cascada y algunas tomas sonaban demasiado pronto; ahora ataque_desde_umbral_s = llegada a −3 dB del máximo (RMS de 20 ms) + 45 ms (desfase que deja la toma típica donde estaba). 2-nov-2026 (03:15): Cm, F y Fm (claves dom, fa, fam) en casa01/, de la quinta grabación en casa (F: 4 tomas de abajo y 3 de látigo). 3-nov-2026: F♯m (clave fasm; 6.ª grabación en casa, 2/11) con sus 8 golpes. En «reserva», para la jota carupanera (aún no los usa ningún ritmo): <acorde>_abanico_reentrante y <acorde>_arriba_redondo en 21 acordes (el reentrante, alineado por ahora en el golpe del pulgar; «llegada_s» = llegada de la cascada), y <acorde>_apagado_abajo / <acorde>_apagado_arriba en 20 (todos menos F♯m): cada toma empieza pre_s antes del instante del apagado y dura 250 ms más; «nivel_antes_db» = nivel (RMS de −35 a −15 ms) de la nota justo antes del apagado, al que se igualaron las tomas. 3-nov-2026 (jota carupanera): los apagados <acorde>_apagado_abajo / _apagado_arriba pasan de «reserva» a «golpes» (20 acordes): el motor los usa en «(X↓)» y «(X)», con la toma del acorde que se apaga, al nivel de la nota justo antes («nivel_antes_db»). 4-nov-2026: <acorde>_abanico_fino (abf) en «reserva», 5 tomas sueltas por acorde en 20 acordes (falta A; C con 4), de la grabación de Luis del 4/11 (casa01/). Alineadas por el golpe del índice + 48 ms (llegada de la envolvente media de todas las tomas + 45 ms, como el abanico; el abanico fino tiene dos jorobas casi iguales, índice y pulgar, y la llegada de cada toma salta entre ellas). 4-nov-2026 (tarde): actualización n.º 3 de Luis: una toma más de abanico fino en C; látigos en D, Em, F♯7, Am y F; un abajo en F; dos bloques fuertes en G7; y los apagados de F♯m (fasm_apagado_abajo / _arriba, en «golpes»): F♯m deja de usar la curva de respaldo. Cada toma nueva, igualada al pico_db de su clave. Mi mayor: +1 abajo y +1 arriba (actualización n.º 3; Luis confirmó cuáles eran). 4-nov-2026 (16:14): actualización n.º 4: la_abanico_fino (5 tomas, «reserva») y una toma más de chasquido_arriba_fuerte (casa01/), igualada al pico real de las otras cuatro. 6-nov-2026: 8.ª grabación en casa, C7, C♯7, F♯, B♭ y F7 (claves do7, dos7, fas, sib, fa7) en casa01/, con los 13 grupos de la guía: los 8 golpes de siempre, el abanico reentrante, el arriba redondo y el abanico fino («reserva») y los apagados («golpes»). 5 tomas por golpe. Arriba redondo (9-nov-2026): las tomas «<acorde>_arriba_redondo» pasan de la reserva a los golpes; MotorRitmos las toca con «r↑» (en los compases de dos acordes, donde el segundo solo tendría chasquidos). 12-nov-2026 (provisional): de la 1.ª sesión en el estudio (11-nov, SM81) solo los 8 acordes que faltaban, en estudio01/ (claves dos, dosm, res7, resm, sols7, solsm, sib7, sibm), con los 13 grupos de la guía y un ecualizador que los acerca al sonido de casa (banco_estudio1.py --eq); 5 tomas por golpe (4 en resm_abajo_normal y solsm_semichasquido_arriba). Alias enarmónicos con las mismas tomas: reb, solb, lab7, mib7, mibm, labm. Cuando estén las tres sesiones, el banco pasa entero al estudio, sin ecualizar. 13-nov-2026: grabación en casa de E♭ (mib, 1·1·1·4) y C°7 (dodim7, 0·1·0·1; sirve a C°7, E♭°7, F♯°7, A°7 y a D7♭9, F7♭9, A♭7♭9, B7♭9: MotorRitmos.fuente) en casa02/, con los 13 grupos de la guía; 5 tomas por golpe. Solo para la Sala de práctica por ahora. 13-nov-2026 (tarde): grabación en casa de G♯ (sols) y B°7 (redim7, la clave del grupo de B°7, D°7, F°7 y G♯°7/A♭°7, con la posición de B°7; sirve también a E7♭9, G7♭9, B♭7♭9 y C♯7♭9/D♭7♭9: MotorRitmos.fuente) en casa03/, con los 13 grupos de la guía; 5 tomas por golpe (4 en el bloque suave: cola limpia). 14-nov-2026: grabación en casa de B♭Δ7 (sibmaj7, 1·3·3·3; Sala de práctica, 16 §20) en casa04/, con los 13 grupos de la guía y los dos golpes nuevos (13b), en la reserva: redondo abajo (<acorde>_abajo_redondo, alineado como el ↓) y arpegio del pulgar (<acorde>_arpegio_pulgar, 3,5 s; ataque = la llegada de la cuerda Fa♯, donde cae el pulso; cuerdas_s = la entrada de La, Re, Fa♯ y Si desde el umbral; duracion_s = de la La a la Si). 5 tomas por golpe (4 en el bloque suave). 14-nov-2026 (madrugada): en casa05/, los dos golpes nuevos de B♭Δ7 otra vez, con el arpegio a tres velocidades (reemplazan a los de casa04), y A m7 (lam7, 0·2·1·1) completo. Cada toma del arpegio lleva su velocidad (lenta, media o rápida, como se tocó). 14-nov-2026 (madrugada): B♭m7 (sibm7, 1·3·2·2; alias lasm7) en casa06/, completo: los 13 grupos y los dos golpes nuevos. 14-nov-2026: do7_arriba, cambiado. Las tomas de casa01 eran golpes hacia abajo (del bloque fuerte); ahora, el ↑ de C7 del estudio (11-nov), con el ecualizador del banco provisional y bajado 19 cents (el cuatro del estudio estaba alto), en estudio01/. 14-nov-2026: los acordes de estudio01/ quedan afinados a La = 440 (la 1.ª sesión del estudio estaba de 4 a 22 cents alta; banco_estudio1.py --afinar). 14-nov-2026 (tarde): apagados corregidos (Luis los grabó de nuevo; tomas elegidas por el hilo de la Sala): lam7 ↑ y ↓, mib ↑ y ↓, dodim7 ↓, sols ↑ y sibmaj7 ↓, en casa07/ (cola de 80 a 250 ms ≤ −25 dB frente a la nota). Fuera, hasta grabarlas de nuevo, las tomas con la cola sucia de dosm ↓ (1–4), solsm ↓ (1 y 3), sibm ↓ (3) y ↑ (2), sib7 ↓ (5) y res7 ↓ (1). 14-nov-2026 (16:45): fuera las tomas 2 y 4 de lam7_apagado_arriba (casa07): un rebote antes de apagarse; no suenan naturales (Luis, de oído, en la jota). 16-nov-2026 (noche): C m7 (dom7, 1·1·1·1) en casa08/: los 13 grupos, el arpegio del pulgar y los apagados; los redondos, de una segunda grabación. Golpes compuestos (17-nov-2026): su ataque_desde_umbral_s es el último golpe — abanico: la yema del pulgar; fino: el pulgar; reentrante: la uña del índice (pruebas/ultimo_golpe.py); arpegio del pulgar: la llegada al Si (cuerdas_s[3]).",
  "pre_s": 0.06,
  "umbral": 0.2,
  "golpes": {
@@ -308,23 +308,23 @@
    "tomas": [
     {
      "archivo": "casa01/do_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0837
+     "ataque_desde_umbral_s": 0.1395
     },
     {
      "archivo": "casa01/do_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.115
+     "ataque_desde_umbral_s": 0.1874
     },
     {
      "archivo": "casa01/do_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0467
+     "ataque_desde_umbral_s": 0.1483
     },
     {
      "archivo": "casa01/do_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0771
+     "ataque_desde_umbral_s": 0.1499
     },
     {
      "archivo": "casa01/do_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0837
+     "ataque_desde_umbral_s": 0.1366
     }
    ]
   },
@@ -548,23 +548,23 @@
    "tomas": [
     {
      "archivo": "casa01/dom_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1305
+     "ataque_desde_umbral_s": 0.1989
     },
     {
      "archivo": "casa01/dom_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.103
+     "ataque_desde_umbral_s": 0.1725
     },
     {
      "archivo": "casa01/dom_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1385
+     "ataque_desde_umbral_s": 0.1726
     },
     {
      "archivo": "casa01/dom_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1059
+     "ataque_desde_umbral_s": 0.1773
     },
     {
      "archivo": "casa01/dom_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0791
+     "ataque_desde_umbral_s": 0.1683
     }
    ]
   },
@@ -788,23 +788,23 @@
    "tomas": [
     {
      "archivo": "casa01/do7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1033
+     "ataque_desde_umbral_s": 0.1773
     },
     {
      "archivo": "casa01/do7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.079
+     "ataque_desde_umbral_s": 0.149
     },
     {
      "archivo": "casa01/do7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1107
+     "ataque_desde_umbral_s": 0.1729
     },
     {
      "archivo": "casa01/do7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.104
+     "ataque_desde_umbral_s": 0.1816
     },
     {
      "archivo": "casa01/do7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1087
+     "ataque_desde_umbral_s": 0.1613
     }
    ]
   },
@@ -1028,23 +1028,23 @@
    "tomas": [
     {
      "archivo": "casa02/dodim7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1011
+     "ataque_desde_umbral_s": 0.1635
     },
     {
      "archivo": "casa02/dodim7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0967
+     "ataque_desde_umbral_s": 0.1867
     },
     {
      "archivo": "casa02/dodim7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0873
+     "ataque_desde_umbral_s": 0.1613
     },
     {
      "archivo": "casa02/dodim7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0979
+     "ataque_desde_umbral_s": 0.1404
     },
     {
      "archivo": "casa02/dodim7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1117
+     "ataque_desde_umbral_s": 0.1679
     }
    ]
   },
@@ -1268,23 +1268,23 @@
    "tomas": [
     {
      "archivo": "casa08/dom7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0958
+     "ataque_desde_umbral_s": 0.1439
     },
     {
      "archivo": "casa08/dom7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.091
+     "ataque_desde_umbral_s": 0.1649
     },
     {
      "archivo": "casa08/dom7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0916
+     "ataque_desde_umbral_s": 0.1366
     },
     {
      "archivo": "casa08/dom7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1212
+     "ataque_desde_umbral_s": 0.1432
     },
     {
      "archivo": "casa08/dom7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1007
+     "ataque_desde_umbral_s": 0.1497
     }
    ]
   },
@@ -1508,23 +1508,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.118
+     "ataque_desde_umbral_s": 0.138
     },
     {
      "archivo": "estudio01/dos_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1046
+     "ataque_desde_umbral_s": 0.1458
     },
     {
      "archivo": "estudio01/dos_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0986
+     "ataque_desde_umbral_s": 0.1624
     },
     {
      "archivo": "estudio01/dos_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0924
+     "ataque_desde_umbral_s": 0.14
     },
     {
      "archivo": "estudio01/dos_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0836
+     "ataque_desde_umbral_s": 0.1229
     }
    ]
   },
@@ -1742,23 +1742,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.118
+     "ataque_desde_umbral_s": 0.138
     },
     {
      "archivo": "estudio01/dos_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1046
+     "ataque_desde_umbral_s": 0.1458
     },
     {
      "archivo": "estudio01/dos_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0986
+     "ataque_desde_umbral_s": 0.1624
     },
     {
      "archivo": "estudio01/dos_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0924
+     "ataque_desde_umbral_s": 0.14
     },
     {
      "archivo": "estudio01/dos_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0836
+     "ataque_desde_umbral_s": 0.1229
     }
    ]
   },
@@ -1976,23 +1976,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0974
+     "ataque_desde_umbral_s": 0.1637
     },
     {
      "archivo": "estudio01/dosm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0766
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "estudio01/dosm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0769
+     "ataque_desde_umbral_s": 0.1531
     },
     {
      "archivo": "estudio01/dosm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1189
+     "ataque_desde_umbral_s": 0.156
     },
     {
      "archivo": "estudio01/dosm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0941
+     "ataque_desde_umbral_s": 0.1735
     }
    ]
   },
@@ -2204,23 +2204,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0974
+     "ataque_desde_umbral_s": 0.1637
     },
     {
      "archivo": "estudio01/dosm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0766
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "estudio01/dosm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0769
+     "ataque_desde_umbral_s": 0.1531
     },
     {
      "archivo": "estudio01/dosm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1189
+     "ataque_desde_umbral_s": 0.156
     },
     {
      "archivo": "estudio01/dosm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0941
+     "ataque_desde_umbral_s": 0.1735
     }
    ]
   },
@@ -2432,23 +2432,23 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.072
+     "ataque_desde_umbral_s": 0.1372
     },
     {
      "archivo": "casa01/dos7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1562
+     "ataque_desde_umbral_s": 0.1678
     },
     {
      "archivo": "casa01/dos7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1723
+     "ataque_desde_umbral_s": 0.1722
     },
     {
      "archivo": "casa01/dos7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1574
+     "ataque_desde_umbral_s": 0.1722
     },
     {
      "archivo": "casa01/dos7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1568
+     "ataque_desde_umbral_s": 0.1576
     }
    ]
   },
@@ -2672,23 +2672,23 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.072
+     "ataque_desde_umbral_s": 0.1372
     },
     {
      "archivo": "casa01/dos7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1562
+     "ataque_desde_umbral_s": 0.1678
     },
     {
      "archivo": "casa01/dos7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1723
+     "ataque_desde_umbral_s": 0.1722
     },
     {
      "archivo": "casa01/dos7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1574
+     "ataque_desde_umbral_s": 0.1722
     },
     {
      "archivo": "casa01/dos7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1568
+     "ataque_desde_umbral_s": 0.1576
     }
    ]
   },
@@ -2912,23 +2912,23 @@
    "tomas": [
     {
      "archivo": "casa31/re_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1136
+     "ataque_desde_umbral_s": 0.1836
     },
     {
      "archivo": "casa31/re_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0705
+     "ataque_desde_umbral_s": 0.1483
     },
     {
      "archivo": "casa31/re_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0772
+     "ataque_desde_umbral_s": 0.1715
     },
     {
      "archivo": "casa31/re_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0785
+     "ataque_desde_umbral_s": 0.1707
     },
     {
      "archivo": "casa31/re_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0817
+     "ataque_desde_umbral_s": 0.1562
     }
    ]
   },
@@ -3152,23 +3152,23 @@
    "tomas": [
     {
      "archivo": "casa01/rem_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0903
+     "ataque_desde_umbral_s": 0.1533
     },
     {
      "archivo": "casa01/rem_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1046
+     "ataque_desde_umbral_s": 0.1729
     },
     {
      "archivo": "casa01/rem_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0866
+     "ataque_desde_umbral_s": 0.1519
     },
     {
      "archivo": "casa01/rem_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1013
+     "ataque_desde_umbral_s": 0.1606
     },
     {
      "archivo": "casa01/rem_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.081
+     "ataque_desde_umbral_s": 0.1468
     }
    ]
   },
@@ -3392,23 +3392,23 @@
    "tomas": [
     {
      "archivo": "casa01/re7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0826
+     "ataque_desde_umbral_s": 0.1744
     },
     {
      "archivo": "casa01/re7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0896
+     "ataque_desde_umbral_s": 0.1693
     },
     {
      "archivo": "casa01/re7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0886
+     "ataque_desde_umbral_s": 0.1822
     },
     {
      "archivo": "casa01/re7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1079
+     "ataque_desde_umbral_s": 0.1584
     },
     {
      "archivo": "casa01/re7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0945
+     "ataque_desde_umbral_s": 0.1882
     }
    ]
   },
@@ -3628,23 +3628,23 @@
    "tomas": [
     {
      "archivo": "casa03/redim7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0913
+     "ataque_desde_umbral_s": 0.1461
     },
     {
      "archivo": "casa03/redim7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1111
+     "ataque_desde_umbral_s": 0.1512
     },
     {
      "archivo": "casa03/redim7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1011
+     "ataque_desde_umbral_s": 0.1722
     },
     {
      "archivo": "casa03/redim7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1162
+     "ataque_desde_umbral_s": 0.1453
     },
     {
      "archivo": "casa03/redim7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0712
+     "ataque_desde_umbral_s": 0.1359
     }
    ]
   },
@@ -3865,23 +3865,23 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.107
+     "ataque_desde_umbral_s": 0.1773
     },
     {
      "archivo": "casa02/mib_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1034
+     "ataque_desde_umbral_s": 0.1693
     },
     {
      "archivo": "casa02/mib_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0961
+     "ataque_desde_umbral_s": 0.175
     },
     {
      "archivo": "casa02/mib_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1002
+     "ataque_desde_umbral_s": 0.1512
     },
     {
      "archivo": "casa02/mib_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0941
+     "ataque_desde_umbral_s": 0.1649
     }
    ]
   },
@@ -4105,23 +4105,23 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.107
+     "ataque_desde_umbral_s": 0.1773
     },
     {
      "archivo": "casa02/mib_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1034
+     "ataque_desde_umbral_s": 0.1693
     },
     {
      "archivo": "casa02/mib_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0961
+     "ataque_desde_umbral_s": 0.175
     },
     {
      "archivo": "casa02/mib_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1002
+     "ataque_desde_umbral_s": 0.1512
     },
     {
      "archivo": "casa02/mib_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0941
+     "ataque_desde_umbral_s": 0.1649
     }
    ]
   },
@@ -4341,23 +4341,23 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0875
+     "ataque_desde_umbral_s": 0.1439
     },
     {
      "archivo": "estudio01/resm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0895
+     "ataque_desde_umbral_s": 0.1655
     },
     {
      "archivo": "estudio01/resm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0913
+     "ataque_desde_umbral_s": 0.1588
     },
     {
      "archivo": "estudio01/resm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0934
+     "ataque_desde_umbral_s": 0.1549
     },
     {
      "archivo": "estudio01/resm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1031
+     "ataque_desde_umbral_s": 0.1684
     }
    ]
   },
@@ -4577,23 +4577,23 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0875
+     "ataque_desde_umbral_s": 0.1439
     },
     {
      "archivo": "estudio01/resm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0895
+     "ataque_desde_umbral_s": 0.1655
     },
     {
      "archivo": "estudio01/resm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0913
+     "ataque_desde_umbral_s": 0.1588
     },
     {
      "archivo": "estudio01/resm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0934
+     "ataque_desde_umbral_s": 0.1549
     },
     {
      "archivo": "estudio01/resm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1031
+     "ataque_desde_umbral_s": 0.1684
     }
    ]
   },
@@ -4817,23 +4817,23 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1067
+     "ataque_desde_umbral_s": 0.1699
     },
     {
      "archivo": "estudio01/res7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1033
+     "ataque_desde_umbral_s": 0.1503
     },
     {
      "archivo": "estudio01/res7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.106
+     "ataque_desde_umbral_s": 0.1567
     },
     {
      "archivo": "estudio01/res7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.104
+     "ataque_desde_umbral_s": 0.1679
     },
     {
      "archivo": "estudio01/res7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1317
+     "ataque_desde_umbral_s": 0.1602
     }
    ]
   },
@@ -5051,23 +5051,23 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1067
+     "ataque_desde_umbral_s": 0.1699
     },
     {
      "archivo": "estudio01/res7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1033
+     "ataque_desde_umbral_s": 0.1503
     },
     {
      "archivo": "estudio01/res7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.106
+     "ataque_desde_umbral_s": 0.1567
     },
     {
      "archivo": "estudio01/res7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.104
+     "ataque_desde_umbral_s": 0.1679
     },
     {
      "archivo": "estudio01/res7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1317
+     "ataque_desde_umbral_s": 0.1602
     }
    ]
   },
@@ -5285,23 +5285,23 @@
    "tomas": [
     {
      "archivo": "casa01/mi_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0938
+     "ataque_desde_umbral_s": 0.1635
     },
     {
      "archivo": "casa01/mi_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0812
+     "ataque_desde_umbral_s": 0.157
     },
     {
      "archivo": "casa01/mi_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0854
+     "ataque_desde_umbral_s": 0.1598
     },
     {
      "archivo": "casa01/mi_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.09
+     "ataque_desde_umbral_s": 0.1751
     },
     {
      "archivo": "casa01/mi_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0805
+     "ataque_desde_umbral_s": 0.17
     }
    ]
   },
@@ -5525,23 +5525,23 @@
    "tomas": [
     {
      "archivo": "casa31/mim_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1068
+     "ataque_desde_umbral_s": 0.179
     },
     {
      "archivo": "casa31/mim_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1467
+     "ataque_desde_umbral_s": 0.1903
     },
     {
      "archivo": "casa31/mim_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0814
+     "ataque_desde_umbral_s": 0.1927
     },
     {
      "archivo": "casa31/mim_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1101
+     "ataque_desde_umbral_s": 0.1758
     },
     {
      "archivo": "casa31/mim_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1299
+     "ataque_desde_umbral_s": 0.2005
     }
    ]
   },
@@ -5765,23 +5765,23 @@
    "tomas": [
     {
      "archivo": "casa01/mi7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1121
+     "ataque_desde_umbral_s": 0.1721
     },
     {
      "archivo": "casa01/mi7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.103
+     "ataque_desde_umbral_s": 0.1773
     },
     {
      "archivo": "casa01/mi7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.072
+     "ataque_desde_umbral_s": 0.1721
     },
     {
      "archivo": "casa01/mi7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0743
+     "ataque_desde_umbral_s": 0.1642
     },
     {
      "archivo": "casa01/mi7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0869
+     "ataque_desde_umbral_s": 0.1652
     }
    ]
   },
@@ -6005,23 +6005,23 @@
    "tomas": [
     {
      "archivo": "casa01/fa_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.093
+     "ataque_desde_umbral_s": 0.1586
     },
     {
      "archivo": "casa01/fa_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.119
+     "ataque_desde_umbral_s": 0.1949
     },
     {
      "archivo": "casa01/fa_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0888
+     "ataque_desde_umbral_s": 0.166
     },
     {
      "archivo": "casa01/fa_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0874
+     "ataque_desde_umbral_s": 0.1751
     },
     {
      "archivo": "casa01/fa_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0833
+     "ataque_desde_umbral_s": 0.1707
     }
    ]
   },
@@ -6245,23 +6245,23 @@
    "tomas": [
     {
      "archivo": "casa01/fam_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.154
+     "ataque_desde_umbral_s": 0.1968
     },
     {
      "archivo": "casa01/fam_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1472
+     "ataque_desde_umbral_s": 0.1962
     },
     {
      "archivo": "casa01/fam_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1301
+     "ataque_desde_umbral_s": 0.1728
     },
     {
      "archivo": "casa01/fam_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0896
+     "ataque_desde_umbral_s": 0.1983
     },
     {
      "archivo": "casa01/fam_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0801
+     "ataque_desde_umbral_s": 0.1958
     }
    ]
   },
@@ -6485,23 +6485,23 @@
    "tomas": [
     {
      "archivo": "casa01/fa7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1068
+     "ataque_desde_umbral_s": 0.1512
     },
     {
      "archivo": "casa01/fa7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0989
+     "ataque_desde_umbral_s": 0.1511
     },
     {
      "archivo": "casa01/fa7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1017
+     "ataque_desde_umbral_s": 0.1352
     },
     {
      "archivo": "casa01/fa7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.103
+     "ataque_desde_umbral_s": 0.1577
     },
     {
      "archivo": "casa01/fa7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0969
+     "ataque_desde_umbral_s": 0.1585
     }
    ]
   },
@@ -6725,23 +6725,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.05
+     "ataque_desde_umbral_s": 0.1621
     },
     {
      "archivo": "casa01/fas_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0764
+     "ataque_desde_umbral_s": 0.141
     },
     {
      "archivo": "casa01/fas_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1021
+     "ataque_desde_umbral_s": 0.1527
     },
     {
      "archivo": "casa01/fas_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1055
+     "ataque_desde_umbral_s": 0.1591
     },
     {
      "archivo": "casa01/fas_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1157
+     "ataque_desde_umbral_s": 0.1351
     }
    ]
   },
@@ -6965,23 +6965,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.05
+     "ataque_desde_umbral_s": 0.1621
     },
     {
      "archivo": "casa01/fas_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0764
+     "ataque_desde_umbral_s": 0.141
     },
     {
      "archivo": "casa01/fas_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1021
+     "ataque_desde_umbral_s": 0.1527
     },
     {
      "archivo": "casa01/fas_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1055
+     "ataque_desde_umbral_s": 0.1591
     },
     {
      "archivo": "casa01/fas_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1157
+     "ataque_desde_umbral_s": 0.1351
     }
    ]
   },
@@ -7180,23 +7180,23 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0991
+     "ataque_desde_umbral_s": 0.1684
     },
     {
      "archivo": "casa01/fasm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0981
+     "ataque_desde_umbral_s": 0.1804
     },
     {
      "archivo": "casa01/fasm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1411
+     "ataque_desde_umbral_s": 0.1746
     },
     {
      "archivo": "casa01/fasm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1177
+     "ataque_desde_umbral_s": 0.1901
     },
     {
      "archivo": "casa01/fasm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0829
+     "ataque_desde_umbral_s": 0.1427
     }
    ]
   },
@@ -7420,23 +7420,23 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0991
+     "ataque_desde_umbral_s": 0.1684
     },
     {
      "archivo": "casa01/fasm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0981
+     "ataque_desde_umbral_s": 0.1804
     },
     {
      "archivo": "casa01/fasm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1411
+     "ataque_desde_umbral_s": 0.1746
     },
     {
      "archivo": "casa01/fasm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1177
+     "ataque_desde_umbral_s": 0.1901
     },
     {
      "archivo": "casa01/fasm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0829
+     "ataque_desde_umbral_s": 0.1427
     }
    ]
   },
@@ -7685,23 +7685,23 @@
    "tomas": [
     {
      "archivo": "casa31/fas7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0846
+     "ataque_desde_umbral_s": 0.1352
     },
     {
      "archivo": "casa31/fas7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0849
+     "ataque_desde_umbral_s": 0.1598
     },
     {
      "archivo": "casa31/fas7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0915
+     "ataque_desde_umbral_s": 0.162
     },
     {
      "archivo": "casa31/fas7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1073
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "casa31/fas7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0874
+     "ataque_desde_umbral_s": 0.1433
     }
    ]
   },
@@ -7925,23 +7925,23 @@
    "tomas": [
     {
      "archivo": "casa31/fas7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0846
+     "ataque_desde_umbral_s": 0.1352
     },
     {
      "archivo": "casa31/fas7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0849
+     "ataque_desde_umbral_s": 0.1598
     },
     {
      "archivo": "casa31/fas7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0915
+     "ataque_desde_umbral_s": 0.162
     },
     {
      "archivo": "casa31/fas7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1073
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "casa31/fas7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0874
+     "ataque_desde_umbral_s": 0.1433
     }
    ]
   },
@@ -8165,23 +8165,23 @@
    "tomas": [
     {
      "archivo": "casa31/sol_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1265
+     "ataque_desde_umbral_s": 0.17
     },
     {
      "archivo": "casa31/sol_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0957
+     "ataque_desde_umbral_s": 0.1548
     },
     {
      "archivo": "casa31/sol_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1181
+     "ataque_desde_umbral_s": 0.1823
     },
     {
      "archivo": "casa31/sol_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0906
+     "ataque_desde_umbral_s": 0.1629
     },
     {
      "archivo": "casa31/sol_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1279
+     "ataque_desde_umbral_s": 0.165
     }
    ]
   },
@@ -8405,23 +8405,23 @@
    "tomas": [
     {
      "archivo": "casa01/solm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1036
+     "ataque_desde_umbral_s": 0.1163
     },
     {
      "archivo": "casa01/solm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0899
+     "ataque_desde_umbral_s": 0.1562
     },
     {
      "archivo": "casa01/solm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0868
+     "ataque_desde_umbral_s": 0.1482
     },
     {
      "archivo": "casa01/solm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1058
+     "ataque_desde_umbral_s": 0.1441
     },
     {
      "archivo": "casa01/solm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0838
+     "ataque_desde_umbral_s": 0.1352
     }
    ]
   },
@@ -8645,23 +8645,23 @@
    "tomas": [
     {
      "archivo": "casa01/sol7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1122
+     "ataque_desde_umbral_s": 0.1821
     },
     {
      "archivo": "casa01/sol7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1015
+     "ataque_desde_umbral_s": 0.1761
     },
     {
      "archivo": "casa01/sol7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0801
+     "ataque_desde_umbral_s": 0.1454
     },
     {
      "archivo": "casa01/sol7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0778
+     "ataque_desde_umbral_s": 0.1252
     },
     {
      "archivo": "casa01/sol7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.092
+     "ataque_desde_umbral_s": 0.1718
     }
    ]
   },
@@ -8881,23 +8881,23 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0748
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "casa03/sols_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0622
+     "ataque_desde_umbral_s": 0.1613
     },
     {
      "archivo": "casa03/sols_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.096
+     "ataque_desde_umbral_s": 0.1612
     },
     {
      "archivo": "casa03/sols_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.065
+     "ataque_desde_umbral_s": 0.1831
     },
     {
      "archivo": "casa03/sols_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0946
+     "ataque_desde_umbral_s": 0.1482
     }
    ]
   },
@@ -9117,23 +9117,23 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0748
+     "ataque_desde_umbral_s": 0.1664
     },
     {
      "archivo": "casa03/sols_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0622
+     "ataque_desde_umbral_s": 0.1613
     },
     {
      "archivo": "casa03/sols_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.096
+     "ataque_desde_umbral_s": 0.1612
     },
     {
      "archivo": "casa03/sols_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.065
+     "ataque_desde_umbral_s": 0.1831
     },
     {
      "archivo": "casa03/sols_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0946
+     "ataque_desde_umbral_s": 0.1482
     }
    ]
   },
@@ -9353,23 +9353,23 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1302
+     "ataque_desde_umbral_s": 0.1659
     },
     {
      "archivo": "estudio01/solsm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1436
+     "ataque_desde_umbral_s": 0.1551
     },
     {
      "archivo": "estudio01/solsm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1042
+     "ataque_desde_umbral_s": 0.1756
     },
     {
      "archivo": "estudio01/solsm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1137
+     "ataque_desde_umbral_s": 0.1762
     },
     {
      "archivo": "estudio01/solsm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1308
+     "ataque_desde_umbral_s": 0.1658
     }
    ]
   },
@@ -9583,23 +9583,23 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1302
+     "ataque_desde_umbral_s": 0.1659
     },
     {
      "archivo": "estudio01/solsm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1436
+     "ataque_desde_umbral_s": 0.1551
     },
     {
      "archivo": "estudio01/solsm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1042
+     "ataque_desde_umbral_s": 0.1756
     },
     {
      "archivo": "estudio01/solsm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1137
+     "ataque_desde_umbral_s": 0.1762
     },
     {
      "archivo": "estudio01/solsm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1308
+     "ataque_desde_umbral_s": 0.1658
     }
    ]
   },
@@ -9817,23 +9817,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0819
+     "ataque_desde_umbral_s": 0.1467
     },
     {
      "archivo": "estudio01/sols7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0965
+     "ataque_desde_umbral_s": 0.1453
     },
     {
      "archivo": "estudio01/sols7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1023
+     "ataque_desde_umbral_s": 0.146
     },
     {
      "archivo": "estudio01/sols7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0945
+     "ataque_desde_umbral_s": 0.1524
     },
     {
      "archivo": "estudio01/sols7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0758
+     "ataque_desde_umbral_s": 0.1346
     }
    ]
   },
@@ -10057,23 +10057,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0819
+     "ataque_desde_umbral_s": 0.1467
     },
     {
      "archivo": "estudio01/sols7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0965
+     "ataque_desde_umbral_s": 0.1453
     },
     {
      "archivo": "estudio01/sols7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1023
+     "ataque_desde_umbral_s": 0.146
     },
     {
      "archivo": "estudio01/sols7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0945
+     "ataque_desde_umbral_s": 0.1524
     },
     {
      "archivo": "estudio01/sols7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0758
+     "ataque_desde_umbral_s": 0.1346
     }
    ]
   },
@@ -10297,23 +10297,23 @@
    "tomas": [
     {
      "archivo": "casa01/la_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0819
+     "ataque_desde_umbral_s": 0.1363
     },
     {
      "archivo": "casa01/la_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0813
+     "ataque_desde_umbral_s": 0.1508
     },
     {
      "archivo": "casa01/la_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0747
+     "ataque_desde_umbral_s": 0.1502
     },
     {
      "archivo": "casa01/la_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0845
+     "ataque_desde_umbral_s": 0.1528
     },
     {
      "archivo": "casa01/la_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0797
+     "ataque_desde_umbral_s": 0.1859
     }
    ]
   },
@@ -10537,23 +10537,23 @@
    "tomas": [
     {
      "archivo": "casa01/lam_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1014
+     "ataque_desde_umbral_s": 0.1574
     },
     {
      "archivo": "casa01/lam_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0907
+     "ataque_desde_umbral_s": 0.1572
     },
     {
      "archivo": "casa01/lam_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1004
+     "ataque_desde_umbral_s": 0.1614
     },
     {
      "archivo": "casa01/lam_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1071
+     "ataque_desde_umbral_s": 0.1785
     },
     {
      "archivo": "casa01/lam_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0911
+     "ataque_desde_umbral_s": 0.1596
     }
    ]
   },
@@ -10777,23 +10777,23 @@
    "tomas": [
     {
      "archivo": "casa31/la7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1067
+     "ataque_desde_umbral_s": 0.1221
     },
     {
      "archivo": "casa31/la7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1158
+     "ataque_desde_umbral_s": 0.1352
     },
     {
      "archivo": "casa31/la7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0767
+     "ataque_desde_umbral_s": 0.1366
     },
     {
      "archivo": "casa31/la7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0823
+     "ataque_desde_umbral_s": 0.1316
     },
     {
      "archivo": "casa31/la7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0829
+     "ataque_desde_umbral_s": 0.1649
     }
    ]
   },
@@ -11013,23 +11013,23 @@
    "tomas": [
     {
      "archivo": "casa05/lam7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0943
+     "ataque_desde_umbral_s": 0.1338
     },
     {
      "archivo": "casa05/lam7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1176
+     "ataque_desde_umbral_s": 0.1374
     },
     {
      "archivo": "casa05/lam7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.117
+     "ataque_desde_umbral_s": 0.0677
     },
     {
      "archivo": "casa05/lam7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1221
+     "ataque_desde_umbral_s": 0.1352
     },
     {
      "archivo": "casa05/lam7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1196
+     "ataque_desde_umbral_s": 0.1585
     }
    ]
   },
@@ -11247,23 +11247,23 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.142
+     "ataque_desde_umbral_s": 0.1519
     },
     {
      "archivo": "casa01/sib_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.072
+     "ataque_desde_umbral_s": 0.1561
     },
     {
      "archivo": "casa01/sib_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0446
+     "ataque_desde_umbral_s": 0.1643
     },
     {
      "archivo": "casa01/sib_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.098
+     "ataque_desde_umbral_s": 0.1483
     },
     {
      "archivo": "casa01/sib_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0844
+     "ataque_desde_umbral_s": 0.1331
     }
    ]
   },
@@ -11487,23 +11487,23 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.142
+     "ataque_desde_umbral_s": 0.1519
     },
     {
      "archivo": "casa01/sib_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.072
+     "ataque_desde_umbral_s": 0.1561
     },
     {
      "archivo": "casa01/sib_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0446
+     "ataque_desde_umbral_s": 0.1643
     },
     {
      "archivo": "casa01/sib_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.098
+     "ataque_desde_umbral_s": 0.1483
     },
     {
      "archivo": "casa01/sib_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0844
+     "ataque_desde_umbral_s": 0.1331
     }
    ]
   },
@@ -11727,23 +11727,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.083
+     "ataque_desde_umbral_s": 0.1675
     },
     {
      "archivo": "estudio01/sibm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1149
+     "ataque_desde_umbral_s": 0.1372
     },
     {
      "archivo": "estudio01/sibm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0962
+     "ataque_desde_umbral_s": 0.159
     },
     {
      "archivo": "estudio01/sibm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0887
+     "ataque_desde_umbral_s": 0.159
     },
     {
      "archivo": "estudio01/sibm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0991
+     "ataque_desde_umbral_s": 0.153
     }
    ]
   },
@@ -11961,23 +11961,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.083
+     "ataque_desde_umbral_s": 0.1675
     },
     {
      "archivo": "estudio01/sibm_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1149
+     "ataque_desde_umbral_s": 0.1372
     },
     {
      "archivo": "estudio01/sibm_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0962
+     "ataque_desde_umbral_s": 0.159
     },
     {
      "archivo": "estudio01/sibm_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0887
+     "ataque_desde_umbral_s": 0.159
     },
     {
      "archivo": "estudio01/sibm_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0991
+     "ataque_desde_umbral_s": 0.153
     }
    ]
   },
@@ -12195,23 +12195,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1311
+     "ataque_desde_umbral_s": 0.1939
     },
     {
      "archivo": "estudio01/sib7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1305
+     "ataque_desde_umbral_s": 0.1656
     },
     {
      "archivo": "estudio01/sib7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.138
+     "ataque_desde_umbral_s": 0.1728
     },
     {
      "archivo": "estudio01/sib7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1012
+     "ataque_desde_umbral_s": 0.1729
     },
     {
      "archivo": "estudio01/sib7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1084
+     "ataque_desde_umbral_s": 0.1751
     }
    ]
   },
@@ -12432,23 +12432,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.1311
+     "ataque_desde_umbral_s": 0.1939
     },
     {
      "archivo": "estudio01/sib7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1305
+     "ataque_desde_umbral_s": 0.1656
     },
     {
      "archivo": "estudio01/sib7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.138
+     "ataque_desde_umbral_s": 0.1728
     },
     {
      "archivo": "estudio01/sib7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1012
+     "ataque_desde_umbral_s": 0.1729
     },
     {
      "archivo": "estudio01/sib7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1084
+     "ataque_desde_umbral_s": 0.1751
     }
    ]
   },
@@ -12665,23 +12665,23 @@
    "tomas": [
     {
      "archivo": "casa04/sibmaj7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.096
+     "ataque_desde_umbral_s": 0.1628
     },
     {
      "archivo": "casa04/sibmaj7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.125
+     "ataque_desde_umbral_s": 0.1606
     },
     {
      "archivo": "casa04/sibmaj7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0887
+     "ataque_desde_umbral_s": 0.067
     },
     {
      "archivo": "casa04/sibmaj7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0928
+     "ataque_desde_umbral_s": 0.1649
     },
     {
      "archivo": "casa04/sibmaj7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0929
+     "ataque_desde_umbral_s": 0.1708
     }
    ]
   },
@@ -12902,23 +12902,23 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0998
+     "ataque_desde_umbral_s": 0.162
     },
     {
      "archivo": "casa06/sibm7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0859
+     "ataque_desde_umbral_s": 0.1519
     },
     {
      "archivo": "casa06/sibm7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.106
+     "ataque_desde_umbral_s": 0.1739
     },
     {
      "archivo": "casa06/sibm7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1013
+     "ataque_desde_umbral_s": 0.1635
     },
     {
      "archivo": "casa06/sibm7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1075
+     "ataque_desde_umbral_s": 0.1916
     }
    ]
   },
@@ -13142,23 +13142,23 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0998
+     "ataque_desde_umbral_s": 0.162
     },
     {
      "archivo": "casa06/sibm7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0859
+     "ataque_desde_umbral_s": 0.1519
     },
     {
      "archivo": "casa06/sibm7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.106
+     "ataque_desde_umbral_s": 0.1739
     },
     {
      "archivo": "casa06/sibm7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1013
+     "ataque_desde_umbral_s": 0.1635
     },
     {
      "archivo": "casa06/sibm7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1075
+     "ataque_desde_umbral_s": 0.1916
     }
    ]
   },
@@ -13382,23 +13382,23 @@
    "tomas": [
     {
      "archivo": "casa01/si_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0804
+     "ataque_desde_umbral_s": 0.1439
     },
     {
      "archivo": "casa01/si_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0912
+     "ataque_desde_umbral_s": 0.1613
     },
     {
      "archivo": "casa01/si_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.0862
+     "ataque_desde_umbral_s": 0.1544
     },
     {
      "archivo": "casa01/si_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0859
+     "ataque_desde_umbral_s": 0.1795
     },
     {
      "archivo": "casa01/si_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0799
+     "ataque_desde_umbral_s": 0.1476
     }
    ]
   },
@@ -13622,23 +13622,23 @@
    "tomas": [
     {
      "archivo": "casa31/sim_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0826
+     "ataque_desde_umbral_s": 0.1417
     },
     {
      "archivo": "casa31/sim_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.0766
+     "ataque_desde_umbral_s": 0.1715
     },
     {
      "archivo": "casa31/sim_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.2011
+     "ataque_desde_umbral_s": 0.2014
     },
     {
      "archivo": "casa31/sim_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.0511
+     "ataque_desde_umbral_s": 0.1729
     },
     {
      "archivo": "casa31/sim_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.0774
+     "ataque_desde_umbral_s": 0.1497
     }
    ]
   },
@@ -13862,23 +13862,23 @@
    "tomas": [
     {
      "archivo": "casa01/si7_abanico_1.mp3",
-     "ataque_desde_umbral_s": 0.0823
+     "ataque_desde_umbral_s": 0.1337
     },
     {
      "archivo": "casa01/si7_abanico_2.mp3",
-     "ataque_desde_umbral_s": 0.1252
+     "ataque_desde_umbral_s": 0.1308
     },
     {
      "archivo": "casa01/si7_abanico_3.mp3",
-     "ataque_desde_umbral_s": 0.1409
+     "ataque_desde_umbral_s": 0.133
     },
     {
      "archivo": "casa01/si7_abanico_4.mp3",
-     "ataque_desde_umbral_s": 0.1325
+     "ataque_desde_umbral_s": 0.1671
     },
     {
      "archivo": "casa01/si7_abanico_5.mp3",
-     "ataque_desde_umbral_s": 0.1037
+     "ataque_desde_umbral_s": 0.1642
     }
    ]
   },
@@ -16853,27 +16853,27 @@
    "tomas": [
     {
      "archivo": "casa01/do_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2063,
      "llegada_s": 0.0892
     },
     {
      "archivo": "casa01/do_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2099,
      "llegada_s": 0.0915
     },
     {
      "archivo": "casa01/do_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2152,
      "llegada_s": 0.0556
     },
     {
      "archivo": "casa01/do_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2099,
      "llegada_s": 0.0517
     },
     {
      "archivo": "casa01/do_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.223,
      "llegada_s": 0.095
     }
    ]
@@ -16883,23 +16883,23 @@
    "tomas": [
     {
      "archivo": "casa01/do_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/do_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0909
     },
     {
      "archivo": "casa01/do_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.088
     },
     {
      "archivo": "casa01/do_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/do_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0764
     }
    ]
   },
@@ -16933,27 +16933,27 @@
    "tomas": [
     {
      "archivo": "casa01/dom_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1925,
      "llegada_s": 0.0538
     },
     {
      "archivo": "casa01/dom_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2092,
      "llegada_s": 0.0479
     },
     {
      "archivo": "casa01/dom_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.207,
      "llegada_s": 0.0484
     },
     {
      "archivo": "casa01/dom_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2164,
      "llegada_s": 0.0501
     },
     {
      "archivo": "casa01/dom_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2027,
      "llegada_s": 0.0477
     }
    ]
@@ -16963,23 +16963,23 @@
    "tomas": [
     {
      "archivo": "casa01/dom_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0888
     },
     {
      "archivo": "casa01/dom_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0902
     },
     {
      "archivo": "casa01/dom_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/dom_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.12
     },
     {
      "archivo": "casa01/dom_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0822
     }
    ]
   },
@@ -17013,27 +17013,27 @@
    "tomas": [
     {
      "archivo": "casa01/do7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2452,
      "llegada_s": 0.1986
     },
     {
      "archivo": "casa01/do7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2165,
      "llegada_s": 0.1848
     },
     {
      "archivo": "casa01/do7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2,
      "llegada_s": 0.2477
     },
     {
      "archivo": "casa01/do7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2114,
      "llegada_s": 0.1459
     },
     {
      "archivo": "casa01/do7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.207,
      "llegada_s": 0.157
     }
    ]
@@ -17043,23 +17043,23 @@
    "tomas": [
     {
      "archivo": "casa01/do7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0749
     },
     {
      "archivo": "casa01/do7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0677
     },
     {
      "archivo": "casa01/do7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0785
     },
     {
      "archivo": "casa01/do7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0822
     },
     {
      "archivo": "casa01/do7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0778
     }
    ]
   },
@@ -17093,27 +17093,27 @@
    "tomas": [
     {
      "archivo": "casa02/dodim7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2885,
      "llegada_s": 0.1945
     },
     {
      "archivo": "casa02/dodim7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2165,
      "llegada_s": 0.1122
     },
     {
      "archivo": "casa02/dodim7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2875,
      "llegada_s": 0.0559
     },
     {
      "archivo": "casa02/dodim7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2781,
      "llegada_s": 0.055
     },
     {
      "archivo": "casa02/dodim7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2842,
      "llegada_s": 0.1129
     }
    ]
@@ -17123,23 +17123,23 @@
    "tomas": [
     {
      "archivo": "casa02/dodim7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0721
     },
     {
      "archivo": "casa02/dodim7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0734
     },
     {
      "archivo": "casa02/dodim7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0597
     },
     {
      "archivo": "casa02/dodim7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0249
     },
     {
      "archivo": "casa02/dodim7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0909
     }
    ]
   },
@@ -17173,27 +17173,27 @@
    "tomas": [
     {
      "archivo": "casa08/dom7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2898,
      "llegada_s": 0.0539
     },
     {
      "archivo": "casa08/dom7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2832,
      "llegada_s": 0.1911
     },
     {
      "archivo": "casa08/dom7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2754,
      "llegada_s": 0.1953
     },
     {
      "archivo": "casa08/dom7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2687,
      "llegada_s": 0.0921
     },
     {
      "archivo": "casa08/dom7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2891,
      "llegada_s": 0.2632
     }
    ]
@@ -17203,23 +17203,23 @@
    "tomas": [
     {
      "archivo": "casa08/dom7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0641
     },
     {
      "archivo": "casa08/dom7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0757
     },
     {
      "archivo": "casa08/dom7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     },
     {
      "archivo": "casa08/dom7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa08/dom7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0684
     }
    ]
   },
@@ -17228,7 +17228,7 @@
    "tomas": [
     {
      "archivo": "casa08/dom7_arpegio_pulgar_1.mp3",
-     "ataque_desde_umbral_s": 0.18,
+     "ataque_desde_umbral_s": 0.2364,
      "cuerdas_s": [
       -0.0046,
       0.0722,
@@ -17240,7 +17240,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_2.mp3",
-     "ataque_desde_umbral_s": 0.1803,
+     "ataque_desde_umbral_s": 0.2408,
      "cuerdas_s": [
       -0.0051,
       0.0811,
@@ -17252,7 +17252,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_3.mp3",
-     "ataque_desde_umbral_s": 0.1652,
+     "ataque_desde_umbral_s": 0.226,
      "cuerdas_s": [
       -0.0052,
       0.0811,
@@ -17264,7 +17264,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_4.mp3",
-     "ataque_desde_umbral_s": 0.1017,
+     "ataque_desde_umbral_s": 0.151,
      "cuerdas_s": [
       -0.0071,
       0.0459,
@@ -17276,7 +17276,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_5.mp3",
-     "ataque_desde_umbral_s": 0.0987,
+     "ataque_desde_umbral_s": 0.1347,
      "cuerdas_s": [
       -0.0051,
       0.0502,
@@ -17288,7 +17288,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_6.mp3",
-     "ataque_desde_umbral_s": 0.1095,
+     "ataque_desde_umbral_s": 0.1452,
      "cuerdas_s": [
       -0.005,
       0.053,
@@ -17300,7 +17300,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_7.mp3",
-     "ataque_desde_umbral_s": 0.0956,
+     "ataque_desde_umbral_s": 0.1369,
      "cuerdas_s": [
       -0.005,
       0.0451,
@@ -17312,7 +17312,7 @@
     },
     {
      "archivo": "casa08/dom7_arpegio_pulgar_8.mp3",
-     "ataque_desde_umbral_s": 0.1044,
+     "ataque_desde_umbral_s": 0.1366,
      "cuerdas_s": [
       -0.0051,
       0.0508,
@@ -17379,27 +17379,27 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2125,
      "llegada_s": 0.0454
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.251,
      "llegada_s": 0.0461
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2277,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.225,
      "llegada_s": 0.0422
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2278,
      "llegada_s": 0.0453
     }
    ]
@@ -17409,23 +17409,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0627
     },
     {
      "archivo": "estudio01/dos_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0723
     },
     {
      "archivo": "estudio01/dos_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0768
     },
     {
      "archivo": "estudio01/dos_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0805
     },
     {
      "archivo": "estudio01/dos_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0897
     }
    ]
   },
@@ -17459,27 +17459,27 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2125,
      "llegada_s": 0.0454
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.251,
      "llegada_s": 0.0461
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2277,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.225,
      "llegada_s": 0.0422
     },
     {
      "archivo": "estudio01/dos_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2278,
      "llegada_s": 0.0453
     }
    ]
@@ -17489,23 +17489,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dos_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0627
     },
     {
      "archivo": "estudio01/dos_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0723
     },
     {
      "archivo": "estudio01/dos_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0768
     },
     {
      "archivo": "estudio01/dos_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0805
     },
     {
      "archivo": "estudio01/dos_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0897
     }
    ]
   },
@@ -17539,27 +17539,27 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1828,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2624,
      "llegada_s": 0.0553
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2702,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2699,
      "llegada_s": 0.0508
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2842,
      "llegada_s": 0.0466
     }
    ]
@@ -17569,23 +17569,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0889
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0947
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0963
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0826
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0841
     }
    ]
   },
@@ -17619,27 +17619,27 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1828,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2624,
      "llegada_s": 0.0553
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2702,
      "llegada_s": 0.0468
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2699,
      "llegada_s": 0.0508
     },
     {
      "archivo": "estudio01/dosm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2842,
      "llegada_s": 0.0466
     }
    ]
@@ -17649,23 +17649,23 @@
    "tomas": [
     {
      "archivo": "estudio01/dosm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0889
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0947
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0963
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0826
     },
     {
      "archivo": "estudio01/dosm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0841
     }
    ]
   },
@@ -17699,27 +17699,27 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1889,
      "llegada_s": 0.0482
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2048,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2143,
      "llegada_s": 0.0504
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1954,
      "llegada_s": 0.0503
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1867,
      "llegada_s": 0.0498
     }
    ]
@@ -17729,23 +17729,23 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0486
     },
     {
      "archivo": "casa01/dos7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0633
     },
     {
      "archivo": "casa01/dos7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0792
     },
     {
      "archivo": "casa01/dos7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0706
     },
     {
      "archivo": "casa01/dos7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0698
     }
    ]
   },
@@ -17779,27 +17779,27 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1889,
      "llegada_s": 0.0482
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2048,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2143,
      "llegada_s": 0.0504
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1954,
      "llegada_s": 0.0503
     },
     {
      "archivo": "casa01/dos7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1867,
      "llegada_s": 0.0498
     }
    ]
@@ -17809,23 +17809,23 @@
    "tomas": [
     {
      "archivo": "casa01/dos7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0486
     },
     {
      "archivo": "casa01/dos7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0633
     },
     {
      "archivo": "casa01/dos7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0792
     },
     {
      "archivo": "casa01/dos7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0706
     },
     {
      "archivo": "casa01/dos7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0698
     }
    ]
   },
@@ -17859,27 +17859,27 @@
    "tomas": [
     {
      "archivo": "casa01/re_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2716,
      "llegada_s": 0.177
     },
     {
      "archivo": "casa01/re_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2738,
      "llegada_s": 0.1584
     },
     {
      "archivo": "casa01/re_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2583,
      "llegada_s": 0.3074
     },
     {
      "archivo": "casa01/re_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1786,
      "llegada_s": 0.2173
     },
     {
      "archivo": "casa01/re_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2657,
      "llegada_s": 0.3085
     }
    ]
@@ -17889,23 +17889,23 @@
    "tomas": [
     {
      "archivo": "casa01/re_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0757
     },
     {
      "archivo": "casa01/re_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     },
     {
      "archivo": "casa01/re_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0735
     },
     {
      "archivo": "casa01/re_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0663
     },
     {
      "archivo": "casa01/re_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0837
     }
    ]
   },
@@ -17939,27 +17939,27 @@
    "tomas": [
     {
      "archivo": "casa01/rem_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2281,
      "llegada_s": 0.0987
     },
     {
      "archivo": "casa01/rem_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2012,
      "llegada_s": 0.0985
     },
     {
      "archivo": "casa01/rem_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1976,
      "llegada_s": 0.1599
     },
     {
      "archivo": "casa01/rem_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.205,
      "llegada_s": 0.0545
     },
     {
      "archivo": "casa01/rem_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1903,
      "llegada_s": 0.0983
     }
    ]
@@ -17969,23 +17969,23 @@
    "tomas": [
     {
      "archivo": "casa01/rem_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0728
     },
     {
      "archivo": "casa01/rem_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0771
     },
     {
      "archivo": "casa01/rem_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.067
     },
     {
      "archivo": "casa01/rem_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0742
     },
     {
      "archivo": "casa01/rem_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0663
     }
    ]
   },
@@ -18019,27 +18019,27 @@
    "tomas": [
     {
      "archivo": "casa01/re7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2107,
      "llegada_s": 0.0522
     },
     {
      "archivo": "casa01/re7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2056,
      "llegada_s": 0.0476
     },
     {
      "archivo": "casa01/re7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2049,
      "llegada_s": 0.089
     },
     {
      "archivo": "casa01/re7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.202,
      "llegada_s": 0.0483
     },
     {
      "archivo": "casa01/re7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2157,
      "llegada_s": 0.0518
     }
    ]
@@ -18049,23 +18049,23 @@
    "tomas": [
     {
      "archivo": "casa01/re7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0917
     },
     {
      "archivo": "casa01/re7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1163
     },
     {
      "archivo": "casa01/re7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.088
     },
     {
      "archivo": "casa01/re7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0967
     },
     {
      "archivo": "casa01/re7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0721
     }
    ]
   },
@@ -18099,27 +18099,27 @@
    "tomas": [
     {
      "archivo": "casa03/redim7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.157,
      "llegada_s": 0.1904
     },
     {
      "archivo": "casa03/redim7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2884,
      "llegada_s": 0.1051
     },
     {
      "archivo": "casa03/redim7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.313,
      "llegada_s": 0.1058
     },
     {
      "archivo": "casa03/redim7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.3003,
      "llegada_s": 0.2445
     },
     {
      "archivo": "casa03/redim7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.3066,
      "llegada_s": 0.1099
     }
    ]
@@ -18129,23 +18129,23 @@
    "tomas": [
     {
      "archivo": "casa03/redim7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0873
     },
     {
      "archivo": "casa03/redim7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0756
     },
     {
      "archivo": "casa03/redim7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0727
     },
     {
      "archivo": "casa03/redim7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0837
     },
     {
      "archivo": "casa03/redim7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0837
     }
    ]
   },
@@ -18179,27 +18179,27 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2451,
      "llegada_s": 0.1925
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1758,
      "llegada_s": 0.2207
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2682,
      "llegada_s": 0.2325
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2651,
      "llegada_s": 0.1734
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.257,
      "llegada_s": 0.2182
     }
    ]
@@ -18209,23 +18209,23 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0698
     },
     {
      "archivo": "casa02/mib_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa02/mib_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.112
     },
     {
      "archivo": "casa02/mib_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0775
     },
     {
      "archivo": "casa02/mib_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0793
     }
    ]
   },
@@ -18259,27 +18259,27 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2451,
      "llegada_s": 0.1925
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1758,
      "llegada_s": 0.2207
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2682,
      "llegada_s": 0.2325
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2651,
      "llegada_s": 0.1734
     },
     {
      "archivo": "casa02/mib_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.257,
      "llegada_s": 0.2182
     }
    ]
@@ -18289,23 +18289,23 @@
    "tomas": [
     {
      "archivo": "casa02/mib_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0698
     },
     {
      "archivo": "casa02/mib_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa02/mib_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.112
     },
     {
      "archivo": "casa02/mib_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0775
     },
     {
      "archivo": "casa02/mib_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0793
     }
    ]
   },
@@ -18339,27 +18339,27 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2679,
      "llegada_s": 0.1027
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1815,
      "llegada_s": 0.2177
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2672,
      "llegada_s": 0.2126
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2677,
      "llegada_s": 0.0973
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2749,
      "llegada_s": 0.122
     }
    ]
@@ -18369,23 +18369,23 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0668
     },
     {
      "archivo": "estudio01/resm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0878
     },
     {
      "archivo": "estudio01/resm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0979
     },
     {
      "archivo": "estudio01/resm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0818
     },
     {
      "archivo": "estudio01/resm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0791
     }
    ]
   },
@@ -18419,27 +18419,27 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2679,
      "llegada_s": 0.1027
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1815,
      "llegada_s": 0.2177
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2672,
      "llegada_s": 0.2126
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2677,
      "llegada_s": 0.0973
     },
     {
      "archivo": "estudio01/resm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2749,
      "llegada_s": 0.122
     }
    ]
@@ -18449,23 +18449,23 @@
    "tomas": [
     {
      "archivo": "estudio01/resm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0668
     },
     {
      "archivo": "estudio01/resm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0878
     },
     {
      "archivo": "estudio01/resm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0979
     },
     {
      "archivo": "estudio01/resm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0818
     },
     {
      "archivo": "estudio01/resm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0791
     }
    ]
   },
@@ -18499,27 +18499,27 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2648,
      "llegada_s": 0.0529
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2639,
      "llegada_s": 0.1113
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2821,
      "llegada_s": 0.1014
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2872,
      "llegada_s": 0.0918
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2855,
      "llegada_s": 0.1075
     }
    ]
@@ -18529,23 +18529,23 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0854
     },
     {
      "archivo": "estudio01/res7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0748
     },
     {
      "archivo": "estudio01/res7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0759
     },
     {
      "archivo": "estudio01/res7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0899
     },
     {
      "archivo": "estudio01/res7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.059
     }
    ]
   },
@@ -18579,27 +18579,27 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2648,
      "llegada_s": 0.0529
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2639,
      "llegada_s": 0.1113
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2821,
      "llegada_s": 0.1014
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2872,
      "llegada_s": 0.0918
     },
     {
      "archivo": "estudio01/res7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2855,
      "llegada_s": 0.1075
     }
    ]
@@ -18609,23 +18609,23 @@
    "tomas": [
     {
      "archivo": "estudio01/res7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0854
     },
     {
      "archivo": "estudio01/res7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0748
     },
     {
      "archivo": "estudio01/res7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0759
     },
     {
      "archivo": "estudio01/res7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0899
     },
     {
      "archivo": "estudio01/res7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.059
     }
    ]
   },
@@ -18659,27 +18659,27 @@
    "tomas": [
     {
      "archivo": "casa01/mi_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2157,
      "llegada_s": 0.1506
     },
     {
      "archivo": "casa01/mi_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.1636
     },
     {
      "archivo": "casa01/mi_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2055,
      "llegada_s": 0.0544
     },
     {
      "archivo": "casa01/mi_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2132,
      "llegada_s": 0.0561
     },
     {
      "archivo": "casa01/mi_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.196,
      "llegada_s": 0.05
     }
    ]
@@ -18689,23 +18689,23 @@
    "tomas": [
     {
      "archivo": "casa01/mi_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0685
     },
     {
      "archivo": "casa01/mi_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0844
     },
     {
      "archivo": "casa01/mi_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/mi_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/mi_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1279
     }
    ]
   },
@@ -18739,27 +18739,27 @@
    "tomas": [
     {
      "archivo": "casa01/mim_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1976,
      "llegada_s": 0.0518
     },
     {
      "archivo": "casa01/mim_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2201,
      "llegada_s": 0.119
     },
     {
      "archivo": "casa01/mim_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1976,
      "llegada_s": 0.0486
     },
     {
      "archivo": "casa01/mim_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2237,
      "llegada_s": 0.0485
     },
     {
      "archivo": "casa01/mim_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2152,
      "llegada_s": 0.1198
     }
    ]
@@ -18769,23 +18769,23 @@
    "tomas": [
     {
      "archivo": "casa01/mim_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0735
     },
     {
      "archivo": "casa01/mim_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     },
     {
      "archivo": "casa01/mim_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0909
     },
     {
      "archivo": "casa01/mim_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0648
     },
     {
      "archivo": "casa01/mim_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0706
     }
    ]
   },
@@ -18819,27 +18819,27 @@
    "tomas": [
     {
      "archivo": "casa01/mi7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2164,
      "llegada_s": 0.0926
     },
     {
      "archivo": "casa01/mi7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2241,
      "llegada_s": 0.0993
     },
     {
      "archivo": "casa01/mi7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.0782
     },
     {
      "archivo": "casa01/mi7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2089,
      "llegada_s": 0.0877
     },
     {
      "archivo": "casa01/mi7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1961,
      "llegada_s": 0.0825
     }
    ]
@@ -18849,23 +18849,23 @@
    "tomas": [
     {
      "archivo": "casa01/mi7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/mi7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1402
     },
     {
      "archivo": "casa01/mi7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0764
     },
     {
      "archivo": "casa01/mi7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     },
     {
      "archivo": "casa01/mi7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0808
     }
    ]
   },
@@ -18899,27 +18899,27 @@
    "tomas": [
     {
      "archivo": "casa01/fa_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2106,
      "llegada_s": 0.0949
     },
     {
      "archivo": "casa01/fa_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.101
     },
     {
      "archivo": "casa01/fa_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.199,
      "llegada_s": 0.0544
     },
     {
      "archivo": "casa01/fa_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2121,
      "llegada_s": 0.0475
     },
     {
      "archivo": "casa01/fa_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1976,
      "llegada_s": 0.0509
     }
    ]
@@ -18929,23 +18929,23 @@
    "tomas": [
     {
      "archivo": "casa01/fa_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0757
     },
     {
      "archivo": "casa01/fa_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0844
     },
     {
      "archivo": "casa01/fa_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0822
     },
     {
      "archivo": "casa01/fa_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0953
     },
     {
      "archivo": "casa01/fa_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0612
     }
    ]
   },
@@ -18979,27 +18979,27 @@
    "tomas": [
     {
      "archivo": "casa01/fam_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2266,
      "llegada_s": 0.0486
     },
     {
      "archivo": "casa01/fam_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2012,
      "llegada_s": 0.0482
     },
     {
      "archivo": "casa01/fam_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.199,
      "llegada_s": 0.0499
     },
     {
      "archivo": "casa01/fam_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.194,
      "llegada_s": 0.0523
     },
     {
      "archivo": "casa01/fam_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1917,
      "llegada_s": 0.0477
     }
    ]
@@ -19009,23 +19009,23 @@
    "tomas": [
     {
      "archivo": "casa01/fam_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/fam_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0779
     },
     {
      "archivo": "casa01/fam_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     },
     {
      "archivo": "casa01/fam_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0822
     },
     {
      "archivo": "casa01/fam_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     }
    ]
   },
@@ -19059,27 +19059,27 @@
    "tomas": [
     {
      "archivo": "casa01/fa7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.1774
     },
     {
      "archivo": "casa01/fa7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2186,
      "llegada_s": 0.1053
     },
     {
      "archivo": "casa01/fa7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2405,
      "llegada_s": 0.1309
     },
     {
      "archivo": "casa01/fa7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2092,
      "llegada_s": 0.0795
     },
     {
      "archivo": "casa01/fa7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1888,
      "llegada_s": 0.073
     }
    ]
@@ -19089,23 +19089,23 @@
    "tomas": [
     {
      "archivo": "casa01/fa7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0597
     },
     {
      "archivo": "casa01/fa7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0684
     },
     {
      "archivo": "casa01/fa7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0749
     },
     {
      "archivo": "casa01/fa7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.067
     },
     {
      "archivo": "casa01/fa7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0742
     }
    ]
   },
@@ -19139,27 +19139,27 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.204,
      "llegada_s": 0.0664
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2194,
      "llegada_s": 0.1708
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1881,
      "llegada_s": 0.1468
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2107,
      "llegada_s": 0.1817
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2033,
      "llegada_s": 0.0793
     }
    ]
@@ -19169,23 +19169,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/fas_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     },
     {
      "archivo": "casa01/fas_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0902
     },
     {
      "archivo": "casa01/fas_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0728
     },
     {
      "archivo": "casa01/fas_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0676
     }
    ]
   },
@@ -19219,27 +19219,27 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.204,
      "llegada_s": 0.0664
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2194,
      "llegada_s": 0.1708
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1881,
      "llegada_s": 0.1468
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2107,
      "llegada_s": 0.1817
     },
     {
      "archivo": "casa01/fas_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2033,
      "llegada_s": 0.0793
     }
    ]
@@ -19249,23 +19249,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/fas_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     },
     {
      "archivo": "casa01/fas_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0902
     },
     {
      "archivo": "casa01/fas_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0728
     },
     {
      "archivo": "casa01/fas_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0676
     }
    ]
   },
@@ -19299,27 +19299,27 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2008,
      "llegada_s": 0.2374
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2012,
      "llegada_s": 0.1637
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.194,
      "llegada_s": 0.1351
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1974,
      "llegada_s": 0.2491
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2272,
      "llegada_s": 0.0501
     }
    ]
@@ -19329,23 +19329,23 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0917
     },
     {
      "archivo": "casa01/fasm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     },
     {
      "archivo": "casa01/fasm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0706
     },
     {
      "archivo": "casa01/fasm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0866
     },
     {
      "archivo": "casa01/fasm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0605
     }
    ]
   },
@@ -19379,27 +19379,27 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2008,
      "llegada_s": 0.2374
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2012,
      "llegada_s": 0.1637
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.194,
      "llegada_s": 0.1351
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1974,
      "llegada_s": 0.2491
     },
     {
      "archivo": "casa01/fasm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2272,
      "llegada_s": 0.0501
     }
    ]
@@ -19409,23 +19409,23 @@
    "tomas": [
     {
      "archivo": "casa01/fasm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0917
     },
     {
      "archivo": "casa01/fasm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     },
     {
      "archivo": "casa01/fasm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0706
     },
     {
      "archivo": "casa01/fasm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0866
     },
     {
      "archivo": "casa01/fasm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0605
     }
    ]
   },
@@ -19459,27 +19459,27 @@
    "tomas": [
     {
      "archivo": "casa01/fas7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2259,
      "llegada_s": 0.1314
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2111,
      "llegada_s": 0.0455
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.215,
      "llegada_s": 0.1316
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.194,
      "llegada_s": 0.0596
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1968,
      "llegada_s": 0.0984
     }
    ]
@@ -19489,23 +19489,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1497
     },
     {
      "archivo": "casa01/fas7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/fas7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0938
     },
     {
      "archivo": "casa01/fas7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0859
     },
     {
      "archivo": "casa01/fas7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     }
    ]
   },
@@ -19539,27 +19539,27 @@
    "tomas": [
     {
      "archivo": "casa01/fas7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2259,
      "llegada_s": 0.1314
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2111,
      "llegada_s": 0.0455
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.215,
      "llegada_s": 0.1316
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.194,
      "llegada_s": 0.0596
     },
     {
      "archivo": "casa01/fas7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1968,
      "llegada_s": 0.0984
     }
    ]
@@ -19569,23 +19569,23 @@
    "tomas": [
     {
      "archivo": "casa01/fas7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1497
     },
     {
      "archivo": "casa01/fas7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/fas7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0938
     },
     {
      "archivo": "casa01/fas7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0859
     },
     {
      "archivo": "casa01/fas7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     }
    ]
   },
@@ -19619,27 +19619,27 @@
    "tomas": [
     {
      "archivo": "casa01/sol_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2346,
      "llegada_s": 0.0497
     },
     {
      "archivo": "casa01/sol_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2342,
      "llegada_s": 0.2802
     },
     {
      "archivo": "casa01/sol_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2564,
      "llegada_s": 0.0564
     },
     {
      "archivo": "casa01/sol_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2497,
      "llegada_s": 0.0592
     },
     {
      "archivo": "casa01/sol_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2317,
      "llegada_s": 0.0527
     }
    ]
@@ -19649,23 +19649,23 @@
    "tomas": [
     {
      "archivo": "casa01/sol_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0641
     },
     {
      "archivo": "casa01/sol_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1091
     },
     {
      "archivo": "casa01/sol_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1228
     },
     {
      "archivo": "casa01/sol_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1163
     },
     {
      "archivo": "casa01/sol_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0975
     }
    ]
   },
@@ -19699,27 +19699,27 @@
    "tomas": [
     {
      "archivo": "casa01/solm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2114,
      "llegada_s": 0.1611
     },
     {
      "archivo": "casa01/solm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2127,
      "llegada_s": 0.0992
     },
     {
      "archivo": "casa01/solm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2048,
      "llegada_s": 0.1165
     },
     {
      "archivo": "casa01/solm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2165,
      "llegada_s": 0.1739
     },
     {
      "archivo": "casa01/solm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2071,
      "llegada_s": 0.0927
     }
    ]
@@ -19729,23 +19729,23 @@
    "tomas": [
     {
      "archivo": "casa01/solm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0829
     },
     {
      "archivo": "casa01/solm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0764
     },
     {
      "archivo": "casa01/solm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0735
     },
     {
      "archivo": "casa01/solm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/solm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     }
    ]
   },
@@ -19779,27 +19779,27 @@
    "tomas": [
     {
      "archivo": "casa01/sol7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.223,
      "llegada_s": 0.1273
     },
     {
      "archivo": "casa01/sol7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.242,
      "llegada_s": 0.1085
     },
     {
      "archivo": "casa01/sol7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2559,
      "llegada_s": 0.1431
     },
     {
      "archivo": "casa01/sol7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2439,
      "llegada_s": 0.2738
     },
     {
      "archivo": "casa01/sol7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2506,
      "llegada_s": 0.1225
     }
    ]
@@ -19809,23 +19809,23 @@
    "tomas": [
     {
      "archivo": "casa01/sol7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/sol7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0851
     },
     {
      "archivo": "casa01/sol7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0982
     },
     {
      "archivo": "casa01/sol7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.08
     },
     {
      "archivo": "casa01/sol7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0938
     }
    ]
   },
@@ -19859,27 +19859,27 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2717,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.3112,
      "llegada_s": 0.2214
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2828,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2745,
      "llegada_s": 0.1765
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2839,
      "llegada_s": 0.0495
     }
    ]
@@ -19889,23 +19889,23 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa03/sols_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1403
     },
     {
      "archivo": "casa03/sols_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     },
     {
      "archivo": "casa03/sols_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0583
     },
     {
      "archivo": "casa03/sols_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1047
     }
    ]
   },
@@ -19939,27 +19939,27 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2717,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.3112,
      "llegada_s": 0.2214
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2828,
      "llegada_s": 0.0496
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2745,
      "llegada_s": 0.1765
     },
     {
      "archivo": "casa03/sols_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2839,
      "llegada_s": 0.0495
     }
    ]
@@ -19969,23 +19969,23 @@
    "tomas": [
     {
      "archivo": "casa03/sols_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa03/sols_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1403
     },
     {
      "archivo": "casa03/sols_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     },
     {
      "archivo": "casa03/sols_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0583
     },
     {
      "archivo": "casa03/sols_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1047
     }
    ]
   },
@@ -20019,27 +20019,27 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2666,
      "llegada_s": 0.0526
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2673,
      "llegada_s": 0.0508
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2759,
      "llegada_s": 0.0527
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2731,
      "llegada_s": 0.0665
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2679,
      "llegada_s": 0.054
     }
    ]
@@ -20049,23 +20049,23 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0827
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1171
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0733
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0792
     }
    ]
   },
@@ -20099,27 +20099,27 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2666,
      "llegada_s": 0.0526
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2673,
      "llegada_s": 0.0508
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2759,
      "llegada_s": 0.0527
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2731,
      "llegada_s": 0.0665
     },
     {
      "archivo": "estudio01/solsm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2679,
      "llegada_s": 0.054
     }
    ]
@@ -20129,23 +20129,23 @@
    "tomas": [
     {
      "archivo": "estudio01/solsm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0827
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1171
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0733
     },
     {
      "archivo": "estudio01/solsm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0792
     }
    ]
   },
@@ -20179,27 +20179,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2746,
      "llegada_s": 0.1151
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2591,
      "llegada_s": 0.0926
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2695,
      "llegada_s": 0.0921
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2741,
      "llegada_s": 0.1114
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1913,
      "llegada_s": 0.1129
     }
    ]
@@ -20209,23 +20209,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0633
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.07
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0694
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     }
    ]
   },
@@ -20259,27 +20259,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2746,
      "llegada_s": 0.1151
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2591,
      "llegada_s": 0.0926
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2695,
      "llegada_s": 0.0921
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2741,
      "llegada_s": 0.1114
     },
     {
      "archivo": "estudio01/sols7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1913,
      "llegada_s": 0.1129
     }
    ]
@@ -20289,23 +20289,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sols7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0633
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.07
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0694
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "estudio01/sols7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     }
    ]
   },
@@ -20339,27 +20339,27 @@
    "tomas": [
     {
      "archivo": "casa01/la_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2237,
      "llegada_s": 0.1022
     },
     {
      "archivo": "casa01/la_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2193,
      "llegada_s": 0.1059
     },
     {
      "archivo": "casa01/la_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1932,
      "llegada_s": 0.1057
     },
     {
      "archivo": "casa01/la_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2068,
      "llegada_s": 0.0942
     },
     {
      "archivo": "casa01/la_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.207,
      "llegada_s": 0.1014
     }
    ]
@@ -20369,23 +20369,23 @@
    "tomas": [
     {
      "archivo": "casa01/la_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0815
     },
     {
      "archivo": "casa01/la_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1004
     },
     {
      "archivo": "casa01/la_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0597
     },
     {
      "archivo": "casa01/la_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0822
     },
     {
      "archivo": "casa01/la_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0892
     }
    ]
   },
@@ -20419,27 +20419,27 @@
    "tomas": [
     {
      "archivo": "casa01/lam_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2295,
      "llegada_s": 0.1093
     },
     {
      "archivo": "casa01/lam_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2085,
      "llegada_s": 0.0495
     },
     {
      "archivo": "casa01/lam_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2346,
      "llegada_s": 0.1118
     },
     {
      "archivo": "casa01/lam_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2179,
      "llegada_s": 0.1003
     },
     {
      "archivo": "casa01/lam_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2098,
      "llegada_s": 0.0535
     }
    ]
@@ -20449,23 +20449,23 @@
    "tomas": [
     {
      "archivo": "casa01/lam_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0692
     },
     {
      "archivo": "casa01/lam_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0779
     },
     {
      "archivo": "casa01/lam_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/lam_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0735
     },
     {
      "archivo": "casa01/lam_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     }
    ]
   },
@@ -20499,27 +20499,27 @@
    "tomas": [
     {
      "archivo": "casa01/la7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2411,
      "llegada_s": 0.115
     },
     {
      "archivo": "casa01/la7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.231,
      "llegada_s": 0.1764
     },
     {
      "archivo": "casa01/la7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.219,
      "llegada_s": 0.1563
     },
     {
      "archivo": "casa01/la7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2677,
      "llegada_s": 0.1842
     },
     {
      "archivo": "casa01/la7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2377,
      "llegada_s": 0.1015
     }
    ]
@@ -20529,23 +20529,23 @@
    "tomas": [
     {
      "archivo": "casa01/la7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/la7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1156
     },
     {
      "archivo": "casa01/la7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/la7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0771
     },
     {
      "archivo": "casa01/la7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0764
     }
    ]
   },
@@ -20579,27 +20579,27 @@
    "tomas": [
     {
      "archivo": "casa05/lam7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2488,
      "llegada_s": 0.1733
     },
     {
      "archivo": "casa05/lam7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2816,
      "llegada_s": 0.0488
     },
     {
      "archivo": "casa05/lam7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2744,
      "llegada_s": 0.0533
     },
     {
      "archivo": "casa05/lam7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.3124,
      "llegada_s": 0.0517
     },
     {
      "archivo": "casa05/lam7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2863,
      "llegada_s": 0.051
     }
    ]
@@ -20609,23 +20609,23 @@
    "tomas": [
     {
      "archivo": "casa05/lam7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0611
     },
     {
      "archivo": "casa05/lam7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0619
     },
     {
      "archivo": "casa05/lam7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0707
     },
     {
      "archivo": "casa05/lam7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0627
     },
     {
      "archivo": "casa05/lam7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.088
     }
    ]
   },
@@ -20659,7 +20659,7 @@
    "tomas": [
     {
      "archivo": "casa05/lam7_arpegio_pulgar_1.mp3",
-     "ataque_desde_umbral_s": 0.1642,
+     "ataque_desde_umbral_s": 0.2456,
      "cuerdas_s": [
       0.0011,
       0.0819,
@@ -20671,7 +20671,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_2.mp3",
-     "ataque_desde_umbral_s": 0.162,
+     "ataque_desde_umbral_s": 0.2695,
      "cuerdas_s": [
       0.0012,
       0.0684,
@@ -20683,7 +20683,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_3.mp3",
-     "ataque_desde_umbral_s": 0.1463,
+     "ataque_desde_umbral_s": 0.2273,
      "cuerdas_s": [
       0.001,
       0.0524,
@@ -20695,7 +20695,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_4.mp3",
-     "ataque_desde_umbral_s": 0.1238,
+     "ataque_desde_umbral_s": 0.2119,
      "cuerdas_s": [
       0.0008,
       0.0502,
@@ -20707,7 +20707,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_5.mp3",
-     "ataque_desde_umbral_s": 0.1317,
+     "ataque_desde_umbral_s": 0.2049,
      "cuerdas_s": [
       0.0011,
       0.0576,
@@ -20719,7 +20719,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_6.mp3",
-     "ataque_desde_umbral_s": 0.1062,
+     "ataque_desde_umbral_s": 0.1754,
      "cuerdas_s": [
       -0.0013,
       0.039,
@@ -20731,7 +20731,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_7.mp3",
-     "ataque_desde_umbral_s": 0.0815,
+     "ataque_desde_umbral_s": 0.112,
      "cuerdas_s": [
       0.001,
       0.0354,
@@ -20743,7 +20743,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_8.mp3",
-     "ataque_desde_umbral_s": 0.0682,
+     "ataque_desde_umbral_s": 0.1118,
      "cuerdas_s": [
       -0.0033,
       0.024,
@@ -20755,7 +20755,7 @@
     },
     {
      "archivo": "casa05/lam7_arpegio_pulgar_9.mp3",
-     "ataque_desde_umbral_s": 0.0748,
+     "ataque_desde_umbral_s": 0.1123,
      "cuerdas_s": [
       -0.0012,
       0.0301,
@@ -20797,27 +20797,27 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1904,
      "llegada_s": 0.0435
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1861,
      "llegada_s": 0.0512
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1947,
      "llegada_s": 0.0447
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.0431
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1802,
      "llegada_s": 0.0434
     }
    ]
@@ -20827,23 +20827,23 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/sib_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0722
     },
     {
      "archivo": "casa01/sib_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0742
     },
     {
      "archivo": "casa01/sib_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0756
     },
     {
      "archivo": "casa01/sib_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     }
    ]
   },
@@ -20877,27 +20877,27 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1904,
      "llegada_s": 0.0435
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1861,
      "llegada_s": 0.0512
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1947,
      "llegada_s": 0.0447
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2034,
      "llegada_s": 0.0431
     },
     {
      "archivo": "casa01/sib_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1802,
      "llegada_s": 0.0434
     }
    ]
@@ -20907,23 +20907,23 @@
    "tomas": [
     {
      "archivo": "casa01/sib_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0713
     },
     {
      "archivo": "casa01/sib_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0722
     },
     {
      "archivo": "casa01/sib_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0742
     },
     {
      "archivo": "casa01/sib_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0756
     },
     {
      "archivo": "casa01/sib_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.075
     }
    ]
   },
@@ -20957,27 +20957,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1594,
      "llegada_s": 0.0939
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2059,
      "llegada_s": 0.124
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2081,
      "llegada_s": 0.101
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2796,
      "llegada_s": 0.1152
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2828,
      "llegada_s": 0.1028
     }
    ]
@@ -20987,23 +20987,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.088
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.091
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0748
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0705
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0863
     }
    ]
   },
@@ -21037,27 +21037,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1594,
      "llegada_s": 0.0939
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2059,
      "llegada_s": 0.124
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2081,
      "llegada_s": 0.101
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2796,
      "llegada_s": 0.1152
     },
     {
      "archivo": "estudio01/sibm_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2828,
      "llegada_s": 0.1028
     }
    ]
@@ -21067,23 +21067,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sibm_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.088
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.091
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0748
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0705
     },
     {
      "archivo": "estudio01/sibm_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0863
     }
    ]
   },
@@ -21117,27 +21117,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2434,
      "llegada_s": 0.0913
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2408,
      "llegada_s": 0.084
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2736,
      "llegada_s": 0.1141
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2725,
      "llegada_s": 0.098
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2816,
      "llegada_s": 0.1048
     }
    ]
@@ -21147,23 +21147,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0862
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0693
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0861
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0903
     }
    ]
   },
@@ -21197,27 +21197,27 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2434,
      "llegada_s": 0.0913
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2408,
      "llegada_s": 0.084
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2736,
      "llegada_s": 0.1141
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2725,
      "llegada_s": 0.098
     },
     {
      "archivo": "estudio01/sib7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2816,
      "llegada_s": 0.1048
     }
    ]
@@ -21227,23 +21227,23 @@
    "tomas": [
     {
      "archivo": "estudio01/sib7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0862
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0693
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0861
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0699
     },
     {
      "archivo": "estudio01/sib7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0903
     }
    ]
   },
@@ -21277,27 +21277,27 @@
    "tomas": [
     {
      "archivo": "casa04/sibmaj7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2563,
      "llegada_s": 0.1143
     },
     {
      "archivo": "casa04/sibmaj7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1911,
      "llegada_s": 0.2426
     },
     {
      "archivo": "casa04/sibmaj7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1973,
      "llegada_s": 0.1189
     },
     {
      "archivo": "casa04/sibmaj7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2939,
      "llegada_s": 0.2626
     },
     {
      "archivo": "casa04/sibmaj7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2038,
      "llegada_s": 0.2533
     }
    ]
@@ -21307,23 +21307,23 @@
    "tomas": [
     {
      "archivo": "casa04/sibmaj7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0975
     },
     {
      "archivo": "casa04/sibmaj7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0917
     },
     {
      "archivo": "casa04/sibmaj7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0923
     },
     {
      "archivo": "casa04/sibmaj7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0884
     },
     {
      "archivo": "casa04/sibmaj7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0953
     }
    ]
   },
@@ -21357,7 +21357,7 @@
    "tomas": [
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_1.mp3",
-     "ataque_desde_umbral_s": 0.1493,
+     "ataque_desde_umbral_s": 0.2576,
      "cuerdas_s": [
       -0.0053,
       0.0647,
@@ -21369,7 +21369,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_2.mp3",
-     "ataque_desde_umbral_s": 0.1128,
+     "ataque_desde_umbral_s": 0.1799,
      "cuerdas_s": [
       -0.0055,
       0.0469,
@@ -21381,7 +21381,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_3.mp3",
-     "ataque_desde_umbral_s": 0.1439,
+     "ataque_desde_umbral_s": 0.2115,
      "cuerdas_s": [
       -0.0049,
       0.0588,
@@ -21393,7 +21393,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_4.mp3",
-     "ataque_desde_umbral_s": 0.1108,
+     "ataque_desde_umbral_s": 0.1607,
      "cuerdas_s": [
       -0.0054,
       0.0473,
@@ -21405,7 +21405,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_5.mp3",
-     "ataque_desde_umbral_s": 0.0901,
+     "ataque_desde_umbral_s": 0.128,
      "cuerdas_s": [
       -0.0053,
       0.0432,
@@ -21417,7 +21417,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_6.mp3",
-     "ataque_desde_umbral_s": 0.1117,
+     "ataque_desde_umbral_s": 0.1586,
      "cuerdas_s": [
       -0.0053,
       0.0488,
@@ -21429,7 +21429,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_7.mp3",
-     "ataque_desde_umbral_s": 0.0745,
+     "ataque_desde_umbral_s": 0.1107,
      "cuerdas_s": [
       -0.0056,
       0.0342,
@@ -21441,7 +21441,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_8.mp3",
-     "ataque_desde_umbral_s": 0.0699,
+     "ataque_desde_umbral_s": 0.1064,
      "cuerdas_s": [
       -0.0074,
       0.0362,
@@ -21453,7 +21453,7 @@
     },
     {
      "archivo": "casa05/sibmaj7_arpegio_pulgar_9.mp3",
-     "ataque_desde_umbral_s": 0.0546,
+     "ataque_desde_umbral_s": 0.0805,
      "cuerdas_s": [
       -0.0056,
       0.0296,
@@ -21495,27 +21495,27 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2416,
      "llegada_s": 0.2086
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2824,
      "llegada_s": 0.1084
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2524,
      "llegada_s": 0.2184
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2692,
      "llegada_s": 0.2399
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2617,
      "llegada_s": 0.1239
     }
    ]
@@ -21525,23 +21525,23 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0916
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1033
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.096
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0945
     }
    ]
   },
@@ -21575,7 +21575,7 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_1.mp3",
-     "ataque_desde_umbral_s": 0.1662,
+     "ataque_desde_umbral_s": 0.2404,
      "cuerdas_s": [
       -0.0053,
       0.0774,
@@ -21587,7 +21587,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_2.mp3",
-     "ataque_desde_umbral_s": 0.1566,
+     "ataque_desde_umbral_s": 0.2408,
      "cuerdas_s": [
       -0.0052,
       0.0705,
@@ -21599,7 +21599,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_3.mp3",
-     "ataque_desde_umbral_s": 0.1847,
+     "ataque_desde_umbral_s": 0.2469,
      "cuerdas_s": [
       -0.0033,
       0.0764,
@@ -21611,7 +21611,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_4.mp3",
-     "ataque_desde_umbral_s": 0.0637,
+     "ataque_desde_umbral_s": 0.0839,
      "cuerdas_s": [
       -0.0053,
       0.0367,
@@ -21623,7 +21623,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_5.mp3",
-     "ataque_desde_umbral_s": 0.1021,
+     "ataque_desde_umbral_s": 0.1474,
      "cuerdas_s": [
       -0.0054,
       0.0531,
@@ -21635,7 +21635,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_6.mp3",
-     "ataque_desde_umbral_s": 0.0753,
+     "ataque_desde_umbral_s": 0.1083,
      "cuerdas_s": [
       -0.0034,
       0.0364,
@@ -21647,7 +21647,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_7.mp3",
-     "ataque_desde_umbral_s": 0.0757,
+     "ataque_desde_umbral_s": 0.102,
      "cuerdas_s": [
       -0.0053,
       0.0374,
@@ -21659,7 +21659,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_8.mp3",
-     "ataque_desde_umbral_s": 0.0918,
+     "ataque_desde_umbral_s": 0.125,
      "cuerdas_s": [
       -0.0035,
       0.0494,
@@ -21671,7 +21671,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_9.mp3",
-     "ataque_desde_umbral_s": 0.0698,
+     "ataque_desde_umbral_s": 0.0908,
      "cuerdas_s": [
       -0.0051,
       0.039,
@@ -21713,27 +21713,27 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2416,
      "llegada_s": 0.2086
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2824,
      "llegada_s": 0.1084
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2524,
      "llegada_s": 0.2184
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2692,
      "llegada_s": 0.2399
     },
     {
      "archivo": "casa06/sibm7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2617,
      "llegada_s": 0.1239
     }
    ]
@@ -21743,23 +21743,23 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0772
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0916
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1033
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.096
     },
     {
      "archivo": "casa06/sibm7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0945
     }
    ]
   },
@@ -21793,7 +21793,7 @@
    "tomas": [
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_1.mp3",
-     "ataque_desde_umbral_s": 0.1662,
+     "ataque_desde_umbral_s": 0.2404,
      "cuerdas_s": [
       -0.0053,
       0.0774,
@@ -21805,7 +21805,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_2.mp3",
-     "ataque_desde_umbral_s": 0.1566,
+     "ataque_desde_umbral_s": 0.2408,
      "cuerdas_s": [
       -0.0052,
       0.0705,
@@ -21817,7 +21817,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_3.mp3",
-     "ataque_desde_umbral_s": 0.1847,
+     "ataque_desde_umbral_s": 0.2469,
      "cuerdas_s": [
       -0.0033,
       0.0764,
@@ -21829,7 +21829,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_4.mp3",
-     "ataque_desde_umbral_s": 0.0637,
+     "ataque_desde_umbral_s": 0.0839,
      "cuerdas_s": [
       -0.0053,
       0.0367,
@@ -21841,7 +21841,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_5.mp3",
-     "ataque_desde_umbral_s": 0.1021,
+     "ataque_desde_umbral_s": 0.1474,
      "cuerdas_s": [
       -0.0054,
       0.0531,
@@ -21853,7 +21853,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_6.mp3",
-     "ataque_desde_umbral_s": 0.0753,
+     "ataque_desde_umbral_s": 0.1083,
      "cuerdas_s": [
       -0.0034,
       0.0364,
@@ -21865,7 +21865,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_7.mp3",
-     "ataque_desde_umbral_s": 0.0757,
+     "ataque_desde_umbral_s": 0.102,
      "cuerdas_s": [
       -0.0053,
       0.0374,
@@ -21877,7 +21877,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_8.mp3",
-     "ataque_desde_umbral_s": 0.0918,
+     "ataque_desde_umbral_s": 0.125,
      "cuerdas_s": [
       -0.0035,
       0.0494,
@@ -21889,7 +21889,7 @@
     },
     {
      "archivo": "casa06/sibm7_arpegio_pulgar_9.mp3",
-     "ataque_desde_umbral_s": 0.0698,
+     "ataque_desde_umbral_s": 0.0908,
      "cuerdas_s": [
       -0.0051,
       0.039,
@@ -21931,27 +21931,27 @@
    "tomas": [
     {
      "archivo": "casa01/si_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.215,
      "llegada_s": 0.05
     },
     {
      "archivo": "casa01/si_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2143,
      "llegada_s": 0.0501
     },
     {
      "archivo": "casa01/si_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.1898,
      "llegada_s": 0.0505
     },
     {
      "archivo": "casa01/si_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2091,
      "llegada_s": 0.0499
     },
     {
      "archivo": "casa01/si_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.199,
      "llegada_s": 0.0502
     }
    ]
@@ -21961,23 +21961,23 @@
    "tomas": [
     {
      "archivo": "casa01/si_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0851
     },
     {
      "archivo": "casa01/si_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0924
     },
     {
      "archivo": "casa01/si_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1004
     },
     {
      "archivo": "casa01/si_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0902
     },
     {
      "archivo": "casa01/si_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1417
     }
    ]
   },
@@ -22011,27 +22011,27 @@
    "tomas": [
     {
      "archivo": "casa01/sim_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2456,
      "llegada_s": 0.0537
     },
     {
      "archivo": "casa01/sim_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.223,
      "llegada_s": 0.1398
     },
     {
      "archivo": "casa01/sim_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2235,
      "llegada_s": 0.2695
     },
     {
      "archivo": "casa01/sim_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2346,
      "llegada_s": 0.1346
     },
     {
      "archivo": "casa01/sim_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2138,
      "llegada_s": 0.2441
     }
    ]
@@ -22041,23 +22041,23 @@
    "tomas": [
     {
      "archivo": "casa01/sim_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0859
     },
     {
      "archivo": "casa01/sim_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1012
     },
     {
      "archivo": "casa01/sim_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0902
     },
     {
      "archivo": "casa01/sim_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0808
     },
     {
      "archivo": "casa01/sim_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.1004
     }
    ]
   },
@@ -22091,27 +22091,27 @@
    "tomas": [
     {
      "archivo": "casa01/si7_abanico_reentrante_1.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2114,
      "llegada_s": 0.0517
     },
     {
      "archivo": "casa01/si7_abanico_reentrante_2.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2041,
      "llegada_s": 0.1593
     },
     {
      "archivo": "casa01/si7_abanico_reentrante_3.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2138,
      "llegada_s": 0.0513
     },
     {
      "archivo": "casa01/si7_abanico_reentrante_4.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2164,
      "llegada_s": 0.0499
     },
     {
      "archivo": "casa01/si7_abanico_reentrante_5.mp3",
-     "ataque_desde_umbral_s": 0.0,
+     "ataque_desde_umbral_s": 0.2049,
      "llegada_s": 0.0523
     }
    ]
@@ -22121,23 +22121,23 @@
    "tomas": [
     {
      "archivo": "casa01/si7_abanico_fino_1.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0917
     },
     {
      "archivo": "casa01/si7_abanico_fino_2.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0888
     },
     {
      "archivo": "casa01/si7_abanico_fino_3.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0786
     },
     {
      "archivo": "casa01/si7_abanico_fino_4.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0807
     },
     {
      "archivo": "casa01/si7_abanico_fino_5.mp3",
-     "ataque_desde_umbral_s": 0.0485
+     "ataque_desde_umbral_s": 0.0866
     }
    ]
   }
