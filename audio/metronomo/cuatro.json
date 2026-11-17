@@ -1,6 +1,6 @@
 {
- "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su último golpe: la yema del pulgar, el pulgar en el fino y la uña del índice en el reentrante; en el arpegio con el pulgar, la llegada a la última cuerda, Si). «db» = ganancia que se suma al tocar (los apagados).",
- "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados se grabaron con su golpe de preparación delante; el apagado es el segundo golpe de cada par, y es el que se cortó.",
+ "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su último golpe: la yema del pulgar, el pulgar en el fino y la uña del índice en el reentrante; en el arpegio con el pulgar, la llegada a la última cuerda, Si). Sin los apagados: en el Metrónomo no suenan (marcas mudas).",
+ "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados (el segundo golpe de cada par) no están aquí: pasaron a la guía de golpes de la Sala (audio/ritmos/guia/).",
  "golpes": {
   "abajo": {
    "tomas": [
@@ -337,56 +337,6 @@
      "a": 0.06
     }
    ]
-  },
-  "apagado_abajo": {
-   "tomas": [
-    {
-     "f": "apagado_abajo_1.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_abajo_2.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_abajo_3.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_abajo_4.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_abajo_5.mp3",
-     "a": 0.06
-    }
-   ],
-   "db": 24
-  },
-  "apagado_arriba": {
-   "tomas": [
-    {
-     "f": "apagado_arriba_1.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_arriba_2.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_arriba_3.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_arriba_4.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "apagado_arriba_5.mp3",
-     "a": 0.06
-    }
-   ],
-   "db": 24
   },
   "abajo_redondo": {
    "tomas": [
