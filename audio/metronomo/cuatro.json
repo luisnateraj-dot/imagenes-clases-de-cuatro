@@ -1,5 +1,5 @@
 {
- "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su punto más fuerte + 45 ms; en el arpegio con el pulgar, la llegada a la última cuerda, Si). «db» = ganancia que se suma al tocar (los apagados).",
+ "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su último golpe: la yema del pulgar, el pulgar en el fino y la uña del índice en el reentrante; en el arpegio con el pulgar, la llegada a la última cuerda, Si). «db» = ganancia que se suma al tocar (los apagados).",
  "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados se grabaron con su golpe de preparación delante; el apagado es el segundo golpe de cada par, y es el que se cortó.",
  "golpes": {
   "abajo": {
@@ -126,23 +126,23 @@
    "tomas": [
     {
      "f": "abanico_1.mp3",
-     "a": 0.169
+     "a": 0.1975
     },
     {
      "f": "abanico_2.mp3",
-     "a": 0.112
+     "a": 0.1728
     },
     {
      "f": "abanico_3.mp3",
-     "a": 0.123
+     "a": 0.1917
     },
     {
      "f": "abanico_4.mp3",
-     "a": 0.13
+     "a": 0.1793
     },
     {
      "f": "abanico_5.mp3",
-     "a": 0.138
+     "a": 0.1931
     }
    ]
   },
@@ -150,23 +150,23 @@
    "tomas": [
     {
      "f": "abanico_fino_1.mp3",
-     "a": 0.106
+     "a": 0.1256
     },
     {
      "f": "abanico_fino_2.mp3",
-     "a": 0.106
+     "a": 0.1322
     },
     {
      "f": "abanico_fino_3.mp3",
-     "a": 0.105
+     "a": 0.1205
     },
     {
      "f": "abanico_fino_4.mp3",
-     "a": 0.11
+     "a": 0.1126
     },
     {
      "f": "abanico_fino_5.mp3",
-     "a": 0.104
+     "a": 0.1162
     }
    ]
   },
@@ -174,23 +174,23 @@
    "tomas": [
     {
      "f": "abanico_reentrante_1.mp3",
-     "a": 0.207
+     "a": 0.3005
     },
     {
      "f": "abanico_reentrante_2.mp3",
-     "a": 0.237
+     "a": 0.302
     },
     {
      "f": "abanico_reentrante_3.mp3",
-     "a": 0.151
+     "a": 0.3288
     },
     {
      "f": "abanico_reentrante_4.mp3",
-     "a": 0.147
+     "a": 0.3194
     },
     {
      "f": "abanico_reentrante_5.mp3",
-     "a": 0.152
+     "a": 0.3361
     }
    ]
   },
