@@ -1,5 +1,5 @@
 {
- "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su punto más fuerte + 45 ms; en el arpegio con el pulgar, la llegada a la tercera cuerda, la más aguda). «db» = ganancia que se suma al tocar (los apagados).",
+ "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su punto más fuerte + 45 ms; en el arpegio con el pulgar, la llegada a la última cuerda, Si). «db» = ganancia que se suma al tocar (los apagados).",
  "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados se grabaron con su golpe de preparación delante; el apagado es el segundo golpe de cada par, y es el que se cortó.",
  "golpes": {
   "abajo": {
@@ -440,23 +440,23 @@
    "tomas": [
     {
      "f": "arpegio_pulgar_lento_1.mp3",
-     "a": 0.1909
+     "a": 0.2809
     },
     {
      "f": "arpegio_pulgar_lento_2.mp3",
-     "a": 0.1953
+     "a": 0.302
     },
     {
      "f": "arpegio_pulgar_lento_3.mp3",
-     "a": 0.175
+     "a": 0.2831
     },
     {
      "f": "arpegio_pulgar_lento_4.mp3",
-     "a": 0.1931
+     "a": 0.3085
     },
     {
      "f": "arpegio_pulgar_lento_5.mp3",
-     "a": 0.2236
+     "a": 0.3114
     }
    ]
   },
@@ -464,23 +464,23 @@
    "tomas": [
     {
      "f": "arpegio_pulgar_medio_1.mp3",
-     "a": 0.1445
+     "a": 0.1829
     },
     {
      "f": "arpegio_pulgar_medio_2.mp3",
-     "a": 0.1467
+     "a": 0.188
     },
     {
      "f": "arpegio_pulgar_medio_3.mp3",
-     "a": 0.1488
+     "a": 0.1931
     },
     {
      "f": "arpegio_pulgar_medio_4.mp3",
-     "a": 0.1416
+     "a": 0.1837
     },
     {
      "f": "arpegio_pulgar_medio_5.mp3",
-     "a": 0.1322
+     "a": 0.1735
     }
    ]
   },
@@ -488,23 +488,23 @@
    "tomas": [
     {
      "f": "arpegio_pulgar_rapido_1.mp3",
-     "a": 0.1155
+     "a": 0.1343
     },
     {
      "f": "arpegio_pulgar_rapido_2.mp3",
-     "a": 0.1147
+     "a": 0.1365
     },
     {
      "f": "arpegio_pulgar_rapido_3.mp3",
-     "a": 0.1147
+     "a": 0.1336
     },
     {
      "f": "arpegio_pulgar_rapido_4.mp3",
-     "a": 0.1205
+     "a": 0.1409
     },
     {
      "f": "arpegio_pulgar_rapido_5.mp3",
-     "a": 0.1205
+     "a": 0.1452
     }
    ]
   }
