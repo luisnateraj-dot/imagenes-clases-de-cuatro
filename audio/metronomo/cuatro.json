@@ -1,6 +1,6 @@
 {
  "_formato": "Golpes del cuatro con las cuerdas apagadas para la pista «Cuatro» del Metrónomo inteligente. MP3 mono 44,1 kHz, 192 kbps, sin normalizar (conservan su diferencia natural de nivel). Cada toma empieza 60 ms antes del golpe; «a» = el punto que cae en el tiempo, en segundos desde el comienzo del archivo (el comienzo del golpe; en los abanicos, su último golpe: la yema del pulgar, el pulgar en el fino y la uña del índice en el reentrante; en el arpegio con el pulgar, la llegada a la última cuerda, Si). Sin los apagados: en el Metrónomo no suenan (marcas mudas).",
- "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los apagados (el segundo golpe de cada par) no están aquí: pasaron a la guía de golpes de la Sala (audio/ritmos/guia/).",
+ "origen": "Luis Natera, 17-nov-2026, Golpes_apagados.wav (5 tomas por golpe y por variante, en el orden de la guía de grabación). Los chasquidos (abajo y arriba; suave, normal y fuerte), de la grabación de la noche del 17-nov (Chasquidos _definitivos_2.wav: sin el ruido de fondo y con la ganancia de la mañana), 5 tomas cada uno salvo el arriba suave (4). Los apagados (el segundo golpe de cada par) no están aquí: pasaron a la guía de golpes de la Sala (audio/ritmos/guia/).",
  "golpes": {
   "abajo": {
    "tomas": [
@@ -282,10 +282,6 @@
     },
     {
      "f": "chasquido_arriba_suave_4.mp3",
-     "a": 0.06
-    },
-    {
-     "f": "chasquido_arriba_suave_5.mp3",
      "a": 0.06
     }
    ]
